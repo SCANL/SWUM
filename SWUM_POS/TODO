@@ -1,0 +1,41 @@
+ISSUES
+
+* why don't ignorable nouns get taken into account for determining equivalence? 
+JumpLists CString GetPropertyStoreString( IPropertyStore pStore, REFPROPERTYKEY key )
+
+Engineering:
+- Handle Anonymous classes
+- Handle Arrays
+- Handle type-only formals
+- Parse method bodies
+- THEME LOCATION -- better solution
+
+Parsing:
+- Develop better NP detection
+- Develop better preamble detection
+
+Handling:
+- checkers
+- void NPs
+- prepositions (leading, middle, trailing)
+- event handlers
+- non-base verbs (-ed, -ing, -s)
+- special cases (main, return, etc)
+- FIELDS
+
+Higher-level SWUM:
+- equivalences (return, name-param, name-class, assignment, formal-actual)
+- special verb args (add, set, etc)
+
+For naming quality paper:
+- void getters
+- non-void setters
+- non-bool "can"
+
+Handling acronyms: 
+Also, [Patrick Francis] found a tricky case that [I] might be interested in:
+<function> int ASSchedule::SetASTypeIndices( int ASTypeIndices[] )
+Set(Verb) | AS(NounModifier) Schedule(Noun) -- AS(Preposition) Type(NounModifier) Indices(Noun)
+         ++ [int(Noun) - AS(Unknown) Type(Unknown) Indices(Unknown)] ++ int(Noun)
+
+In this case AS is actually an acronym, but Swum thinks it's the preposition "as". It parses the method in a logical way; it's just wrong. I think Swum would need to identify things in all caps as acronyms, and then use some different handling for them.

@@ -1,0 +1,108 @@
+3401,3402c3401,3402
+< V_MODAL:NAME:UserBL boolean canInvoice(): can (V)  | invoice (N) 
+< 	++ :: boolean (N)  :: user (NM) BL (N) 
+---
+> V_MODAL:CLAS:UserBL boolean canInvoice(): can (VI) invoice (V)  | user (NM) BL (N) 
+> 	++ :: boolean (N) 
+3421c3421
+< V_MODAL:NAME:ActionMenu void willBecomeVisible(): will (V)  | become (NM) visible (N) 
+---
+> V_MODAL:NAME:ActionMenu void willBecomeVisible(): will (VI) become (V)  | visible (N) 
+4641c4641
+< V_MODAL:NAME:CapitalShip boolean canTurnRight(): can (V)  | turn (NM) right (N) 
+---
+> V_MODAL:NAME:CapitalShip boolean canTurnRight(): can (VI) turn (V)  | right (N) 
+5612c5612
+< V_MODAL:NAME:Monster boolean shouldStealItem(AdventureResult item, float dropModifier): should (V)  | EQUIV[steal (NM) item (NI) , [ adventure (NM) result (N) - item (NI) ]]
+---
+> V_MODAL:NAME:Monster boolean shouldStealItem(AdventureResult item, float dropModifier): should (VI) steal (V)  | EQUIV[item (NI) , [ adventure (NM) result (N) - item (NI) ]]
+6093c6093
+< V_MODAL:NAME:IntLiteral boolean mayRepresentMIN_VALUE(): may (V)  | represent (NM) MIN (NM) VALUE (NI) 
+---
+> V_MODAL:NAME:IntLiteral boolean mayRepresentMIN_VALUE(): may (VI) represent (V)  | MIN (NM) VALUE (NI) 
+6431c6431
+< V_MODAL:NAME:Trap_SleepGas int canTargetCode(): can (V)  | target (NM) code (NI) 
+---
+> V_MODAL:NAME:Trap_SleepGas int canTargetCode(): can (VI) target (V)  | code (NI) 
+7384c7384
+< V_MODAL:NAME:MoveTool boolean shouldWorkAreaRegister(): should (V)  | work (NM) area (NM) register (N) 
+---
+> V_MODAL:NAME:MoveTool boolean shouldWorkAreaRegister(): should (VI) work (V)  | area (NM) register (N) 
+7467,7468c7467,7468
+< V_MODAL:NAME:Super_Any boolean can_delete(Transferable context): can (V)  | delete (N) 
+< 	++ :: [ transferable (N) - context (N) ] :: boolean (N)  :: super (NM) any (DT) 
+---
+> V_MODAL:FORM:Super_Any boolean can_delete(Transferable context): can (VI) delete (V)  | [ transferable (N) - context (N) ]
+> 	++ :: super (NM) any (DT)  :: boolean (N) 
+8634,8635c8634,8635
+< V_MODAL:NAME:boolean canModify(Object obj, String s): can (V)  | modify (N) 
+< 	++ :: [ object (NI) - obj (NI) ] :: [ string (NI) - s (N) ] :: boolean (N)  :: ANONYMOUS (N) 
+---
+> V_MODAL:FORM:boolean canModify(Object obj, String s): can (VI) modify (V)  | [ object (NI) - obj (NI) ]
+> 	++ :: [ string (NI) - s (N) ] :: ANONYMOUS (N)  :: boolean (N) 
+9643,9644c9643,9644
+< V_MODAL:NAME:Tuple boolean canGet(String field, Class type): can (V)  | get (N) 
+< 	++ :: [ string (NI) - field (N) ] :: [ class (NI) - type (N) ] :: boolean (N)  :: tuple (N) 
+---
+> V_MODAL:FORM:Tuple boolean canGet(String field, Class type): can (VI) get (V)  | [ string (NI) - field (N) ]
+> 	++ :: [ class (NI) - type (N) ] :: tuple (N)  :: boolean (N) 
+10057c10057
+< V_MODAL:NAME:Disease_Carrier int canAffectCode(): can (V)  | affect (NM) code (NI) 
+---
+> V_MODAL:NAME:Disease_Carrier int canAffectCode(): can (VI) affect (V)  | code (NI) 
+10531c10531
+< V_MODAL:NAME:InvocationInProgress boolean shouldSendResults(): should (V)  | send (NM) results (N) 
+---
+> V_MODAL:NAME:InvocationInProgress boolean shouldSendResults(): should (VI) send (V)  | results (N) 
+10976,10977c10976,10977
+< V_MODAL:NAME:Flag boolean canTag(MailItem item): can (V)  | tag (NI) 
+< 	++ :: [ mail (NM) item (NI) - item (NI) ] :: boolean (N)  :: flag (N) 
+---
+> V_MODAL:FORM:Flag boolean canTag(MailItem item): can (VI) tag (V)  | [ mail (NM) item (NI) - item (NI) ]
+> 	++ :: flag (N)  :: boolean (N) 
+12457c12457
+< V_MODAL:NAME:boolean canWritePDataTF(): can (V)  | write (NM) P (NM) data (NM) TF (N) 
+---
+> V_MODAL:NAME:boolean canWritePDataTF(): can (VI) write (V)  | P (NM) data (NM) TF (N) 
+14179c14179
+< V_MODAL:NAME:ActionHandler boolean canExecuteAction(String actionId): can (V)  | EQUIV[execute (NM) action (N) , [ string (NI) - action (NM) id (NI) ]]
+---
+> V_MODAL:NAME:ActionHandler boolean canExecuteAction(String actionId): can (VI) execute (VI)  | EQUIV[action (N) , [ string (NI) - action (NM) id (NI) ]]
+14939,14940c14939,14940
+< V_MODAL:NAME:RemoveStateType boolean canTransitToUpdate(): can (V)  | transit (N) -- to (P) update (N) 
+< 	++ :: boolean (N)  :: remove (NM) state (NM) type (N) 
+---
+> V_MODAL:CLAS:RemoveStateType boolean canTransitToUpdate(): can (VI) transit (V)  | remove (NM) state (NM) type (N) -- to (P) update (N) 
+> 	++ :: boolean (N) 
+15005c15005
+< V_MODAL:NAME:ShortCellEditor boolean canParseString(String value): can (V)  | EQUIV[parse (NM) string (NI) , [ string (NI) - value (NI) ]]
+---
+> V_MODAL:NAME:ShortCellEditor boolean canParseString(String value): can (VI) parse (V)  | EQUIV[string (NI) , [ string (NI) - value (NI) ]]
+15831c15831
+< V_MODAL:NAME:BaseNoad boolean canPrecedeBin(): can (V)  | precede (NM) bin (N) 
+---
+> V_MODAL:NAME:BaseNoad boolean canPrecedeBin(): can (VI) precede (V)  | bin (N) 
+15909c15909
+< V_MODAL:NAME:PullUpRefactoring boolean shouldAddMethodStubsToConcreteSubclassesOfTargetClass(): should (V)  | add (NM) method (NM) stubs (N) -- to (P) concrete (NM) subclasses (NM) of (NM) target (NM) class (NI) 
+---
+> V_MODAL:NAME:PullUpRefactoring boolean shouldAddMethodStubsToConcreteSubclassesOfTargetClass(): should (VI) add (V)  | method (NM) stubs (N) -- to (P) concrete (NM) subclasses (NM) of (NM) target (NM) class (NI) 
+16212c16212
+< V_MODAL:NAME:Entry String shallIndexCacheForCrawler(): shall (V)  | index (NM) cache (N) -- for (P) crawler (N) 
+---
+> V_MODAL:NAME:Entry String shallIndexCacheForCrawler(): shall (VI) index (V)  | cache (N) -- for (P) crawler (N) 
+17084c17084
+< V_MODAL:NAME:Application boolean canStartSlaves(): can (V)  | start (NM) slaves (N) 
+---
+> V_MODAL:NAME:Application boolean canStartSlaves(): can (VI) start (V)  | slaves (N) 
+18054,18055c18054,18055
+< V_MODAL:NAME:TextureTrack boolean canAcceptAsParent(Object obj): can (V)  | accept (N) -- as (P) parent (N) 
+< 	++ :: [ object (NI) - obj (NI) ] :: boolean (N)  :: texture (NM) track (N) 
+---
+> V_MODAL:CLAS:TextureTrack boolean canAcceptAsParent(Object obj): can (VI) accept (VI)  | texture (NM) track (N) -- as (P) parent (N) 
+> 	++ :: [ object (NI) - obj (NI) ] :: boolean (N) 
+18737,18738c18737,18738
+< V_MODAL:NAME:Thing boolean canSee(Map m, int tx, int ty): can (V)  | see (N) 
+< 	++ :: [ map (N) - m (N) ] :: [ int (N) - tx (N) ] :: [ int (N) - ty (N) ] :: boolean (N)  :: thing (N) 
+---
+> V_MODAL:FORM:Thing boolean canSee(Map m, int tx, int ty): can (VI) see (V)  | [ map (N) - m (N) ]
+> 	++ :: [ int (N) - tx (N) ] :: [ int (N) - ty (N) ] :: thing (N)  :: boolean (N) 

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="SWUM HITS"
+               mnemonic="M"
+               id="SWUM.menus.sampleMenu">
+            <command
+                  commandId="SWUM.commands.hits"
+                  mnemonic="S"
+                  id="SWUM.menus.hits">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="SWUM.toolbars.sampleToolbar">
+            <command
+                  commandId="SWUM.commands.hits"
+                  icon="icons/circleB.png"
+                  tooltip="Run HITS"
+                  id="SWUM.toolbars.hits">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="SWUM"
+            id="SWUM.commands.category">
+      </category>
+      <command
+            name="Run Batch"
+            categoryId="SWUM.commands.category"
+            id="SWUM.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="SWUM.commands.sampleCommand"
+            class="edu.udel.nlpa.swum.actions.BatchSWUMHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="SWUM.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="SWUM"
+               mnemonic="M"
+               id="SWUM.menus.sampleMenu">
+            <command
+                  commandId="SWUM.commands.sampleCommand"
+                  mnemonic="S"
+                  id="SWUM.menus.sampleCommand">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="SWUM.toolbars.sampleToolbar">
+            <command
+                  commandId="SWUM.commands.sampleCommand"
+                  icon="icons/shieldGr.png"
+                  tooltip="Run Batch SWUM"
+                  id="SWUM.toolbars.sampleCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+         id="SWUM.element.createSWUM"
+         objectClass="org.eclipse.jdt.core.IJavaElement">
+      <action
+         id="SWUM.element.createSWUM.action"
+         label="Build SWUM for Java Element"
+         enablesFor="1"
+         class="edu.udel.nlpa.swum.actions.ElementSWUMHandler">
+      </action>
+      </objectContribution>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+         id="SWUM.element.buildSWUM"
+         objectClass="org.eclipse.core.resources.IFile"
+         adaptable="true">
+      <action
+         id="SWUM.element.buildSWUM.action"
+         label="Build SWUM for Editor Element"
+         enablesFor="+"
+         class="edu.udel.nlpa.swum.actions.ElementSWUMHandler">
+      </action>
+      </objectContribution>
+   </extension>
+   
+      <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="Run Batch Search"
+            categoryId="SWUM.commands.category"
+            id="SWUM.commands.sampleCommand2">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="SWUM.commands.sampleCommand2"
+            class="edu.udel.nlpa.swum.actions.BatchSearchHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="SWUM.commands.sampleCommand2"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+7"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="SWUM Search"
+               mnemonic="M"
+               id="SWUM.menus.sampleMenu">
+            <command
+                  commandId="SWUM.commands.sampleCommand2"
+                  mnemonic="S"
+                  id="SWUM.menus.sampleCommand2">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="SWUM.toolbars.sampleToolbar">
+            <command
+                  commandId="SWUM.commands.sampleCommand2"
+                  icon="icons/search2.png"
+                  tooltip="Run Batch SWUM Search"
+                  id="SWUM.toolbars.sampleCommand2">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+         id="SWUM.element.searchSWUM"
+         objectClass="org.eclipse.jdt.core.IJavaElement">
+      <action
+         id="SWUM.element.searchSWUM.action"
+         label="Search SWUM for Java Element"
+         enablesFor="1"
+         class="edu.udel.nlpa.swum.actions.ElementSearchHandler">
+      </action>
+      </objectContribution>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+         id="SWUM.element.searchingSWUM"
+         objectClass="org.eclipse.core.resources.IFile"
+         adaptable="true">
+      <action
+         id="SWUM.element.searchingSWUM.action"
+         label="Search SWUM for Editor Element"
+         enablesFor="+"
+         class="edu.udel.nlpa.swum.actions.ElementSearchHandler">
+      </action>
+      </objectContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="Run HITS"
+            categoryId="SWUM.commands.category"
+            id="SWUM.commands.hits">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="SWUM.commands.hits"
+            class="edu.udel.nlpa.swum.actions.BatchHITSHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="SWUM.commands.hits"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+8"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+
+   
+</plugin>

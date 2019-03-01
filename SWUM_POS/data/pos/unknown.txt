@@ -1,0 +1,68 @@
+# id
+10448:ID:int:id (UN) 
+9979:ID:void:id (UN)
+2836:id:void:id (V) 
+
+# V or N?
+5945:error:void:error (V)
+5363:log:void:log (V) 
+2931:debug:void:debug (V)
+1785:code:void:code (V)  // encode/decode? get error code? generate code?
+                         // sun.tools.javadoc.doclets.HtmlWriter code()?
+2089:info:void:info (V)  // List number of rows selected -- like a void getter?
+
+# NPs -- on PC-Kimmo only-noun list
+1617:action:void:action (V) // perform/take action
+1591:usage:void:usage (V)   // print usage
+1589:site:void:site (V)     // process site command, handle FTP site?
+1492:text:void:text (V)     // marshall/append text
+3414:characters:void:characters (V)     // well-known EH -- how to auto. id?
+
+# Visitors -- opposite verbs (esp. XML)
+5160:startElement:void:start (V) element (N)
+4689:endElement:void:end (V) element (N) 
+3122:enterElement:void:enter (V) element (N) 
+3088:leaveElement:void:leave (V) element (N) 
+3077:enterAttribute:void:enter (V) attribute (N) 
+3075:leaveAttribute:void:leave (V) attribute (N) 
+2325:startDocument:void:start (V) document (N) 
+2209:endDocument:void:end (V) document (N) 
+1919:end:void:end (V) 
+
+# How to handle?
+3991:println:void:println (V)  // should leave in base form, but also expand abbrev?
+3506:doGet:void:do (V) get (N) // looks like mistake, but actually correct
+2674:doPost:void:do (V) post (N) 
+1404:putAll:void:put (V) all (N) 
+
+# ADJ?
+1307:ignorableWhitespace:void:ignorable (V) whitespace (N)
+1565:fatalError:void:fatal (V) error (N) // fatal is adj?
+
+# prepend abbrev
+4268:jbInit:void:jb (V) init (N)
+2244:ejbRemove:void:ejb (V) remove (N) 
+2071:ejbPassivate:void:ejb (V) passivate (N) 
+2057:ejbActivate:void:ejb (V) activate (N) 
+1549:ejbCreate:void:ejb (V) create (N) 
+
+# V-V
+2455:doDelete:void:do (V) delete (N)
+1638:doUpdate:void:do (V) update (N) 
+
+# Verb particles
+22506:setUp:void:set (V) up (N) 
+11592:tearDown:void:tear (V) down (N) // not in list
+
+# Poor Event Handler Identification
+4078:focusLost:void:focus (V) lost (N)  // EH, in irregular -ED list
+
+# Unimplemented EH Identification (event param)
+5588:propertyChange:void:property (V) change (N)
+2039:insertUpdate:void:insert (V) update (N)
+2032:removeUpdate:void:remove (V) update (N) 
+
+# Poor Id splitting
+2275:serializeURIs:void:serialize (V) ur (NM) is (N) // id split problem
+1971:rollback:void:rollback (V)  // should be roll back -> particle?
+2689:cleanup:void:cleanup (V)    // particle?

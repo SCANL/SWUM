@@ -1,0 +1,8 @@
+Automobile boolean HasEmptyGasTank(boolean gasTank)
+Automobile void addEmptyGasTank(boolean gasTank)
+Automobile void addEmptyGasTank(Object gasTank)
+DropDownButton JButton addToToolBar(JToolBar toolbar)
+JUnit void assertSame(String message, Object expected, Object actual)
+JUnit void assertSame(Object expected, Object actual)
+JUnit void assertEquals(Object expected, Object actual)
+JUnit void assertEquals(String expected, String actual)

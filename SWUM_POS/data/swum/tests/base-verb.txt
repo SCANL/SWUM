@@ -1,0 +1,123 @@
+# Top 100 randomly selected from sourceforge
+# should do all of one project, so it's easier to investigate?
+
+# is it really a base verb?
+CLAS:AbstractAnyAccountContractorsBlock Object clone(): clone (V)  | abstract (NM) any (DT) account (NM) contractors (NM) block (N) 
+
+# should theme really be return type?
+# Creates a duplicate (in memory) object of the caller. Similar to the clone() method. 
+# SnmpPduTrap implements SnmpSyntax
+CLAS:SnmpPduTrap SnmpSyntax duplicate(): duplicate (V)  | snmp (NM) pdu (NM) trap (N) 
+
+# Removes from the underlying collection the last element returned by the iterator (optional operation).
+# Giri's brought up before
+CLAS:EdgeIterator void remove(): remove (V)  | edge (NM) iterator (N) 
+
+# copmlimentary JUnit testing setup/teardown to be run around each test
+CLAS:SetGroupsTest void tearDown(): tear (V) down (VP)  | set (NM) groups (NM) test (N) 
+
+#Unsure
+FORM:DefaultHandshakeResponder HandshakeResponse respond(HandshakeResponse response, boolean outgoing): respond (V)  | handshake (NM) response (N)  - response (N) 
+FORM:AgentMeasurementPlugin String translate(String template, ConfigResponse config): translate (V)  | string (N)  - template (N) 
+
+# special well-known method name in corba and poa server helpers
+# what it returns might be the object
+FORM:ICClientSessionHelper static ICClientSession narrow(Object obj): narrow (V)  | object (N)  - obj (N) 
+
+
+# Sounds good
+FORM:BSHThrowStatement Object eval(CallStack callstack, Interpreter interpreter): eval (V)  | call (NM) stack (N)  - callstack (N) 
+FORM:Compiler void set(String file): set (V)  | string (N)  - file (N) 
+FORM:Factory static TabIndexAttribute parse(File file, XmlOptions options): parse (V)  | file (N)  - file (N) 
+FORM:IpObject void read(IpInputStream stream): read (V)  | ip (NM) input (NM) stream (N)  - stream (N) 
+FORM:LineCountVisitor Object visit(ASTMemberValue node, Object data): visit (V)  | AST (NM) member (NM) value (N)  - node (N) 
+FORM:MapTexture void paint(Graphics g): paint (V)  | graphics (N)  - g (N) 
+
+# Theme = Name, confidence = confidence in parse
+NAME:ABTSaveArray Object popFront(): pop (V)  | front (N) 
+NAME:AbstractActiveDirectoryAccountNewBlock void initStandardBlock(): init (V)  | standard (NM) block (N) 
+NAME:AbstractDatabase String getFalseBooleanValue(): get (V)  | false (NM) boolean (NM) value (N) 
+NAME:AdventureApp int getYScreen(): get (V)  | Y (NM) screen (N) 
+NAME:AlphabeticalIndex void setStyleName(String styleName): set (V)  | style (NM) name (N) 
+NAME:AnimalMedical void setTreatmentRule(Integer newValue): set (V)  | treatment (NM) rule (N) 
+NAME:ArcType void xsetArcrole(Arcrole arcrole): xset (V)  | arcrole (N) 
+NAME:ArchiveFile File getFile(): get (V)  | file (N) 
+NAME:AttributeList String getValue(String strName): get (V)  | value (N) 
+NAME:BeanSearchUtil void processProperties(Properties p, Object obj, boolean removeFoundKeys, String prefix): process (V)  | properties (N) 
+NAME:BlockTrackerArchiver static void saveBlockTracker(BlockTracker blockTracker, OutputStream oStream): save (V)  | block (NM) tracker (N) 
+NAME:BugTrackerServlet void writeBugs(PrintWriter out, Bug oBugs): write (V)  | bugs (N) 
+NAME:CapabilitiesVM int supportsCapability(byte capabilityName): supports (V)  | capability (N) 
+NAME:CharTupleChecker List<Type2> visitVarDecl(VarDecl varDecl): visit (V)  | var (NM) decl (N) 
+NAME:CharacterEnumSelectTag void setObjectName(String objectName): set (V)  | object (NM) name (N) 
+NAME:ConeTypeImpl void setRmax1(Object value): set (V)  | rmax (N) 1 (D) 
+NAME:CountryModel String getA2(): get (V)  | A (N) 2 (D) 
+NAME:DashboardService void deleteDashboard(IDashboard dashboard): delete (V)  | dashboard (N) 
+NAME:DataTarget void deleteFile(String fileName): delete (V)  | file (N) 
+NAME:DatabaseModelEditor void gotoMarker(IMarker marker): goto (V)  | marker (N) 
+NAME:DefaultBarHeader void setForeground(Color color): set (V)  | foreground (N) 
+NAME:DefaultProcessInstance void setVariables(Map variables): set (V)  | variables (N) 
+NAME:DomainRefListTypeImpl DocumentDeclaration createRawValidator(): create (V)  | raw (NM) validator (N) 
+NAME:EntityLoadHandler String getSearchResultsPageId(): get (V)  | search (NM) results (NM) page (NM) id (N) 
+NAME:ExternalClass String getName(): get (V)  | name (N) 
+NAME:FolderDisplayPanel void unregisterKeyboardAction(KeyStroke aKeyStroke): unregister (V)  | keyboard (NM) action (N) 
+NAME:GanttTabbedPane void addTab(String title, Component component, Object userObject): add (V)  | tab (N) 
+NAME:GncGncEntryType String getEntryQty(): get (V)  | entry (NM) qty (N) 
+NAME:GrossCashflow CashflowId getCashflowId(): get (V)  | cashflow (NM) id (N) 
+NAME:HBCIPassportRDH HBCIKey getMyPrivateDigKey(): get (V)  | my (NM) private (NM) dig (NM) key (N) 
+NAME:HTMLTableCellElement String getAlign(): get (V)  | align (N) 
+NAME:HibernateGenerator String generateJavaPk(TableMetadata table): generate (V)  | java (NM) pk (N) 
+NAME:ID3V2_3_0Tag TPE4TextInformationID3V2Frame getTPE4TextInformationFrame(): get (V)  | TPE (NM) 4 (D) text (NM) information (NM) frame (N) 
+NAME:InOut void removeSource(Source s): remove (V)  | source (N) 
+NAME:IncrementalZipMedium String getDescription(): get (V)  | description (N) 
+NAME:IndentVisitor Object visitTryFinally(TryFinally node): visit (V)  | try (NM) finally (N) 
+NAME:InsertStmtIdsNew_1ParamsImpl Long getStart1(): get (V)  | start (N) 1 (D) 
+NAME:IntegerSeries double getRealValue(int index): get (V)  | real (NM) value (N) 
+NAME:JDBMWordsDataSource void addNonMatch(String word): add (V)  | non (NM) match (N) 
+NAME:JaasSecurityDomainMBean void setTrustStoreType(String type): set (V)  | trust (NM) store (NM) type (N) 
+NAME:KSwingListener void setDemonstrateEvent(String name, Object eventSrc): set (V)  | demonstrate (NM) event (N) 
+NAME:LinkFilter void setLinkAnchor(String key, String anchor): set (V)  | link (NM) anchor (N) 
+NAME:LinkedList void removeEntry(Entry e): remove (V)  | entry (N) 
+NAME:MainPanel ConfigurableKeyBinding getKeyBindings(): get (V)  | key (NM) bindings (N) 
+NAME:MapLayerInfo String getLabel(): get (V)  | label (N) 
+NAME:MonthTests void testEquals(): test (V)  | equals (N) 
+NAME:OS static void FXWindow_detach(long handle): FX (V)  | window (NM) detach (N) 
+NAME:ObjectFactory DynamicValues createDynamicValues(): create (V)  | dynamic (NM) values (N) 
+NAME:ObjectPool void drainPool(long waitTime): drain (V)  | pool (N) 
+NAME:PCRStatistics int hashCode(): hash (V)  | code (N) 
+NAME:PictureChat JID getJID(): get (V)  | JID (N) 
+NAME:PositionTypeList void activateExternalPage(Object parameters, IRequestCycle cycle): activate (V)  | external (NM) page (N) 
+NAME:PrinterDriverInstaller String getName(): get (V)  | name (N) 
+NAME:RaceStartResponse byte getSp0(): get (V)  | sp (N) 0 (D) 
+NAME:RegroupidAttribute XmlInteger xgetRegroupid(): xget (V)  | regroupid (N) 
+NAME:ResourceTypeDisplaySummary void setThroughput(Double throughput): set (V)  | throughput (N) 
+NAME:RuleSet void setFileName(String fileName): set (V)  | file (NM) name (N) 
+NAME:SAXContentHandler InputSource getInputSource(): get (V)  | input (NM) source (N) 
+NAME:SAXException String getMessage(): get (V)  | message (N) 
+NAME:SAXOutputter XMLReader createDTDParser(): create (V)  | DTD (NM) parser (N) 
+NAME:ScalarInterpolator float getValue(): get (V)  | value (N) 
+NAME:ScrollableGroupView void addItem(AbstractButton itemView): add (V)  | item (N) 
+NAME:SecurityServiceFactory static String getLoginContextName(): get (V)  | login (NM) context (NM) name (N) 
+NAME:SimpleDecimalFormat static SimpleDecimalFormat getInstance(): get (V)  | instance (N) 
+NAME:SimsorderBean String getStatus(): get (V)  | status (N) 
+NAME:SmartTree String testDropTarget(TreePath destination, TreePath dropper): test (V)  | drop (NM) target (N) 
+NAME:TagsEntryServiceUtil static int searchCount(long companyId, String name, String properties): search (V)  | count (N) 
+NAME:TemplateController TrayType createTrayType(String name, int condCount, String sSize, Category c, boolean sad): create (V)  | tray (NM) type (N) 
+NAME:TestSpansAdvanced void addDocument(IndexWriter writer, String id, String text): add (V)  | document (N) 
+NAME:TiffEncoder void writeIFD(DataOutputStream out, int imageOffset, int nextIFD): write (V)  | IFD (N) 
+NAME:TrackpointJTableModel Class getColumnClass(int c): get (V)  | column (NM) class (N) 
+NAME:TreeContext TreePath getSelectionPath(): get (V)  | selection (NM) path (N) 
+NAME:TrimUtil static String getLeftTrimmedToken(String token): get (V)  | left (NM) trimmed (NM) token (N) 
+NAME:Unmarshaller void leaveAttribute(String ___uri, String ___local, String ___qname): leave (V)  | attribute (N) 
+NAME:WaterfallBarRenderer void setNegativeBarPaint(Paint paint): set (V)  | negative (NM) bar (NM) paint (N) 
+NAME:WeakMapValue Object getValue(): get (V)  | value (N) 
+NAME:WordsUtil static String getRandomWord(): get (V)  | random (NM) word (N) 
+NAME:WorkBenchDefinition String getPath(): get (V)  | path (N) 
+NAME:WorkspaceHQLSource String getHQLQuery(): get (V)  | HQL (NM) query (N) 
+NAME:XMLInstance String getLocalName(): get (V)  | local (NM) name (N) 
+NAME:XTokenCore PreferencesSet getIMAPAccounts(): get (V)  | IMAP (NM) accounts (N) 
+NAME:XmFormLayout void processConstraints(String newConstraints): process (V)  | constraints (N) 
+NAME:YearTests void testDateConstructor1(): test (V)  | date (NM) constructor (N) 1 (D) 
+NAME:jcanalciJNI static long get_canalMsg_flags(long jarg1): get (V)  | canal (NM) msg (NM) flags (N) 
+NAME:jdbcResultSet void updateAsciiStream(String columnName, InputStream x, int length): update (V)  | ascii (NM) stream (N) 
+NAME:tuiStaticText static int get_default_align(): get (V)  | default (NM) align (N) 
+NAME:TrimUtil static String getLeftTrimmedToken(String token): get (V)  | left (NM) trimmed (NM) token (N) 

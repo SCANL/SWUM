@@ -1,0 +1,4264 @@
+FlowScrollPanel long serialVersionUID
+FlowScrollPanel FlowLayout layout
+FlowScrollPanel JScrollPane scroller
+FlowScrollPanel FlowScrollPanel FlowScrollPanel()
+FlowScrollPanel FlowScrollPanel FlowScrollPanel(JScrollPane scrollPane)
+FlowScrollPanel void setScroller(JScrollPane scrollPane)
+ void componentResized(ComponentEvent e)
+FlowScrollPanel Dimension getPreferredSize()
+FlowScrollPanel void setLayout(LayoutManager l)
+FlowScrollPanel Dimension getPreferredScrollableViewportSize()
+FlowScrollPanel int getScrollableUnitIncrement(Rectangle visibleRect, int orientation, int direction)
+FlowScrollPanel int getScrollableBlockIncrement(Rectangle visibleRect, int orientation, int direction)
+FlowScrollPanel boolean getScrollableTracksViewportWidth()
+FlowScrollPanel boolean getScrollableTracksViewportHeight()
+DropDownButton JButton arrowButton
+DropDownButton boolean popupVisible
+DropDownButton DropDownButton DropDownButton(ImageIcon icon)
+DropDownButton void propertyChange(PropertyChangeEvent evt)
+DropDownButton void stateChanged(ChangeEvent e)
+DropDownButton void actionPerformed(ActionEvent ae)
+DropDownButton void popupMenuWillBecomeVisible(PopupMenuEvent e)
+DropDownButton void popupMenuWillBecomeInvisible(PopupMenuEvent e)
+DropDownButton void popupMenuCanceled(PopupMenuEvent e)
+DropDownButton JPopupMenu getPopupMenu()
+DropDownButton JButton addToToolBar(JToolBar toolbar)
+SwingWorker Object value
+ThreadVar Thread thread
+ThreadVar ThreadVar ThreadVar(Thread t)
+ThreadVar Thread get()
+ThreadVar void clear()
+SwingWorker ThreadVar threadVar
+SwingWorker Object getValue()
+SwingWorker void setValue(Object x)
+SwingWorker Object construct()
+SwingWorker void finished()
+SwingWorker void interrupt()
+SwingWorker Object get()
+SwingWorker SwingWorker SwingWorker()
+ void run()
+ void run()
+SwingWorker void start()
+JSplash long serialVersionUID
+JSplash JProgressBar m_progress
+JSplash boolean m_progressBar
+JSplash boolean m_progressBarMessages
+JSplash boolean m_progressBarPercent
+JSplash JSplash JSplash(URL url, boolean progress, boolean messages, boolean percent, String copyrightString, String versionString, Font versionStringFont, Color versionStringColor)
+JSplash void splashOn()
+JSplash void splashOff()
+JSplash void setProgress(int value)
+JSplash void setProgress(int value, String msg)
+SliderMenuItem long serialVersionUID
+SliderMenuItem SliderMenuItem SliderMenuItem(int iMin, int iMax, int iValue, String sTitle)
+SliderMenuItem void processMouseEvent(MouseEvent e, MenuElement[] path, MenuSelectionManager manager)
+SliderMenuItem void processKeyEvent(KeyEvent e, MenuElement[] path, MenuSelectionManager manager)
+SliderMenuItem void menuSelectionChanged(boolean isIncluded)
+SliderMenuItem MenuElement[] getSubElements()
+SliderMenuItem Component getComponent()
+JSplashLabel long serialVersionUID
+JSplashLabel String m_text
+JSplashLabel String m_copyright
+JSplashLabel Font m_font
+JSplashLabel Color m_color
+JSplashLabel JSplashLabel JSplashLabel(URL url, String copyright, String s, Font f, Color c)
+JSplashLabel void paint(Graphics g)
+Main JajukWindow jw
+Main CommandJPanel command
+Main ToolBarContainer tbcontainer
+Main PerspectiveBarJPanel perspectiveBar
+Main InformationJPanel information
+Main JPanel jpFrame
+Main JSplash sc
+Main int iExitCode
+Main boolean bIdeMode
+Main boolean bTestMode
+Main boolean bExiting
+Main JajukSystray jsystray
+Main boolean bUILauched
+Main boolean bNoTaskBar
+Main String sPerspective
+Main ServerSocket ss
+Main boolean bUpgraded
+Main boolean bFirstSession
+Main boolean bCrashRecover
+Main MPlayerStatus mplayerStatus
+MPlayerStatus MPlayerStatus MPLAYER_STATUS_OK
+MPlayerStatus MPlayerStatus MPLAYER_STATUS_NOT_FOUND
+MPlayerStatus MPlayerStatus MPLAYER_STATUS_WRONG_VERSION
+Main static void main(String[] args)
+ void run()
+ void run()
+Main static void initialCheckups()
+Main static void registerTypes()
+Main static void checkOtherSession()
+ void run()
+Main static void exit(int iExitCode)
+Main static void loadCollection()
+ boolean accept(File dir, String name)
+Main static void launchInitialTrack()
+Main static void autoMount()
+Main static JajukWindow getWindow()
+Main static boolean isExiting()
+Main static void launchUI()
+ void run()
+Main static void launchTray()
+ void run()
+Main static boolean isUILaunched()
+Main static boolean isNoTaskBar()
+Main static String getDefaultPerspective()
+Main static void setDefaultPerspective(String perspective)
+Main static JajukSystray getSystray()
+Main static ToolBarContainer getToolbarContainer()
+Main static boolean isUpgradeDetected()
+Main static boolean isCrashRecover()
+Style long serialVersionUID
+Style Style Style(String sId, String sName)
+Style String getIdentifier()
+Style String getName2()
+Style String toString()
+Style boolean equals(Object otherStyle)
+Style int hashCode()
+Style int compareTo(Object o)
+Style int getCount()
+Style boolean isUnknown()
+Style String getDesc()
+Style String getHumanValue(String sKey)
+Style ArrayList<Track> getTracksRecursively()
+Cover int LOCAL_COVER
+Cover int REMOTE_COVER
+Cover int DEFAULT_COVER
+Cover int ABSOLUTE_DEFAULT_COVER
+Cover URL url
+Cover int iType
+Cover File file
+Cover ImageIcon iiDefaultCover
+Cover URL urlDefault
+Cover Cover Cover(URL url, int iType)
+Cover int compareTo(Cover cOther)
+Cover int getType()
+Cover URL getURL()
+Cover String getSize()
+Cover ImageIcon getImage()
+Cover String toString()
+Cover boolean equals(Object o)
+Cover int hashCode()
+Cover File getFile()
+HistoryItem String sFileId
+HistoryItem long lDate
+HistoryItem HistoryItem HistoryItem(String sFileId, long lDate)
+HistoryItem long getDate()
+HistoryItem void setDate(long lDate)
+HistoryItem String getFileId()
+HistoryItem void setFileId(String fileId)
+HistoryItem String toString()
+ObserverRegistry Hashtable<EventSubject,ArrayList<Observer>> hEventComponents
+ObserverRegistry void notifySync(Event event)
+ObserverRegistry boolean register(EventSubject subject, Observer observer)
+ObserverRegistry boolean unregister(EventSubject subject, Observer observer)
+PopulatedStyle Style style
+PopulatedStyle ArrayList<PopulatedAuthor> authors
+PopulatedStyle PopulatedStyle PopulatedStyle(Style style)
+PopulatedStyle PopulatedStyle PopulatedStyle(Style style, ArrayList<PopulatedAuthor> authors)
+PopulatedStyle ArrayList<PopulatedAuthor> getAuthors()
+PopulatedStyle void setAuthors(ArrayList<PopulatedAuthor> authors)
+PopulatedStyle Style getStyle()
+PopulatedStyle void setStyle(Style style)
+PopulatedStyle void addAuthor(PopulatedAuthor author)
+PopulatedAlbum Album album
+PopulatedAlbum ArrayList<Track> tracks
+PopulatedAlbum PopulatedAlbum PopulatedAlbum(Album album)
+PopulatedAlbum PopulatedAlbum PopulatedAlbum(Album album, ArrayList<Track> tracks)
+PopulatedAlbum Album getAlbum()
+PopulatedAlbum void setAlbum(Album album)
+PopulatedAlbum ArrayList<Track> getTracks()
+PopulatedAlbum void setTracks(ArrayList<Track> tracks)
+PopulatedAlbum void addTrack(Track track)
+AgePredicate int iAge
+AgePredicate AgePredicate AgePredicate(int iAge)
+AgePredicate boolean evaluate(Object o)
+ReadyFilePredicate int iAge
+ReadyFilePredicate boolean evaluate(Object o)
+File long serialVersionUID
+File Directory directory
+File Track track
+File long lSize
+File long lQuality
+File File fio
+File File File(String sId, String sName, Directory directory, Track track, long lSize, long lQuality)
+File String getIdentifier()
+File String toString()
+File String toStringSearch()
+File boolean hasAncestor(Directory directory)
+File long getSize()
+File Directory getDirectory()
+File Device getDevice()
+File Type getType()
+File long getQuality()
+File Track getTrack()
+File boolean equals(Object otherFile)
+File int hashCode()
+File String getAbsolutePath()
+File int compareTo(Object o)
+File boolean isReady()
+File boolean isScanned()
+File File getIO()
+File boolean shouldBeHidden()
+File void setTrack(Track track)
+File String getDesc()
+File String getHumanValue(String sKey)
+File String getAny()
+File void reset()
+History History history
+History Vector<HistoryItem> vHistory
+History long lDateStart
+History SimpleDateFormat formatter
+History static History getInstance()
+History History History()
+History Set<EventSubject> getRegistrationKeys()
+History Vector<HistoryItem> getHistory()
+History void addItem(String sFileId, long lDate)
+History void clear()
+History void cleanup()
+History void changeID(String sIDOld, String sIDNew)
+History void clear(int iDays)
+History static void commit()
+History static void load()
+History String getLastFile()
+History HistoryItem getHistoryItem(int index)
+History void warning(SAXParseException spe)
+History void error(SAXParseException spe)
+History void fatalError(SAXParseException spe)
+History void startDocument()
+History void endDocument()
+History void startElement(String sUri, String sName, String sQName, Attributes attributes)
+History void endElement(String sUri, String sName, String sQName)
+History void update(Event event)
+History SimpleDateFormat getDateFormatter()
+Playlist long serialVersionUID
+Playlist ArrayList<PlaylistFile> alPlaylistFiles
+Playlist Playlist Playlist(String sId, PlaylistFile plFile)
+Playlist String getIdentifier()
+Playlist String toString()
+Playlist boolean equals(Object otherPlaylist)
+Playlist int hashCode()
+Playlist ArrayList<PlaylistFile> getPlaylistFiles()
+Playlist String getHumanValue(String sKey)
+Playlist PlaylistFile getPlayeablePlaylistFile()
+Playlist void addFile(PlaylistFile plFile)
+Playlist void removePlaylistFile(PlaylistFile plf)
+Playlist void rebuildProperty()
+Playlist String getName()
+Playlist int compareTo(Object o)
+Playlist String getDesc()
+JajukTimer JajukTimer timer
+JajukTimer long lTimeToPlay
+JajukTimer int DEFAULT_HEARTBEAT
+JajukTimer static JajukTimer getInstance()
+JajukTimer JajukTimer JajukTimer()
+JajukTimer void addTrackTime(File file)
+JajukTimer void addTrackTime(ArrayList alFiles)
+JajukTimer void removeTrackTime(File file)
+JajukTimer void removeTrackTime(ArrayList alFiles)
+JajukTimer long getCurrentTrackEllapsedTime()
+JajukTimer float getCurrentTrackPosition()
+JajukTimer long getCurrentTrackTotalTime()
+JajukTimer long getTotalTimeToPlay()
+JajukTimer void reset()
+Type long serialVersionUID
+Type String sExtension
+Type Class cTagImpl
+Type Class cPlayerImpl
+Type Type Type(String sId, String sName, String sExtension, Class cPlayerImpl, Class cTagImpl)
+Type String getIdentifier()
+Type Class<IPlayerImpl> getPlayerClass()
+Type Class getTaggerClass()
+Type String getExtension()
+Type String toString()
+Type boolean equals(Object otherType)
+Type int hashCode()
+Type ITagImpl getTagImpl()
+Type String getDesc()
+Type int compareTo(Object other)
+Event EventSubject subject
+Event Properties pDetails
+Event Event Event(EventSubject subject, Properties pDetails)
+Event Event Event(EventSubject subject)
+Event Properties getDetails()
+Event EventSubject getSubject()
+Event String toString()
+Event boolean equals(Object obj)
+Bookmarks Bookmarks bookmarks
+Bookmarks ArrayList<File> alFiles
+Bookmarks static Bookmarks getInstance()
+Bookmarks Bookmarks Bookmarks()
+Bookmarks String toString()
+Bookmarks ArrayList getFiles()
+Bookmarks void clear()
+Bookmarks void down(int index)
+Bookmarks void up(int index)
+Bookmarks void remove(int index)
+Bookmarks void addFile(int index, File file)
+Bookmarks void addFile(File file)
+Bookmarks void addFiles(List<File> alFilesToAdd)
+Tag ITagImpl tagImpl
+Tag File fio
+Tag boolean bCorrupted
+Tag Tag Tag(File fio)
+Tag Tag Tag(File fio, boolean bIgnoreErrors)
+Tag String getTrackName()
+Tag String getAlbumName()
+Tag String getAuthorName()
+Tag String getStyleName()
+Tag long getLength()
+Tag long getYear()
+Tag long getQuality()
+Tag String getComment()
+Tag long getOrder()
+Tag void setTrackName(String sTrackName)
+Tag void setAlbumName(String sAlbumName)
+Tag void setAuthorName(String sAuthorName)
+Tag void setStyleName(String style)
+Tag void setOrder(long lOrder)
+Tag void setYear(long lYear)
+Tag void setComment(String sComment)
+Tag void commit()
+Tag boolean isCorrupted()
+Tag void setCorrupted(boolean corrupted)
+Track long serialVersionUID
+Track Album album
+Track Style style
+Track Author author
+Track long length
+Track long lYear
+Track long lOrder
+Track Type type
+Track ArrayList<File> alFiles
+Track int iSessionHits
+Track Track Track(String sId, String sName, Album album, Style style, Author author, long length, long lYear, long lOrder, Type type)
+Track String toString()
+Track int compareTo(Object o)
+Track Album getAlbum()
+Track ArrayList<org.jajuk.base.File> getFiles()
+Track ArrayList<File> getReadyFiles()
+Track ArrayList<File> getReadyFiles(HashSet filter)
+Track long getTotalSize()
+Track File getPlayeableFile(boolean bHideUnmounted)
+ int compare(File file1, File file2)
+Track long getHits()
+Track String getComment()
+Track long getOrder()
+Track long getYear()
+Track long getLength()
+Track long getRate()
+Track int getStarsNumber()
+Track IconLabel getStars()
+Track Date getAdditionDate()
+Track Type getType()
+Track boolean equals(Object otherTrack)
+Track int hashCode()
+Track Author getAuthor()
+Track Style getStyle()
+Track void addFile(File file)
+Track void removeFile(File file)
+Track void setHits(long hits)
+Track void incHits()
+Track void setRate(long rate)
+Track void setComment(String sComment)
+Track void setAdditionDate(Date additionDate)
+Track int getSessionHits()
+Track void incSessionHits()
+Track boolean shouldBeHidden()
+Track String getIdentifier()
+Track String getDesc()
+Track String getHumanValue(String sKey)
+Observer void update(Event event)
+Observer Set<EventSubject> getRegistrationKeys()
+PopulatedAuthor Author author
+PopulatedAuthor ArrayList<PopulatedAlbum> albums
+PopulatedAuthor PopulatedAuthor PopulatedAuthor(Author author)
+PopulatedAuthor PopulatedAuthor PopulatedAuthor(Author author, ArrayList<PopulatedAlbum> albums)
+PopulatedAuthor ArrayList<PopulatedAlbum> getAlbums()
+PopulatedAuthor void setAlbums(ArrayList<PopulatedAlbum> albums)
+PopulatedAuthor Author getAuthor()
+PopulatedAuthor void setAuthor(Author author)
+PopulatedAuthor void addAlbum(PopulatedAlbum album)
+StackItem File file
+StackItem boolean bRepeat
+StackItem boolean bUserLaunch
+StackItem boolean bPlanned
+StackItem StackItem StackItem(File file)
+StackItem StackItem StackItem(File file, boolean bUserLauched)
+StackItem StackItem StackItem(File file, boolean bRepeat, boolean bUserLauched)
+StackItem boolean isRepeat()
+StackItem void setRepeat(boolean repeat)
+StackItem File getFile()
+StackItem boolean isUserLaunch()
+StackItem void setUserLaunch(boolean userLaunch)
+StackItem boolean isPlanned()
+StackItem void setPlanned(boolean planned)
+StackItem Object clone()
+StackItem boolean equals(Object o)
+StackItem String toString()
+IItemFilter Collection<Item> apply(Collection<Item> col)
+FileManager boolean bRateHasChanged
+FileManager ArrayList<File> alBestofFiles
+FileManager FileManager singleton
+FileManager Comparator<File> rateComparator
+ int compare(File file1, File file2)
+FileManager FileManager FileManager()
+FileManager static FileManager getInstance()
+FileManager File registerFile(String sId, String sName, Directory directory, Track track, long lSize, long lQuality)
+FileManager static String getID(String sName, Directory dir)
+FileManager File changeFileName(File fileOld, String sNewName)
+FileManager File changeFileDirectory(File old, Directory newDir)
+FileManager void cleanDevice(String sId)
+FileManager void removeFile(File file)
+FileManager File getFileByPath(String sPath)
+FileManager List<File> getReadyFiles()
+FileManager File getShuffleFile()
+FileManager List<File> getGlobalShufflePlaylist()
+FileManager File getNoveltyFile()
+FileManager ArrayList<org.jajuk.base.File> getGlobalNoveltiesPlaylist()
+FileManager ArrayList<File> getGlobalNoveltiesPlaylist(boolean bHideUnmounted)
+ int compare(File file1, File file2)
+FileManager List<File> getShuffleNoveltiesPlaylist()
+FileManager List<File> getShuffledFilesByAlbum(List<File> alEligibleFiles)
+FileManager List<File> getSortedByRate()
+FileManager ArrayList<File> getGlobalBestofPlaylist()
+FileManager ArrayList getBestOfFiles()
+FileManager ArrayList getBestOfFiles(boolean bHideUnmounted)
+FileManager File getNextFile(File file)
+FileManager File getPreviousFile(File file)
+FileManager boolean isVeryfirstFile(File file)
+FileManager Set<File> getAllDirectory(File file)
+FileManager Set<File> getAllDirectoryFrom(File file)
+FileManager TreeSet<SearchResult> search(String sCriteria)
+FileManager boolean hasRateChanged()
+FileManager void setRateHasChanged(boolean rateHasChanged)
+FileManager String getIdentifier()
+FileManager void update(Event event)
+FileManager Set<EventSubject> getRegistrationKeys()
+FileManager File getFileByID(String sID)
+FileManager Set<File> getFiles()
+ItemManager TreeBidiMap hmItems
+ItemManager LinkedHashMap<Class,ItemManager> hmItemManagers
+ItemManager LinkedHashMap<String,PropertyMetaInformation> hmPropertiesMetaInformation
+ItemManager byte[] bLock
+ItemManager ItemManager ItemManager()
+ItemManager static void registerItemManager(Class c, ItemManager itemManager)
+ItemManager String getIdentifier()
+ItemManager PropertyMetaInformation getMetaInformation(String sPropertyName)
+ItemManager static String getHumanType(String sKey)
+ItemManager void removeProperty(String sProperty)
+ItemManager void applyRemoveProperty(PropertyMetaInformation meta)
+ItemManager void applyNewProperty(PropertyMetaInformation meta)
+ItemManager String toXML()
+ItemManager Collection<PropertyMetaInformation> getProperties()
+ItemManager Collection<PropertyMetaInformation> getCustomProperties()
+ItemManager Collection getVisibleProperties()
+ItemManager static ItemManager getItemManager(String sProperty)
+ItemManager static ItemManager getItemManager(Class c)
+ItemManager static Iterator getItemManagers()
+ItemManager void cleanup()
+ItemManager void cleanup(Item item)
+ItemManager Collection<Item> getItems(Filter filter)
+ItemManager void removeItem(String sID)
+ItemManager void registerProperty(PropertyMetaInformation meta)
+ItemManager static Item changeItem(Item itemToChange, String sKey, Object oValue, HashSet filter)
+ItemManager byte[] getLock()
+ItemManager int getElementCount()
+ItemManager Item getItemByID(String sID)
+ItemManager Set<Item> getItems()
+TypeManager HashMap<String,Type> hmSupportedTypes
+TypeManager TypeManager singleton
+TypeManager TypeManager TypeManager()
+TypeManager static TypeManager getInstance()
+TypeManager Type registerType(String sName, String sExtension, Class cPlayerImpl, Class cTagImpl)
+TypeManager static String getID(int index)
+TypeManager Type registerType(String sId, String sName, String sExtension, Class cPlayerImpl, Class cTagImpl)
+TypeManager boolean isExtensionSupported(String sExt)
+TypeManager Type getTypeByExtension(String sExtension)
+TypeManager Type getTypeByTechDesc(String sTechDesc)
+TypeManager ArrayList getAllMusicTypes()
+TypeManager String getTypeListString()
+TypeManager String getIdentifier()
+TypeManager Type getTypeByID(String sID)
+TypeManager Set<Type> getTypes()
+SearchResult File file
+SearchResult String sResu
+SearchResult SearchResult SearchResult(File file)
+SearchResult SearchResult SearchResult(File file, String sResu)
+SearchResult int hashCode()
+SearchResult int compareTo(Object o)
+SearchResult File getFile()
+SearchResult String getResu()
+PropertyMetaInformation String sName
+PropertyMetaInformation boolean bCustom
+PropertyMetaInformation boolean bConstructor
+PropertyMetaInformation Class cType
+PropertyMetaInformation Object oDefaultValue
+PropertyMetaInformation boolean bShouldBeDisplayed
+PropertyMetaInformation boolean bEditable
+PropertyMetaInformation boolean bMergeable
+PropertyMetaInformation String sHumanType
+PropertyMetaInformation PropertyMetaInformation PropertyMetaInformation(String sName, boolean bCustom, boolean bConstructor, boolean bShouldBeDisplayed, boolean bEditable, boolean bMergeable, Class cType, Object oDefaultValue)
+PropertyMetaInformation boolean isConstructor()
+PropertyMetaInformation boolean isCustom()
+PropertyMetaInformation Class getType()
+PropertyMetaInformation String getName()
+PropertyMetaInformation String toXML()
+PropertyMetaInformation Object getDefaultValue()
+PropertyMetaInformation String toString()
+PropertyMetaInformation boolean isVisible()
+PropertyMetaInformation boolean isEditable()
+PropertyMetaInformation boolean isMergeable()
+PropertyMetaInformation String getHumanType()
+PropertyMetaInformation String getHumanName()
+Collection long serialVersionUID
+Collection Collection collection
+Collection long lTime
+Collection ItemManager manager
+Collection HashMap<String,String> hmWrongRightTrackID
+Collection HashMap<String,String> hmWrongRightAlbumID
+Collection HashMap<String,String> hmWrongRightAuthorID
+Collection HashMap<String,String> hmWrongRightStyleID
+Collection HashMap<String,String> hmWrongRightDeviceID
+Collection HashMap<String,String> hmWrongRightDirectoryID
+Collection HashMap<String,String> hmWrongRightFileID
+Collection HashMap<String,String> hmWrongRightPlaylistFileID
+Collection Thread tAutoCommit
+ void run()
+Collection static Collection getInstance()
+Collection Collection Collection()
+Collection static void commit(String sFileName)
+Collection static void load(String sFile)
+Collection static void cleanup()
+Collection void warning(SAXParseException spe)
+Collection void error(SAXParseException spe)
+Collection void fatalError(SAXParseException spe)
+Collection void startDocument()
+Collection void endDocument()
+Collection void startElement(String sUri, String s, String sQName, Attributes attributes)
+Collection HashMap<String,String> getHmWrongRightFileID()
+PlaylistFileManager PlaylistFileManager singleton
+PlaylistFileManager PlaylistFileManager PlaylistFileManager()
+PlaylistFileManager static PlaylistFileManager getInstance()
+PlaylistFileManager PlaylistFile registerPlaylistFile(File fio, Directory dParentDirectory)
+PlaylistFileManager static String getID(String sName, Directory dParentDirectory)
+PlaylistFileManager void removePlaylistFile(PlaylistFile plf)
+PlaylistFileManager PlaylistFile registerPlaylistFile(String sId, String sName, Directory dParentDirectory)
+PlaylistFileManager void cleanDevice(String sId)
+PlaylistFileManager String getIdentifier()
+PlaylistFileManager PlaylistFile changePlaylistFileName(PlaylistFile plfOld, String sNewName)
+PlaylistFileManager void update(Event event)
+PlaylistFileManager Set<EventSubject> getRegistrationKeys()
+PlaylistFileManager PlaylistFile getPlaylistFileByID(String sID)
+PlaylistFileManager Set<PlaylistFile> getPlaylistFiles()
+Album long serialVersionUID
+Album Album Album(String sId, String sName)
+Album String getName2()
+Album String toString()
+Album boolean equals(Object otherAlbum)
+Album int hashCode()
+Album int compareTo(Object o)
+Album boolean isUnknown()
+Album String getIdentifier()
+Album String getDesc()
+Album String getHumanValue(String sKey)
+Album File getCoverFile()
+Directory long serialVersionUID
+Directory Directory dParent
+Directory Device device
+Directory TreeSet<Directory> directories
+Directory TreeSet<org.jajuk.base.File> files
+Directory TreeSet<PlaylistFile> playlistFiles
+Directory File fio
+Directory Directory Directory(String sId, String sName, Directory dParent, Device device)
+Directory String getIdentifier()
+Directory String toString()
+Directory boolean equals(Object otherDirectory)
+Directory String getAbsolutePath()
+Directory int hashCode()
+Directory Device getDevice()
+Directory Directory getParentDirectory()
+Directory Set<Directory> getDirectories()
+Directory void addDirectory(Directory directory)
+Directory void removeFile(File file)
+Directory void addPlaylistFile(PlaylistFile plf)
+Directory void removePlaylistFile(PlaylistFile plf)
+Directory void removeDirectory(Directory directory)
+Directory Set<org.jajuk.base.File> getFiles()
+Directory Set<PlaylistFile> getPlaylistFiles()
+Directory ArrayList<org.jajuk.base.File> getFilesFromFile(File fileStart)
+Directory ArrayList<org.jajuk.base.File> getFilesRecursively()
+Directory void addFile(File file)
+Directory void changePlaylistFile(PlaylistFile plfOld, PlaylistFile plfNew)
+Directory void changeFile(File fileOld, File fileNew)
+Directory void scan(boolean bDeepScan)
+Directory String getRelativePath()
+Directory File getFio()
+Directory int compareTo(Object o)
+Directory boolean shouldBeHidden()
+Directory String getDesc()
+Directory String getHumanValue(String sKey)
+AlbumManager AlbumManager singleton
+AlbumManager AlbumManager AlbumManager()
+AlbumManager static AlbumManager getInstance()
+AlbumManager Album registerAlbum(String sName)
+AlbumManager static String getID(String sName)
+AlbumManager Album registerAlbum(String sId, String sName)
+AlbumManager Album changeAlbumName(Album old, String sNewName)
+AlbumManager static String format(String sName)
+AlbumManager String getIdentifier()
+AlbumManager Album getAlbumByID(String sID)
+AlbumManager Set<Album> getAlbums()
+ObservationManager ObserverRegistry observerRegistry
+ObservationManager HashMap<EventSubject,Properties> hLastEventBySubject
+ObservationManager Vector<Event> vFIFO
+ObservationManager Thread t
+ void run()
+ void run()
+ObservationManager static void register(Observer observer)
+ObservationManager static boolean unregister(EventSubject subject, Observer observer)
+ObservationManager static void notify(Event event)
+ObservationManager static void notifySync(Event event)
+ObservationManager static boolean containsEvent(EventSubject subject)
+ObservationManager static void notify(Event event, boolean bSync)
+ObservationManager static Object getDetailLastOccurence(EventSubject subject, String sDetailName)
+ObservationManager static Object getDetail(Event event, String sDetailName)
+ObservationManager static Properties getDetailsLastOccurence(EventSubject subject)
+TrackManager TrackManager singleton
+TrackManager boolean bChangePbm
+TrackManager TrackComparator comparator
+TrackManager long lMaxRate
+TrackManager TrackManager TrackManager()
+TrackManager Set<EventSubject> getRegistrationKeys()
+TrackManager static TrackManager getInstance()
+TrackManager Track registerTrack(String sName, Album album, Style style, Author author, long length, long lYear, long lOrder, Type type)
+TrackManager static String getID(String sName, Album album, Style style, Author author, long length, long lYear, long lOrder, Type type)
+TrackManager Track registerTrack(String sId, String sName, Album album, Style style, Author author, long length, long lYear, long lOrder, Type type)
+TrackManager Track changeTrackAlbum(Track track, String sNewAlbum, HashSet filter)
+TrackManager Track changeTrackAuthor(Track track, String sNewAuthor, HashSet filter)
+TrackManager Track changeTrackStyle(Track track, String sNewStyle, HashSet filter)
+TrackManager Track changeTrackYear(Track track, long lNewItem, HashSet filter)
+TrackManager Track changeTrackComment(Track track, String sNewItem, HashSet filter)
+TrackManager Track changeTrackRate(Track track, long lNew)
+TrackManager Track changeTrackOrder(Track track, long lNewOrder, HashSet filter)
+TrackManager Track changeTrackName(Track track, String sNewItem, HashSet filter)
+TrackManager void updateFilesReferences(Track oldTrack, Track newTrack, HashSet filter)
+TrackManager void postChange(Track track, Track newTrack, HashSet filter)
+TrackManager void cleanup()
+TrackManager String getIdentifier()
+TrackManager void update(Event event)
+TrackManager Set<Track> getAssociatedTracks(Item item)
+TrackManager boolean isChangePbm()
+TrackManager TrackComparator getComparator()
+TrackManager void setComparator(TrackComparator comparator)
+TrackManager long getMaxRate()
+TrackManager void setMaxRate(long lRate)
+TrackManager Track getTrackByID(String sID)
+TrackManager Set<Track> getTracks()
+Player File fCurrent
+Player IPlayerImpl playerImpl
+Player IPlayerImpl playerImpl1
+Player IPlayerImpl playerImpl2
+Player boolean bMute
+Player boolean bPaused
+Player boolean bPlaying
+Player static boolean play(File file, float fPosition, long length)
+ void run()
+Player static void stop(boolean bAll)
+Player static void mute()
+Player static void mute(boolean bMute)
+Player static boolean isMuted()
+Player static void setVolume(float pVolume)
+Player static long getElapsedTime()
+Player static void pause()
+Player static void resume()
+Player static boolean isPaused()
+Player static void setPaused(boolean bPaused)
+Player static void seek(float pfPosition)
+Player static float getCurrentPosition()
+Player static long getCurrentLength()
+Player static float getCurrentVolume()
+Player static boolean isPlaying()
+Player static boolean isSeeking()
+Author long serialVersionUID
+Author Author Author(String sId, String sName)
+Author String getIdentifier()
+Author String getName2()
+Author String toString()
+Author boolean equals(Object otherAuthor)
+Author int hashCode()
+Author int compareTo(Object o)
+Author boolean isUnknown()
+Author String getDesc()
+Author String getHumanValue(String sKey)
+DirectoryManager DirectoryManager singleton
+DirectoryManager DirectoryManager DirectoryManager()
+DirectoryManager static DirectoryManager getInstance()
+DirectoryManager Directory registerDirectory(String sName, Directory dParent, Device device)
+DirectoryManager Directory registerDirectory(Device device)
+DirectoryManager static String getID(String sName, Device device, Directory dParent)
+DirectoryManager Directory registerDirectory(String sId, String sName, Directory dParent, Device device)
+DirectoryManager void cleanDevice(String sId)
+DirectoryManager void removeDirectory(String sId)
+DirectoryManager String getIdentifier()
+DirectoryManager Directory getDirectoryForIO(File fio)
+DirectoryManager Directory getDirectoryByID(String sID)
+DirectoryManager Set<Directory> getDirectories()
+DeviceManager ArrayList<String> alDevicesTypes
+DeviceManager DeviceManager singleton
+DeviceManager long lDateLastGlobalRefresh
+DeviceManager Set<Device> devicesDeepRefreshed
+DeviceManager Thread tAutoRefresh
+ void run()
+DeviceManager boolean bGlobalRefreshing
+DeviceManager DeviceManager DeviceManager()
+DeviceManager void startAutoRefreshThread()
+DeviceManager static DeviceManager getInstance()
+DeviceManager Device registerDevice(String sName, long lDeviceType, String sUrl)
+DeviceManager Device registerDevice(String sId, String sName, long lDeviceType, String sUrl)
+DeviceManager static String getID(String sName)
+DeviceManager String checkDeviceAvailablity(String sName, int iDeviceType, String sUrl, String sMountPoint, boolean bNew)
+DeviceManager void registerDeviceType(String sDeviceType)
+DeviceManager int getDeviceTypesNumber()
+DeviceManager Iterator getDeviceTypes()
+DeviceManager String getDeviceType(long index)
+DeviceManager void removeDevice(Device device)
+DeviceManager boolean isAnyDeviceRefreshing()
+DeviceManager void cleanAllDevices()
+DeviceManager String getIdentifier()
+DeviceManager long getDateLastGlobalRefresh()
+DeviceManager void refreshAllDevices()
+DeviceManager Device getDeviceByID(String sID)
+DeviceManager Set<Device> getDevices()
+AuthorManager AuthorManager singleton
+AuthorManager Vector<String> authorsList
+AuthorManager AuthorManager AuthorManager()
+AuthorManager static AuthorManager getInstance()
+AuthorManager Author registerAuthor(String sName)
+AuthorManager static String getID(String sName)
+AuthorManager Author registerAuthor(String sId, String sName)
+ int compare(String o1, String o2)
+AuthorManager Author changeAuthorName(Author old, String sNewName)
+AuthorManager static String format(String sName)
+AuthorManager String getIdentifier()
+AuthorManager static Vector<String> getAuthorsList()
+AuthorManager Author getAuthorByID(String sID)
+AuthorManager Set<Author> getAuthors()
+TrackComparator int iSortingMethod
+TrackComparator int STYLE_AUTHOR_ALBUM
+TrackComparator int AUTHOR_ALBUM
+TrackComparator int ALBUM
+TrackComparator TrackComparator TrackComparator(int iSortingMethod)
+TrackComparator String getCompareString(Track track)
+TrackComparator int compare(Track track1, Track track2)
+PlaylistFile long serialVersionUID
+PlaylistFile Directory dParentDirectory
+PlaylistFile ArrayList<File> alFiles
+PlaylistFile boolean bModified
+PlaylistFile File fio
+PlaylistFile int iType
+PlaylistFile String sAbs
+PlaylistFile boolean bContainsExtFiles
+PlaylistFile PlaylistFile PlaylistFile(int iType, String sId, String sName, Directory dParentDirectory)
+PlaylistFile String getIdentifier()
+PlaylistFile PlaylistFile PlaylistFile(String sId, String sName, Directory dParentDirectory)
+PlaylistFile String toString()
+PlaylistFile boolean equals(Object otherPlaylistFile)
+PlaylistFile String getAbsolutePath()
+PlaylistFile void clear()
+PlaylistFile int hashCode()
+PlaylistFile String getHashcode()
+PlaylistFile String computesHashcode()
+PlaylistFile Directory getDirectory()
+PlaylistFile int compareTo(Object o)
+PlaylistFile ArrayList<File> getFiles()
+PlaylistFile void forceRefresh()
+PlaylistFile void addFile(int index, File file)
+PlaylistFile void addFile(File file)
+PlaylistFile void addFiles(List<File> alFilesToAdd)
+PlaylistFile void down(int index)
+PlaylistFile void up(int index)
+PlaylistFile void remove(int index)
+PlaylistFile void remove(File file)
+PlaylistFile void replaceFile(File fOld, File fNew)
+PlaylistFile void commit()
+PlaylistFile ArrayList<File> load()
+PlaylistFile boolean isReady()
+PlaylistFile boolean shouldBeHidden()
+PlaylistFile File getFio()
+PlaylistFile void setFio(File fio)
+PlaylistFile int getType()
+PlaylistFile void setType(int type)
+PlaylistFile void play()
+PlaylistFile boolean isModified()
+PlaylistFile void setModified(boolean modified)
+PlaylistFile void setFiles(ArrayList<File> alFiles)
+PlaylistFile void saveAs()
+PlaylistFile void setParentDirectory(Directory parentDirectory)
+PlaylistFile void setHashcode(String hashcode)
+PlaylistFile String getDesc()
+PlaylistFile String getHumanValue(String sKey)
+PlaylistFile boolean containsExtFiles()
+PlaylistFile void reset()
+StyleManager StyleManager singleton
+StyleManager Vector<String> stylesList
+StyleManager StyleManager StyleManager()
+StyleManager static StyleManager getInstance()
+StyleManager Style registerStyle(String sName)
+StyleManager static String getID(String sName)
+StyleManager Style registerStyle(String sId, String sName)
+ int compare(String o1, String o2)
+StyleManager Style getStyleByName(String sName)
+StyleManager Style changeStyleName(Style old, String sNewName)
+StyleManager static String format(String sName)
+StyleManager String getIdentifier()
+StyleManager Vector<String> getStylesList()
+StyleManager Style getStyleByID(String sID)
+StyleManager Set<Style> getStyles()
+Device long serialVersionUID
+Device String sUrl
+Device File fio
+Device String sMountPoint
+Device boolean bMounted
+Device ArrayList<Directory> alDirectories
+Device boolean bAlreadyRefreshing
+Device boolean bAlreadySynchronizing
+Device int iNbFilesBeforeRefresh
+Device int iNbDirsBeforeRefresh
+Device int iNbNewFiles
+Device int iNbCorruptedFiles
+Device int iNbCreatedFilesSrc
+Device int iNbCreatedFilesDest
+Device int iNbDeletedFiles
+Device long lVolume
+Device long lDateLastRefresh
+Device String sFinalMessage
+Device int OPTION_REFRESH_FAST
+Device int OPTION_REFRESH_DEEP
+Device int OPTION_REFRESH_CANCEL
+Device int TYPE_DIRECTORY
+Device int TYPE_CD
+Device int TYPE_NETWORK_DRIVE
+Device int TYPE_EXT_DD
+Device int TYPE_PLAYER
+Device int TYPE_REMOTE
+Device Device Device(String sId, String sName)
+Device String getIdentifier()
+Device String toString()
+Device boolean equals(Object otherDevice)
+Device int hashCode()
+Device void refresh(boolean bAsynchronous)
+Device void refresh(boolean bAsynchronous, boolean bAsk)
+ void run()
+Device void manualRefresh(boolean bAsk)
+Device boolean refreshCommand(boolean bDeepScan, boolean bManual)
+Device void synchronize(boolean bAsynchronous)
+ void run()
+Device void synchronizeCommand()
+Device int synchronizeUnidirectonal(Device dSrc, Device dest)
+Device boolean isMounted()
+Device String getDeviceTypeS()
+Device long getType()
+Device String getUrl()
+Device void setUrl(String url)
+Device ArrayList getDirectories()
+Device void addDirectory(Directory directory)
+Device boolean isRefreshing()
+Device boolean isSynchronizing()
+Device void mount()
+Device void mount(boolean bUIRefresh)
+Device void unmount()
+Device void unmount(boolean bEjection, boolean bUIRefresh)
+Device boolean test()
+Device String getMountPoint()
+Device int compareTo(Object o)
+Device ArrayList<org.jajuk.base.File> getFilesRecursively()
+Device boolean isReady()
+Device File getFio()
+Device String getDesc()
+Device String getHumanValue(String sKey)
+Device long getDateLastRefresh()
+Device boolean cleanRemovedFiles()
+Device void populateProperties(Attributes attributes)
+Item LinkedHashMap<String,Object> properties
+Item String sId
+Item String sName
+Item Item Item(String sId, String sName)
+Item String getId()
+Item String getName()
+Item String getDesc()
+Item boolean equals(Object other)
+Item LinkedHashMap<String,Object> getProperties()
+Item Object getValue(String sKey)
+Item long getLongValue(String sKey)
+Item double getDoubleValue(String sKey)
+Item String getStringValue(String sKey)
+Item boolean getBooleanValue(String sKey)
+Item Date getDateValue(String sKey)
+Item Object getDefaultValue(String sKey)
+Item boolean containsProperty(String sKey)
+Item void setProperty(String sKey, Object oValue)
+Item String getAny()
+Item void populateDefaultProperty(PropertyMetaInformation meta)
+Item String toXml()
+Item String getIdentifier()
+Item String getPropertiesXml()
+Item void populateProperties(Attributes attributes)
+Item void setProperties(LinkedHashMap<String,Object> properties)
+Item void removeProperty(String sKey)
+Item void displayProperties()
+Item String getHumanValue(String sKey)
+Item PropertyMetaInformation getMeta(String sProperty)
+Item void cloneProperties(Item propertiesSource)
+FIFO int index
+FIFO StackItem itemLast
+FIFO ArrayList<StackItem> alFIFO
+FIFO ArrayList<StackItem> alPlanned
+FIFO boolean bStop
+FIFO FIFO fifo
+FIFO boolean bFirstFile
+FIFO PlaylistFile playlist
+FIFO static FIFO getInstance()
+FIFO FIFO FIFO()
+FIFO void reset()
+FIFO void setRepeatModeToAll(boolean bRepeat)
+FIFO void push(List<StackItem> alItems, boolean bAppend)
+ void run()
+FIFO void push(StackItem item, boolean bAppend)
+ void run()
+FIFO void pushCommand(List<StackItem> alItems, boolean bAppend)
+FIFO void pushCommand(StackItem item, boolean bAppend)
+FIFO void finished()
+FIFO void launch(int index)
+FIFO void setIndex(int index)
+FIFO void computesPlanned(boolean bClear)
+FIFO void clear()
+FIFO boolean containsRepeat()
+FIFO boolean containsOnlyRepeat()
+FIFO int addPrevious()
+FIFO void playPrevious()
+FIFO void playPreviousAlbum()
+FIFO void playNext()
+FIFO void playNextAlbum()
+FIFO File getCurrentFile()
+FIFO StackItem getCurrentItem()
+FIFO StackItem getItem(int index)
+FIFO int getLastRepeatedItem()
+FIFO static boolean canUnmount(Device device)
+FIFO void stopRequest()
+FIFO static boolean isStopped()
+FIFO ArrayList<StackItem> getFIFO()
+FIFO void shuffle()
+FIFO void insert(StackItem item, int iPos)
+FIFO void insert(ArrayList<StackItem> alFiles, int iPos)
+FIFO void up(int index)
+FIFO void down(int index)
+FIFO void goTo(int pIndex)
+FIFO void remove(int iStart, int iStop)
+FIFO StackItem getLast()
+FIFO StackItem getLastPlayed()
+FIFO int getIndex()
+FIFO ArrayList<StackItem> getPlanned()
+FIFO static void setFirstFile(boolean bFirstFile)
+FIFO void setPlaylist(PlaylistFile playlist)
+FIFO void cleanDevice(Device device)
+FIFO void commit()
+PlaylistManager PlaylistManager singleton
+PlaylistManager PlaylistManager PlaylistManager()
+PlaylistManager static PlaylistManager getInstance()
+PlaylistManager Playlist registerPlaylist(PlaylistFile plFile)
+PlaylistManager static String getID(PlaylistFile plf)
+PlaylistManager Playlist registerPlaylist(String sId, PlaylistFile plFile)
+PlaylistManager void removePlaylistFile(PlaylistFile plf)
+PlaylistManager void removePlaylist(Playlist pl)
+PlaylistManager void refreshPlaylist(PlaylistFile plf)
+PlaylistManager void cleanup()
+PlaylistManager Playlist getPlaylist(PlaylistFile plf)
+PlaylistManager Playlist getPlayList(PlaylistFile plf)
+PlaylistManager String getIdentifier()
+PlaylistManager Playlist getPlaylistByID(String sID)
+PlaylistManager Set<Playlist> getPlayLists()
+Exporter Exporter Exporter()
+Exporter boolean saveToFile(String sContent, String sPath)
+ExportFileFilter String sFilterType
+ExportFileFilter ExportFileFilter ExportFileFilter(String pFiltertype)
+ExportFileFilter boolean accept(File f)
+ExportFileFilter String getDescription()
+ExportFileFilter String getExtension()
+XMLTransformer static String xmlToHTML(String xml, URL xsltPath)
+XMLExporter int PHYSICAL_COLLECTION
+XMLExporter int LOGICAL_GENRE_COLLECTION
+XMLExporter int LOGICAL_ARTIST_COLLECTION
+XMLExporter int LOGICAL_ALBUM_COLLECTION
+XMLExporter String NEWLINE
+XMLExporter String XML_HEADER
+XMLExporter XMLExporter self
+XMLExporter static XMLExporter getInstance()
+XMLExporter XMLExporter XMLExporter()
+XMLExporter String process(PopulatedAlbum album)
+XMLExporter String process(PopulatedAuthor author)
+XMLExporter String process(PopulatedStyle style)
+XMLExporter String process(Directory directory)
+XMLExporter String process(Device device)
+XMLExporter String processCollection(int COLLECTION_TYPE, ArrayList collection)
+XMLExporter String exportDirectoryHelper(int level, Directory directory)
+XMLExporter String tagFile(File file, int level)
+XMLExporter String tagTrack(Track track, int level)
+XMLExporter String tagAlbum(PopulatedAlbum album, int level)
+XMLExporter String tagAuthor(PopulatedAuthor author, int level)
+XMLExporter String tagStyle(PopulatedStyle style, int level)
+XMLExporter String getAuthorOfAlbum(Album album)
+XMLExporter String getStyleOfAlbum(Album album)
+XMLExporter String addTabs(int num)
+Tag static String openTag(String tagname)
+Tag static String closeTag(String tagname)
+Tag static String tagData(String tagname, String data)
+Tag static String tagData(String tagname, long data)
+Tag static String tagData(String tagname, int data)
+Tag static String tagData(String tagname, double data)
+HTMLExporter int PHYSICAL_COLLECTION
+HTMLExporter int LOGICAL_GENRE_COLLECTION
+HTMLExporter int LOGICAL_ARTIST_COLLECTION
+HTMLExporter int LOGICAL_ALBUM_COLLECTION
+HTMLExporter HTMLExporter self
+HTMLExporter static HTMLExporter getInstance()
+HTMLExporter HTMLExporter HTMLExporter()
+HTMLExporter String process(PopulatedAlbum album)
+HTMLExporter String process(PopulatedAuthor author)
+HTMLExporter String process(PopulatedStyle style)
+HTMLExporter String process(Directory directory)
+HTMLExporter String process(Device device)
+HTMLExporter String processCollection(int COLLECTION_TYPE, ArrayList collection)
+Proportion Ambience ambience
+Proportion float proportion
+Proportion Proportion Proportion(Ambience ambience, float proportion)
+Proportion Proportion Proportion()
+Proportion boolean equals(Object other)
+Proportion HashSet<Style> getStyles()
+Proportion void addStyle(Style style)
+Proportion String toString()
+Proportion String getStylesDesc()
+Proportion Style getNextStyle()
+Proportion float getProportion()
+Proportion void setStyle(Ambience ambience)
+Proportion void setProportion(float proportion)
+AmbienceManager HashMap<String,Ambience> ambiences
+AmbienceManager AmbienceManager self
+AmbienceManager AmbienceManager AmbienceManager()
+AmbienceManager Set<EventSubject> getRegistrationKeys()
+AmbienceManager static AmbienceManager getInstance()
+AmbienceManager void load()
+AmbienceManager Collection<Ambience> getAmbiences()
+AmbienceManager Ambience getAmbience(String sID)
+AmbienceManager Ambience getAmbienceByName(String sName)
+AmbienceManager void registerAmbience(Ambience ambience)
+AmbienceManager Ambience getSelectedAmbience()
+AmbienceManager void update(Event event)
+AmbienceManager void commit()
+AmbienceManager void removeAmbience(String sAmbienceID)
+AmbienceManager void createDefaultAmbiences()
+TransitionDigitalDJ ArrayList<Transition> transitions
+TransitionDigitalDJ Style startupStyle
+TransitionDigitalDJ TransitionDigitalDJ TransitionDigitalDJ(String sID)
+TransitionDigitalDJ ArrayList getTransitions()
+TransitionDigitalDJ void deleteTransition(int offset)
+TransitionDigitalDJ void addTransition(Transition transition, int offset)
+TransitionDigitalDJ Transition getTransition(Ambience ambience)
+TransitionDigitalDJ List<File> generatePlaylist()
+TransitionDigitalDJ Ambience getAmbience(Style style)
+TransitionDigitalDJ String toXML()
+TransitionDigitalDJ Style getStartupStyle()
+TransitionDigitalDJ void setStartupStyle(Style startupStyle)
+TransitionDigitalDJ void setTransitions(ArrayList<Transition> transitions)
+Ambience HashSet<Style> styles
+Ambience String sName
+Ambience String sID
+Ambience Ambience Ambience(String sID, String sName, HashSet<Style> styles)
+Ambience Ambience Ambience(String sID, String sName, String[] styles)
+Ambience Ambience Ambience(String sID, String sName)
+Ambience Ambience Ambience()
+Ambience void addStyle(Style style)
+Ambience void removeStyle(Style style)
+Ambience String getName()
+Ambience String getID()
+Ambience void setName(String name)
+Ambience HashSet<Style> getStyles()
+Ambience void setStyles(HashSet<Style> styles)
+Ambience String getStylesDesc()
+Ambience String toString()
+Ambience boolean equals(Object o)
+Ambience int compareTo(Ambience ambience)
+Ambience String toXML()
+ProportionDigitalDJ ArrayList<Proportion> proportions
+ProportionDigitalDJ ProportionDigitalDJ ProportionDigitalDJ(String sID)
+ProportionDigitalDJ List<File> generatePlaylist()
+ProportionDigitalDJ List<File> getSequence()
+ProportionDigitalDJ ArrayList<Proportion> getProportions()
+ProportionDigitalDJ String toXML()
+ProportionDigitalDJ void setProportions(ArrayList<Proportion> proportions)
+DigitalDJManager HashMap<String,DigitalDJ> djs
+DigitalDJManager DigitalDJManager dj
+DigitalDJManager DigitalDJManager DigitalDJManager()
+DigitalDJManager Set<EventSubject> getRegistrationKeys()
+DigitalDJManager static DigitalDJManager getInstance()
+DigitalDJManager Collection<DigitalDJ> getDJs()
+DigitalDJManager Set<String> getDJNames()
+DigitalDJManager DigitalDJ getDJByName(String sName)
+DigitalDJManager DigitalDJ getDJByID(String sID)
+DigitalDJManager static void commit(DigitalDJ dj)
+DigitalDJManager void remove(DigitalDJ dj)
+DigitalDJManager void register(DigitalDJ dj)
+DigitalDJManager void update(Event event)
+DigitalDJManager void loadAllDJs()
+ boolean accept(File file)
+DigitalDJFactory String factoryType
+DigitalDJFactory String type
+DigitalDJFactory String name
+DigitalDJFactory String id
+DigitalDJFactory int fadeDuration
+DigitalDJFactory int iRatingLevel
+DigitalDJFactory Style startupStyle
+DigitalDJFactory boolean bTrackUnicity
+GeneralDefaultHandler void startElement(String sUri, String s, String sQName, Attributes attributes)
+GeneralDefaultHandler void othersTags(String sQname, Attributes attributes)
+DigitalDJFactory static DigitalDJFactory getFactory(File file)
+ void startElement(String sUri, String s, String sQName, Attributes attributes)
+DigitalDJFactory DigitalDJ getDJ(File file)
+DigitalDJFactoryProportionImpl String styles
+DigitalDJFactoryProportionImpl float proportion
+DigitalDJFactoryProportionImpl ArrayList<Proportion> proportions
+DigitalDJFactoryProportionImpl DigitalDJ getDJ(File file)
+ void othersTags(String sQname, Attributes attributes)
+DigitalDJFactoryProportionImpl DigitalDJFactoryProportionImpl DigitalDJFactoryProportionImpl()
+DigitalDJFactoryAmbienceImpl Ambience ambience
+DigitalDJFactoryAmbienceImpl DigitalDJ getDJ(File file)
+ void othersTags(String sQname, Attributes attributes)
+DigitalDJFactoryAmbienceImpl DigitalDJFactoryAmbienceImpl DigitalDJFactoryAmbienceImpl()
+DigitalDJFactoryTransitionImpl ArrayList<Transition> transitions
+DigitalDJFactoryTransitionImpl DigitalDJ getDJ(File file)
+ void othersTags(String sQname, Attributes attributes)
+DigitalDJFactoryTransitionImpl DigitalDJFactoryTransitionImpl DigitalDJFactoryTransitionImpl()
+DigitalDJ String sID
+DigitalDJ String sName
+DigitalDJ int iRatingLevel
+DigitalDJ int iFadingDuration
+DigitalDJ boolean bUnicity
+DigitalDJ DigitalDJ DigitalDJ(String sID)
+DigitalDJ String toString()
+DigitalDJ int compareTo(Object o)
+DigitalDJ String toXML()
+DigitalDJ String toXMLGeneralParameters()
+DigitalDJ void filterFilesByRate(List<File> files)
+DigitalDJ String getName()
+DigitalDJ boolean equals(Object other)
+DigitalDJ void setName(String name)
+DigitalDJ int getFadingDuration()
+DigitalDJ void setFadingDuration(int fadingDuration)
+DigitalDJ int getRatingLevel()
+DigitalDJ void setRatingLevel(int ratingFloor)
+DigitalDJ List<File> generatePlaylist()
+DigitalDJ String getID()
+DigitalDJ boolean isTrackUnicity()
+DigitalDJ void setTrackUnicity(boolean trackUnicity)
+AmbienceDigitalDJ Ambience ambience
+AmbienceDigitalDJ AmbienceDigitalDJ AmbienceDigitalDJ(String sID)
+AmbienceDigitalDJ List<File> generatePlaylist()
+AmbienceDigitalDJ List<File> getSequence()
+AmbienceDigitalDJ Ambience getAmbience()
+AmbienceDigitalDJ String toXML()
+AmbienceDigitalDJ void setAmbience(Ambience ambience)
+Transition Ambience from
+Transition Ambience to
+Transition int nb
+Transition Transition Transition(Ambience from, Ambience to, int nb)
+Transition Transition Transition(int nb)
+Transition boolean equals(Object other)
+Transition Ambience getFrom()
+Transition String getFromString()
+Transition String getToString()
+Transition Ambience getTo()
+Transition void addFromStyle(Style style)
+Transition void removeFromStyle(Style style)
+Transition void addToStyle(Style style)
+Transition void removeToStyle(Style style)
+Transition Style getNextStyle()
+Transition int getNbTracks()
+Transition void setFrom(Ambience from)
+Transition void setTo(Ambience to)
+Transition void setNb(int nb)
+Messages String sLocal
+Messages ArrayList<String> alLocals
+Messages ArrayList<String> alDescs
+Messages Messages mesg
+Messages Properties properties
+Messages Properties propertiesEn
+Messages Messages Messages()
+Messages static Messages getInstance()
+Messages boolean contains(String sKey)
+Messages static String getString(String key)
+Messages static String[] getAll(String base)
+Messages void registerLocal(String sLocal, String sDesc)
+Messages static ArrayList<String> getLocales()
+Messages static ArrayList<String> getDescs()
+Messages static String getHumanForLocale(String sLocale)
+Messages void setLocal(String sLocal)
+Messages Properties parseLangpack(String sLocal)
+ StringBuffer sb
+ void characters(char[] ch, int start, int length)
+ void endElement(String uri, String localName, String qName)
+Messages static String getErrorMessage(String pCode)
+Messages static Object getLimitedMessage(String sText, int limit)
+Messages static void showErrorMessage(String sCode)
+ void run()
+Messages static int getChoice(String sText, int iType)
+Messages static String getTitleForType(int iType)
+Messages static void showWarningMessage(String sMessage)
+Messages static void showHideableWarningMessage(String sMessage, String sProperty)
+Messages static void showInfoMessage(String sMessage, Icon icon)
+Messages static void showErrorMessage(String sCode, String sInfoSup)
+Messages static void showDetailedErrorMessage(String sCode, String sInfoSup, String sDetails)
+Messages static void showInfoMessage(String sMessage, String sInfoSup)
+Messages static void showInfoMessage(String sMessage)
+Messages String getLocal()
+Messages static boolean isInitialized()
+Messages Properties getProperties()
+Messages Properties getPropertiesEn()
+ConfirmDialog int iResu
+ConfirmDialog String sText
+ConfirmDialog String sTitle
+ConfirmDialog int iType
+ConfirmDialog ConfirmDialog ConfirmDialog(String sText, String sTitle, int iType)
+ConfirmDialog void run()
+ConfirmDialog int getResu()
+DetailsMessageDialog String sText
+DetailsMessageDialog String sTitle
+DetailsMessageDialog int iType
+DetailsMessageDialog String sDetails
+DetailsMessageDialog Icon icon
+DetailsMessageDialog DetailsMessageDialog DetailsMessageDialog(String sText, String sTitle, int iType, String sDetails, Icon icon)
+DetailsMessageDialog void run()
+ void actionPerformed(ActionEvent arg0)
+HideableMessageDialog String sText
+HideableMessageDialog String sTitle
+HideableMessageDialog String sProperty
+HideableMessageDialog int iType
+HideableMessageDialog Icon icon
+HideableMessageDialog int iResu
+HideableMessageDialog HideableMessageDialog HideableMessageDialog(String sText, String sTitle, String sProperty, int iType, Icon icon)
+HideableMessageDialog void run()
+HideableMessageDialog int getResu()
+IPlayerImpl void play(File file, float fPosition, long length, float fVolume)
+IPlayerImpl void stop()
+IPlayerImpl void setVolume(float fVolume)
+IPlayerImpl long getElapsedTime()
+IPlayerImpl void pause()
+IPlayerImpl void resume()
+IPlayerImpl void seek(float fPosition)
+IPlayerImpl float getCurrentPosition()
+IPlayerImpl long getCurrentLength()
+IPlayerImpl float getCurrentVolume()
+IPlayerImpl int getState()
+MPlayerPlayerImpl long lTime
+MPlayerPlayerImpl long lDateLastUpdate
+MPlayerPlayerImpl long length
+MPlayerPlayerImpl float fPosition
+MPlayerPlayerImpl float fVolume
+MPlayerPlayerImpl long lDuration
+MPlayerPlayerImpl int iFadeDuration
+MPlayerPlayerImpl boolean bFading
+MPlayerPlayerImpl int PROGRESS_STEP
+MPlayerPlayerImpl File fCurrent
+MPlayerPlayerImpl Process proc
+MPlayerPlayerImpl boolean bPaused
+MPlayerPlayerImpl boolean bEOF
+MPlayerPlayerImpl boolean bOpening
+MPlayerPlayerImpl PositionThread position
+MPlayerPlayerImpl ReaderThread reader
+MPlayerPlayerImpl boolean bHasBeenRated
+MPlayerPlayerImpl boolean bStop
+PositionThread void run()
+ReaderThread void run()
+MPlayerPlayerImpl void play(File file, float fPosition, long length, float fVolume)
+MPlayerPlayerImpl void stop()
+MPlayerPlayerImpl void setVolume(float fVolume)
+MPlayerPlayerImpl void sendCommand(String command)
+MPlayerPlayerImpl float getCurrentPosition()
+MPlayerPlayerImpl float getCurrentVolume()
+MPlayerPlayerImpl long getElapsedTime()
+MPlayerPlayerImpl void pause()
+MPlayerPlayerImpl void resume()
+MPlayerPlayerImpl void seek(float posValue)
+MPlayerPlayerImpl int getState()
+MPlayerPlayerImpl long getCurrentLength()
+JavaLayerPlayerImpl BasicPlayer player
+JavaLayerPlayerImpl long lTime
+JavaLayerPlayerImpl long lDateLastUpdate
+JavaLayerPlayerImpl Map mPlayingData
+JavaLayerPlayerImpl float fPos
+JavaLayerPlayerImpl long length
+JavaLayerPlayerImpl float fVolume
+JavaLayerPlayerImpl long lDuration
+JavaLayerPlayerImpl int iFadeDuration
+JavaLayerPlayerImpl boolean bFading
+JavaLayerPlayerImpl int PROGRESS_STEP
+JavaLayerPlayerImpl float fadingVolume
+JavaLayerPlayerImpl File fCurrent
+JavaLayerPlayerImpl boolean bHasBeenRated
+JavaLayerPlayerImpl void play(File file, float fPosition, long length, float fVolume)
+JavaLayerPlayerImpl void stop()
+JavaLayerPlayerImpl void setVolume(float fVolume)
+JavaLayerPlayerImpl float getCurrentPosition()
+JavaLayerPlayerImpl float getCurrentVolume()
+JavaLayerPlayerImpl long getElapsedTime()
+JavaLayerPlayerImpl void pause()
+JavaLayerPlayerImpl void resume()
+JavaLayerPlayerImpl void seek(float pPosValue)
+JavaLayerPlayerImpl int getState()
+JavaLayerPlayerImpl void opened(Object arg0, Map arg1)
+JavaLayerPlayerImpl void progress(int iBytesread, long lMicroseconds, byte[] bPcmdata, Map mProperties)
+ void run()
+ void run()
+JavaLayerPlayerImpl void stateUpdated(BasicPlayerEvent bpe)
+JavaLayerPlayerImpl void setController(BasicController arg0)
+JavaLayerPlayerImpl long getCurrentLength()
+ITagImpl String getTrackName()
+ITagImpl String getAlbumName()
+ITagImpl String getAuthorName()
+ITagImpl String getStyleName()
+ITagImpl long getLength()
+ITagImpl long getYear()
+ITagImpl long getQuality()
+ITagImpl String getComment()
+ITagImpl long getOrder()
+ITagImpl String getTagItem(String sTagItem)
+ITagImpl void setTrackName(String sTrackName)
+ITagImpl void setAlbumName(String sAlbumName)
+ITagImpl void setAuthorName(String sAuthorName)
+ITagImpl void setStyleName(String style)
+ITagImpl void setYear(long lYear)
+ITagImpl void setComment(String sComment)
+ITagImpl void setFile(File fio)
+ITagImpl void setOrder(long lOrder)
+ITagImpl void setTagItem(String sTagItem, String sValue)
+ITagImpl void commit()
+NoTagsTagImpl File fio
+NoTagsTagImpl Map mapInfo
+NoTagsTagImpl String getTrackName()
+NoTagsTagImpl String getAlbumName()
+NoTagsTagImpl String getAuthorName()
+NoTagsTagImpl String getStyleName()
+NoTagsTagImpl long getLength()
+ void opened(Object arg0, Map mProperties)
+ void progress(int iBytesread, long lMicroseconds, byte[] bPcmdata, Map mProperties)
+ void stateUpdated(BasicPlayerEvent bpe)
+ void setController(BasicController arg0)
+NoTagsTagImpl String getComment()
+NoTagsTagImpl void setTrackName(String sTrackName)
+NoTagsTagImpl void setAlbumName(String sAlbumName)
+NoTagsTagImpl void setComment(String sComment)
+NoTagsTagImpl void setAuthorName(String sAuthorName)
+NoTagsTagImpl void setStyleName(String style)
+NoTagsTagImpl void setLength(long length)
+NoTagsTagImpl void setQuality(String sQuality)
+NoTagsTagImpl void setFile(File fio)
+NoTagsTagImpl String getTagItem(String sTagItem)
+NoTagsTagImpl void setTagItem(String sTagItem, String sValue)
+NoTagsTagImpl void commit()
+NoTagsTagImpl long getOrder()
+NoTagsTagImpl void setOrder(long lOrder)
+NoTagsTagImpl void setYear(long lYear)
+NoTagsTagImpl long getYear()
+NoTagsTagImpl long getQuality()
+MPlayerTagImpl Tag tag
+MPlayerTagImpl String getTrackName()
+MPlayerTagImpl String getAlbumName()
+MPlayerTagImpl String getAuthorName()
+MPlayerTagImpl String getStyleName()
+MPlayerTagImpl long getLength()
+MPlayerTagImpl long getYear()
+MPlayerTagImpl long getQuality()
+MPlayerTagImpl String getComment()
+MPlayerTagImpl long getOrder()
+MPlayerTagImpl void setTrackName(String sTrackName)
+MPlayerTagImpl void setAlbumName(String sAlbumName)
+MPlayerTagImpl void setAuthorName(String sAuthorName)
+MPlayerTagImpl void setStyleName(String style)
+MPlayerTagImpl void setOrder(long lOrder)
+MPlayerTagImpl void setComment(String sComment)
+MPlayerTagImpl String getTagItem(String sTagItem)
+MPlayerTagImpl void setTagItem(String sTagItem, String sValue)
+MPlayerTagImpl void commit()
+MPlayerTagImpl void setYear(long lYear)
+MPlayerTagImpl void setFile(File fio)
+EntaggedTagImpl Tag tag
+EntaggedTagImpl AudioFile audioFile
+EntaggedTagImpl String getTrackName()
+EntaggedTagImpl String getAlbumName()
+EntaggedTagImpl String getAuthorName()
+EntaggedTagImpl String getStyleName()
+EntaggedTagImpl long getLength()
+EntaggedTagImpl long getYear()
+EntaggedTagImpl long getQuality()
+EntaggedTagImpl String getComment()
+EntaggedTagImpl long getOrder()
+EntaggedTagImpl void setTrackName(String sTrackName)
+EntaggedTagImpl void setAlbumName(String sAlbumName)
+EntaggedTagImpl void setAuthorName(String sAuthorName)
+EntaggedTagImpl void setStyleName(String style)
+EntaggedTagImpl void setOrder(long lOrder)
+EntaggedTagImpl void setComment(String sComment)
+EntaggedTagImpl void setFile(File fio)
+EntaggedTagImpl String getTagItem(String sTagItem)
+EntaggedTagImpl void setTagItem(String sTagItem, String sValue)
+EntaggedTagImpl void commit()
+EntaggedTagImpl void setYear(long lYear)
+DefaultMouseWheelListener JSlider js
+DefaultMouseWheelListener DefaultMouseWheelListener DefaultMouseWheelListener(JSlider js)
+DefaultMouseWheelListener void mouseWheelMoved(MouseWheelEvent mwe)
+QualityFeedbackWizard long serialVersionUID
+QualityFeedbackWizard JPanel jpMain
+QualityFeedbackWizard JTextArea jtaNotice
+QualityFeedbackWizard JLabel jlType
+QualityFeedbackWizard JComboBox jcbType
+QualityFeedbackWizard JLabel jlFrom
+QualityFeedbackWizard JTextField jtfFrom
+QualityFeedbackWizard JLabel jlDesc
+QualityFeedbackWizard JTextField jtfDesc
+QualityFeedbackWizard JLabel jlDetail
+QualityFeedbackWizard JTextArea jtaDetail
+QualityFeedbackWizard OKCancelPanel okp
+QualityFeedbackWizard QualityFeedbackWizard QualityFeedbackWizard()
+ void windowActivated(WindowEvent e)
+QualityFeedbackWizard void actionPerformed(ActionEvent ae)
+ void run()
+QualityFeedbackWizard void itemStateChanged(ItemEvent e)
+QualityFeedbackWizard void keyTyped(KeyEvent e)
+QualityFeedbackWizard void keyPressed(KeyEvent e)
+QualityFeedbackWizard void keyReleased(KeyEvent e)
+PatternInputVerifier boolean verify(JComponent input)
+PatternInputVerifier boolean shouldYieldFocus(JComponent input)
+AmbienceWizard ArrayList<Ambience> ambiences
+AmbiencePanel long serialVersionUID
+AmbiencePanel JComponent[][] widgets
+AmbiencePanel JButton jbNew
+AmbiencePanel JButton jbDelete
+AmbiencePanel JButton jbDefaults
+AmbiencePanel JPanel jpButtons
+AmbiencePanel AmbienceDigitalDJ dj
+AmbiencePanel int ambienceIndex
+AmbiencePanel String getDescription()
+AmbiencePanel String getName()
+AmbiencePanel void initUI()
+AmbiencePanel JScrollPane getPanel()
+ void caretUpdate(CaretEvent arg0)
+ void actionPerformed(ActionEvent ae)
+ void actionPerformed(ActionEvent ae)
+AmbiencePanel void addStyle(int row)
+AmbiencePanel void refreshScreen()
+AmbiencePanel void actionPerformed(ActionEvent ae)
+AmbienceWizard static int getWidgetIndex(JComponent[][] widgets, JComponent widget)
+AmbienceWizard Class getPreviousScreen(Class screen)
+AmbienceWizard Class getNextScreen(Class screen)
+AmbienceWizard AmbienceWizard AmbienceWizard()
+AmbienceWizard void finish()
+JajukFileChooser long serialVersionUID
+JajukFileChooser FileFilter filter
+JajukFileChooser JajukFileChooser JajukFileChooser(JajukFileFilter jfilter)
+JajukFileChooser JajukFileChooser JajukFileChooser()
+TreeTransferHandler JTree tree
+TreeTransferHandler DragSource dragSource
+TreeTransferHandler DropTarget dropTarget
+TreeTransferHandler DefaultMutableTreeNode draggedNode
+TreeTransferHandler DefaultMutableTreeNode draggedNodeParent
+TreeTransferHandler BufferedImage image
+TreeTransferHandler Rectangle rect2D
+TreeTransferHandler boolean drawImage
+TreeTransferHandler TreeTransferHandler TreeTransferHandler(JTree tree, int action, boolean drawIcon)
+TreeTransferHandler void dragDropEnd(DragSourceDropEvent dsde)
+TreeTransferHandler void dragEnter(DragSourceDragEvent dsde)
+TreeTransferHandler void dragOver(DragSourceDragEvent dsde)
+TreeTransferHandler void dropActionChanged(DragSourceDragEvent dsde)
+TreeTransferHandler void dragExit(DragSourceEvent dse)
+TreeTransferHandler void dragGestureRecognized(DragGestureEvent dge)
+TreeTransferHandler void dragEnter(DropTargetDragEvent dtde)
+TreeTransferHandler void dragExit(DropTargetEvent dte)
+TreeTransferHandler void dragOver(DropTargetDragEvent dtde)
+TreeTransferHandler void dropActionChanged(DropTargetDragEvent dtde)
+TreeTransferHandler void drop(DropTargetDropEvent dtde)
+TreeTransferHandler void paintImage(Point pt)
+TreeTransferHandler void clearImage()
+TreeTransferHandler void treeWillCollapse(TreeExpansionEvent event)
+TreeTransferHandler void treeWillExpand(TreeExpansionEvent event)
+JajukButton long serialVersionUID
+JajukButton JajukButton JajukButton()
+JajukButton JajukButton JajukButton(Icon icon)
+JajukButton JajukButton JajukButton(String text)
+JajukButton JajukButton JajukButton(Action a)
+JajukButton JajukButton JajukButton(String text, Icon icon)
+JajukButton void init(String text, Icon icon)
+JajukButton void configurePropertiesFromAction(Action action)
+ActionWrapper long serialVersionUID
+ActionWrapper void actionPerformed(ActionEvent e)
+IView String getID()
+IView void setID(String sID)
+IView String getDesc()
+IView void initUI()
+IView boolean isPopulated()
+IView void setIsPopulated(boolean isDisplayed)
+IView void refresh()
+IView IPerspective getPerspective()
+IView void setPerspective(IPerspective perspective)
+OKCancelPanel long serialVersionUID
+OKCancelPanel JajukButton jbOk
+OKCancelPanel JajukButton jbCancel
+OKCancelPanel ActionListener al
+OKCancelPanel OKCancelPanel OKCancelPanel(ActionListener al)
+OKCancelPanel OKCancelPanel OKCancelPanel(ActionListener al, String sOKTitle, String sCancelTitle)
+OKCancelPanel JajukButton getOKButton()
+OKCancelPanel JajukButton getCancelButton()
+JPressButton long serialVersionUID
+JPressButton long DEFAULT_INTERVAL
+JPressButton long actionInterval
+JPressButton String uiClassID
+JPressButton JPressButton JPressButton()
+JPressButton JPressButton JPressButton(long actionInterval)
+JPressButton JPressButton JPressButton(Icon icon)
+JPressButton JPressButton JPressButton(Icon icon, long actionInterval)
+JPressButton JPressButton JPressButton(String text)
+JPressButton JPressButton JPressButton(String text, long actionInterval)
+JPressButton JPressButton JPressButton(Action a)
+JPressButton JPressButton JPressButton(Action a, long actionInterval)
+JPressButton JPressButton JPressButton(String text, Icon icon)
+JPressButton JPressButton JPressButton(String text, Icon icon, long actionInterval)
+JPressButton long getActionInterval()
+JPressButton void setActionInterval(long actionInterval)
+JPressButton void updateUI()
+JPressButton String getUIClassID()
+PressButtonModel long serialVersionUID
+PressButtonModel ActionThread thread
+PressButtonModel JPressButton button
+PressButtonModel PressButtonModel PressButtonModel(JPressButton button)
+PressButtonModel void setPressed(boolean b)
+ActionThread ActionEvent evt
+ActionThread boolean active
+ActionThread long interval
+ActionThread ActionThread ActionThread(ActionEvent evt)
+ActionThread ActionThread ActionThread(ActionEvent evt, long interval)
+ActionThread void setActive(boolean active)
+ActionThread void run()
+PasswordDialog long serialVersionUID
+PasswordDialog JPasswordField pf
+PasswordDialog JOptionPane optionPane
+PasswordDialog PasswordDialog PasswordDialog(String sMessage)
+ void propertyChange(PropertyChangeEvent e)
+ void componentShown(ComponentEvent ce)
+PasswordDialog void actionPerformed(ActionEvent e)
+PasswordDialog JOptionPane getOptionPane()
+JajukJMenuBar long serialVersionUID
+JajukJMenuBar JajukJMenuBar jjmb
+JajukJMenuBar JMenu file
+JajukJMenuBar JMenuItem jmiFileOpen
+JajukJMenuBar JajukFileChooser jfchooser
+JajukJMenuBar JMenuItem jmiFileExit
+JajukJMenuBar JMenu views
+JajukJMenuBar JMenuItem jmiRestoreDefaultViews
+JajukJMenuBar JMenu properties
+JajukJMenuBar JMenuItem jmiNewProperty
+JajukJMenuBar JMenuItem jmiRemoveProperty
+JajukJMenuBar JMenu mode
+JajukJMenuBar JCheckBoxMenuItem jcbmiRepeat
+JajukJMenuBar JCheckBoxMenuItem jcbmiShuffle
+JajukJMenuBar JCheckBoxMenuItem jcbmiContinue
+JajukJMenuBar JCheckBoxMenuItem jcbmiIntro
+JajukJMenuBar JMenu configuration
+JajukJMenuBar JMenuItem jmiDJ
+JajukJMenuBar JMenuItem jmiAmbience
+JajukJMenuBar JMenuItem jmiWizard
+JajukJMenuBar JMenuItem jmiOptions
+JajukJMenuBar JMenu help
+JajukJMenuBar JMenuItem jmiHelp
+JajukJMenuBar JMenuItem jmiTipOfTheDay
+JajukJMenuBar JMenuItem jmiQualityAgent
+JajukJMenuBar JMenuItem jmiTraces
+JajukJMenuBar JMenuItem jmiAbout
+JajukJMenuBar HashMap hmCheckboxView
+JajukJMenuBar JajukJMenuBar JajukJMenuBar()
+JajukJMenuBar static JajukJMenuBar getInstance()
+FirstTimeWizard long serialVersionUID
+FirstTimeWizard JLabel jlLeftIcon
+FirstTimeWizard JPanel jpRightPanel
+FirstTimeWizard JLabel jlWelcome
+FirstTimeWizard JLabel jlFileSelection
+FirstTimeWizard JTextField jtfFileSelected
+FirstTimeWizard JButton jbFileSelection
+FirstTimeWizard JCheckBox jcbAutoCover
+FirstTimeWizard JLabel jlRefreshTime
+FirstTimeWizard JTextField jtfRefreshTime
+FirstTimeWizard JLabel jlMins
+FirstTimeWizard JCheckBox jcbHelp
+FirstTimeWizard JPanel jpButtons
+FirstTimeWizard JButton jbOk
+FirstTimeWizard JButton jbCancel
+FirstTimeWizard JPanel jpMain
+FirstTimeWizard File fDir
+FirstTimeWizard FirstTimeWizard FirstTimeWizard()
+FirstTimeWizard void actionPerformed(ActionEvent e)
+PlaylistFileItem long serialVersionUID
+PlaylistFileItem PlaylistFile plf
+PlaylistFileItem String sName
+PlaylistFileItem JLabel jlIcon
+PlaylistFileItem int iType
+PlaylistFileItem int PLAYLIST_TYPE_NORMAL
+PlaylistFileItem int PLAYLIST_TYPE_NEW
+PlaylistFileItem int PLAYLIST_TYPE_BOOKMARK
+PlaylistFileItem int PLAYLIST_TYPE_BESTOF
+PlaylistFileItem int PLAYLIST_TYPE_QUEUE
+PlaylistFileItem int PLAYLIST_TYPE_NOVELTIES
+PlaylistFileItem Font font
+PlaylistFileItem PlaylistFileItem PlaylistFileItem(int iType, URL urlIcon, PlaylistFile plf, String sName)
+PlaylistFileItem PlaylistFileItem PlaylistFileItem(int iType, ImageIcon icon, PlaylistFile plf, String sName)
+PlaylistFileItem PlaylistFile getPlaylistFile()
+PlaylistFileItem int getType()
+PlaylistFileItem String getName()
+PlaylistFileItem JLabel getIcon()
+JajukJPanel long serialVersionUID
+JajukJPanel JajukJPanel JajukJPanel()
+PlaylistEditorTransferHandler long serialVersionUID
+PlaylistEditorTransferHandler JTable jtable
+PlaylistEditorTransferHandler int iSelectedRow
+PlaylistEditorTransferHandler PlaylistEditorTransferHandler PlaylistEditorTransferHandler(JTable jtable)
+PlaylistEditorTransferHandler Transferable createTransferable(JComponent c)
+PlaylistEditorTransferHandler int getSourceActions(JComponent c)
+PlaylistEditorTransferHandler boolean importData(JComponent c, Transferable t)
+PlaylistEditorTransferHandler boolean canImport(JComponent c, DataFlavor[] flavors)
+DigitalDJWizard String KEY_ACTION
+DigitalDJWizard String KEY_DJ_TYPE
+DigitalDJWizard String KEY_DJ_NAME
+DigitalDJWizard String KEY_UNICITY
+DigitalDJWizard String KEY_RATINGS_LEVEL
+DigitalDJWizard String KEY_FADE_DURATION
+DigitalDJWizard String KEY_TRANSITIONS
+DigitalDJWizard String KEY_PROPORTIONS
+DigitalDJWizard String KEY_AMBIENCE
+DigitalDJWizard String KEY_REMOVE
+DigitalDJWizard String KEY_CHANGE
+DigitalDJWizard String KEY_STARTUP_STYLE
+TypeSelectionPanel long serialVersionUID
+TypeSelectionPanel String DJ_TYPE_TRANSITION
+TypeSelectionPanel String DJ_TYPE_PROPORTION
+TypeSelectionPanel String DJ_TYPE_AMBIENCE
+TypeSelectionPanel ButtonGroup bgTypes
+TypeSelectionPanel JRadioButton jrbTransitions
+TypeSelectionPanel JRadioButton jrbProp
+TypeSelectionPanel JRadioButton jrbAmbiance
+TypeSelectionPanel void initUI()
+TypeSelectionPanel void actionPerformed(ActionEvent e)
+TypeSelectionPanel String getDescription()
+TypeSelectionPanel String getName()
+RemovePanel long serialVersionUID
+RemovePanel JComponent[][] widgets
+RemovePanel ButtonGroup bgDJS
+RemovePanel ArrayList<DigitalDJ> djs
+RemovePanel void initUI()
+RemovePanel void actionPerformed(ActionEvent e)
+RemovePanel String getDescription()
+RemovePanel String getName()
+ChangePanel long serialVersionUID
+ChangePanel JComponent[][] widgets
+ChangePanel ButtonGroup bgDJS
+ChangePanel ArrayList<DigitalDJ> djs
+ChangePanel void initUI()
+ChangePanel void actionPerformed(ActionEvent e)
+ChangePanel String getDescription()
+ChangePanel String getName()
+ActionSelectionPanel long serialVersionUID
+ActionSelectionPanel String ACTION_CREATION
+ActionSelectionPanel String ACTION_CHANGE
+ActionSelectionPanel String ACTION_DELETE
+ActionSelectionPanel ButtonGroup bgActions
+ActionSelectionPanel JRadioButton jrbNew
+ActionSelectionPanel JRadioButton jrbChange
+ActionSelectionPanel JRadioButton jrbDelete
+ActionSelectionPanel void initUI()
+ActionSelectionPanel void actionPerformed(ActionEvent e)
+ActionSelectionPanel String getDescription()
+ActionSelectionPanel String getName()
+GeneralOptionsPanel long serialVersionUID
+GeneralOptionsPanel JLabel jlName
+GeneralOptionsPanel JTextField jtfName
+GeneralOptionsPanel JLabel jlRatingLevel
+GeneralOptionsPanel JSlider jsRatingLevel
+GeneralOptionsPanel JLabel jlFadeDuration
+GeneralOptionsPanel JSlider jsFadeDuration
+GeneralOptionsPanel JCheckBox jcbUnicity
+GeneralOptionsPanel String getDescription()
+GeneralOptionsPanel String getName()
+GeneralOptionsPanel void initUI()
+ void actionPerformed(ActionEvent arg0)
+GeneralOptionsPanel void actionPerformed(ActionEvent ae)
+GeneralOptionsPanel void caretUpdate(CaretEvent ce)
+GeneralOptionsPanel void stateChanged(ChangeEvent ie)
+TransitionsPanel long serialVersionUID
+TransitionsPanel JLabel jlStartWith
+TransitionsPanel JComboBox jcbStartwith
+TransitionsPanel JPanel jpStartwith
+TransitionsPanel JComponent[][] widgets
+TransitionsPanel ArrayList<Transition> alTransitions
+TransitionsPanel String getDescription()
+TransitionsPanel String getName()
+TransitionsPanel ArrayList<Transition> getCleanedTransitions()
+TransitionsPanel void initUI()
+ void actionPerformed(ActionEvent arg0)
+TransitionsPanel JScrollPane getTransitionsPanel()
+ void actionPerformed(ActionEvent ae)
+ void actionPerformed(ActionEvent ae)
+ void actionPerformed(ActionEvent ae)
+ void stateChanged(ChangeEvent ce)
+TransitionsPanel void addStyle(int row, boolean bFrom)
+TransitionsPanel boolean containsVoidItem()
+TransitionsPanel void refreshScreen()
+ProportionsPanel long serialVersionUID
+ProportionsPanel JComponent[][] widgets
+ProportionsPanel ArrayList<Proportion> proportions
+ProportionsPanel String getDescription()
+ProportionsPanel String getName()
+ProportionsPanel void initUI()
+ProportionsPanel ArrayList<Proportion> getCleanedProportions()
+ProportionsPanel JScrollPane getProportionsPanel()
+ void actionPerformed(ActionEvent ae)
+ void actionPerformed(ActionEvent ae)
+ void stateChanged(ChangeEvent ce)
+ProportionsPanel int getTotalValue()
+ProportionsPanel void addStyle(int row)
+ProportionsPanel boolean containsVoidItem()
+ProportionsPanel void refreshScreen()
+AmbiencePanel long serialVersionUID
+AmbiencePanel JComponent[][] widgets
+AmbiencePanel ArrayList<Ambience> ambiences
+AmbiencePanel AmbienceDigitalDJ dj
+AmbiencePanel int ambienceIndex
+AmbiencePanel String getDescription()
+AmbiencePanel String getName()
+AmbiencePanel void initUI()
+AmbiencePanel void actionPerformed(ActionEvent e)
+DigitalDJWizard static int getWidgetIndex(JComponent[][] widgets, JComponent widget)
+DigitalDJWizard Class getPreviousScreen(Class screen)
+DigitalDJWizard Class getNextScreen(Class screen)
+DigitalDJWizard DigitalDJWizard DigitalDJWizard()
+DigitalDJWizard void finish()
+NewPropertyWizard long serialVersionUID
+NewPropertyWizard JTextField jtfName
+NewPropertyWizard JLabel jlClass
+NewPropertyWizard JComboBox jcbClass
+NewPropertyWizard JLabel jlDefault
+NewPropertyWizard JTextField jtfDefault
+NewPropertyWizard JCheckBox jcbDefault
+NewPropertyWizard JXDatePicker jdpDefault
+NewPropertyWizard int STRING
+NewPropertyWizard int LONG
+NewPropertyWizard int DOUBLE
+NewPropertyWizard int BOOLEAN
+NewPropertyWizard int DATE
+NewPropertyWizard NewPropertyWizard NewPropertyWizard()
+ void windowActivated(WindowEvent e)
+NewPropertyWizard void actionPerformed(ActionEvent ae)
+NewPropertyWizard void itemStateChanged(ItemEvent e)
+NewPropertyWizard void keyTyped(KeyEvent e)
+NewPropertyWizard void keyPressed(KeyEvent e)
+NewPropertyWizard void keyReleased(KeyEvent e)
+RemovePropertyWizard long serialVersionUID
+RemovePropertyWizard JComboBox jcbName
+RemovePropertyWizard RemovePropertyWizard RemovePropertyWizard()
+RemovePropertyWizard void actionPerformed(ActionEvent ae)
+RemovePropertyWizard void itemStateChanged(ItemEvent e)
+RemovePropertyWizard void populateProperties()
+TracksTableModel long serialVersionUID
+TracksTableModel TracksTableModel TracksTableModel()
+TracksTableModel void populateModel(String sPropertyName, String sPattern)
+PropertiesWizard long serialVersionUID
+PropertiesWizard JPanel jpMain
+PropertiesWizard OKCancelPanel okc
+PropertiesWizard double[][] dSize
+PropertiesWizard ArrayList<Item> alItems
+PropertiesWizard ArrayList<Item> alItems2
+PropertiesWizard HashSet<File> filter
+PropertiesWizard int iEditable
+PropertiesWizard PropertiesPanel panel1
+PropertiesWizard PropertiesPanel panel2
+PropertiesWizard PropertiesWizard PropertiesWizard(ArrayList<Item> alItems)
+PropertiesWizard PropertiesWizard PropertiesWizard(ArrayList<Item> alItems1, ArrayList<Item> alItems2)
+PropertiesWizard void display()
+ void run()
+PropertiesWizard void actionPerformed(ActionEvent e)
+ void run()
+PropertiesWizard boolean isLinkable(PropertyMetaInformation meta)
+PropertiesPanel long serialVersionUID
+PropertiesPanel JPanel jpProperties
+PropertiesPanel JLabel jlDesc
+PropertiesPanel JComponent[][] widgets
+PropertiesPanel ArrayList<PropertyMetaInformation> alToDisplay
+PropertiesPanel ArrayList<Item> alItems
+PropertiesPanel HashMap<PropertyMetaInformation,Object> hmPropertyToChange
+PropertiesPanel boolean bMerged
+PropertiesPanel PropertiesPanel PropertiesPanel(ArrayList<Item> alItems, String sDesc, boolean bMerged)
+ void actionPerformed(ActionEvent arg0)
+ void actionPerformed(ActionEvent arg0)
+ void keyTyped(KeyEvent arg0)
+ void keyPressed(KeyEvent arg0)
+ void keyReleased(KeyEvent arg0)
+ void actionPerformed(ActionEvent arg0)
+ void actionPerformed(ActionEvent arg0)
+ void keyTyped(KeyEvent arg0)
+ void keyPressed(KeyEvent arg0)
+ void keyReleased(KeyEvent arg0)
+PropertiesPanel void actionPerformed(ActionEvent ae)
+PropertiesPanel void save()
+PropertiesPanel int getWidgetIndex(JComponent widget)
+PropertiesWizard boolean isMonoFile()
+JajukToggleButton long serialVersionUID
+JajukToggleButton Border PRESSED_BORDER
+JajukToggleButton Border UNPRESSED_BORDER
+JajukToggleButton JajukToggleButton JajukToggleButton()
+JajukToggleButton JajukToggleButton JajukToggleButton(boolean selected)
+JajukToggleButton JajukToggleButton JajukToggleButton(Icon icon)
+JajukToggleButton JajukToggleButton JajukToggleButton(Icon icon, boolean selected)
+JajukToggleButton JajukToggleButton JajukToggleButton(String text)
+JajukToggleButton JajukToggleButton JajukToggleButton(String text, boolean selected)
+JajukToggleButton JajukToggleButton JajukToggleButton(Action a)
+JajukToggleButton JajukToggleButton JajukToggleButton(Action a, boolean selected)
+JajukToggleButton JajukToggleButton JajukToggleButton(String text, Icon icon)
+JajukToggleButton JajukToggleButton JajukToggleButton(String text, Icon icon, boolean selected)
+JajukToggleButton void setSelected(boolean b)
+JajukToggleButton void fireActionPerformed(ActionEvent event)
+ButtonRenderer long serialVersionUID
+ButtonRenderer ButtonRenderer ButtonRenderer(String sText, Icon icon)
+ButtonRenderer Component getTableCellRendererComponent(JTable arg0, Object arg1, boolean arg2, boolean arg3, int arg4, int arg5)
+TableTransferHandler long serialVersionUID
+TableTransferHandler JTable jtable
+TableTransferHandler int iSelectedRow
+TableTransferHandler TableTransferHandler TableTransferHandler(JTable jtable)
+TableTransferHandler Transferable createTransferable(JComponent c)
+TableTransferHandler int getSourceActions(JComponent c)
+TransferableTableRow long serialVersionUID
+TransferableTableRow DataFlavor ROW_FLAVOR
+TransferableTableRow Object oData
+TransferableTableRow TransferableTableRow TransferableTableRow(Object oData)
+TransferableTableRow Object getData()
+TransferableTableRow DataFlavor[] flavors
+TransferableTableRow DataFlavor[] getTransferDataFlavors()
+TransferableTableRow boolean isDataFlavorSupported(DataFlavor flavor)
+TransferableTableRow Object getTransferData(DataFlavor flavor)
+DeviceWizard long serialVersionUID
+DeviceWizard JPanel jpMain
+DeviceWizard JPanel jp1
+DeviceWizard JLabel jlType
+DeviceWizard JComboBox jcbType
+DeviceWizard JLabel jlName
+DeviceWizard JTextField jtfName
+DeviceWizard JLabel jlUrl
+DeviceWizard JTextField jtfUrl
+DeviceWizard JButton jbUrl
+DeviceWizard JButton jbUrlMountPoint
+DeviceWizard JLabel jlMountPoint
+DeviceWizard JTextField jtfMountPoint
+DeviceWizard JCheckBox jcbRefresh
+DeviceWizard JCheckBox jcbAutoMount
+DeviceWizard JLabel jlAutoRefresh
+DeviceWizard JFormattedTextField jftfAutoRefresh
+DeviceWizard JLabel jlMinutes
+DeviceWizard JCheckBox jcboxSynchronized
+DeviceWizard JComboBox jcbSynchronized
+DeviceWizard JPanel jp2
+DeviceWizard ButtonGroup bgSynchro
+DeviceWizard JRadioButton jrbBidirSynchro
+DeviceWizard JRadioButton jrbUnidirSynchro
+DeviceWizard JPanel jpButtons
+DeviceWizard JButton jbOk
+DeviceWizard JButton jbCancel
+DeviceWizard boolean bNew
+DeviceWizard Device device
+DeviceWizard ArrayList<Device> alDevices
+DeviceWizard String sInitialURL
+DeviceWizard DeviceWizard DeviceWizard()
+ void windowActivated(WindowEvent e)
+ void propertyChange(PropertyChangeEvent e)
+DeviceWizard void updateWidgetsDefault()
+DeviceWizard void updateWidgets(Device device)
+DeviceWizard void actionPerformed(ActionEvent e)
+JajukSystray long serialVersionUID
+JajukSystray SystemTray stray
+JajukSystray TrayIcon trayIcon
+JajukSystray JPopupMenu jmenu
+JajukSystray JMenuItem jmiExit
+JajukSystray JMenuItem jmiMute
+JajukSystray JMenuItem jmiHelp
+JajukSystray JMenuItem jmiShuffle
+JajukSystray JMenuItem jmiBestof
+JajukSystray JMenuItem jmiDJ
+JajukSystray JMenuItem jmiNovelties
+JajukSystray JMenuItem jmiNorm
+JajukSystray JMenuItem jmiPause
+JajukSystray JMenuItem jmiStop
+JajukSystray JMenuItem jmiPrevious
+JajukSystray JMenuItem jmiNext
+JajukSystray JLabel jlVolume
+JajukSystray JLabel jlPosition
+JajukSystray JMenu jmAmbience
+JajukSystray long lDateLastAdjust
+JajukSystray JCheckBoxMenuItem jcbmiVisible
+JajukSystray JajukSystray jsystray
+JajukSystray Timer timer
+ void actionPerformed(ActionEvent e)
+JajukSystray static JajukSystray getInstance()
+JajukSystray static void dispose()
+JajukSystray JajukSystray JajukSystray()
+ void actionPerformed(ActionEvent arg0)
+JajukSystray Set<EventSubject> getRegistrationKeys()
+JajukSystray void actionPerformed(ActionEvent e)
+JajukSystray void update(Event event)
+ void run()
+JajukSystray void closeSystray()
+JajukSystray String getHTMLFormatText(File file)
+JajukSystray String getBasicFormatText(File file)
+JajukSystray void populateAmbiences()
+ void actionPerformed(ActionEvent ae)
+IPerspective String getID()
+IPerspective void setID(String sid)
+IPerspective String getDesc()
+IPerspective URL getIconPath()
+IPerspective void setIconPath(URL iconURL)
+IPerspective Set<IView> getViews()
+IPerspective Container getContentPane()
+IPerspective void commit()
+IPerspective void load()
+IPerspective void restoreDefaults()
+IPerspective void setAsBeenSelected(boolean b)
+CDDBTableModel long serialVersionUID
+CDDBTableModel ArrayList<CDDBTrack> alItems
+CDDBTableModel CDDBTableModel CDDBTableModel(ArrayList<CDDBTrack> alItems)
+CDDBTableModel void populateModel(FreedbReadResult fdbReader)
+CDDBTableModel void populateModel(String sProperty, String sPattern)
+FilesTableModel long serialVersionUID
+FilesTableModel FilesTableModel FilesTableModel()
+FilesTableModel void populateModel(String sPropertyName, String sPattern)
+InformationJPanel long serialVersionUID
+InformationJPanel int INFORMATIVE
+InformationJPanel int ERROR
+InformationJPanel int WARNING
+InformationJPanel InformationJPanel ijp
+InformationJPanel Timer timer
+ void actionPerformed(ActionEvent e)
+InformationJPanel static InformationJPanel getInstance()
+InformationJPanel JLabel jlMessage
+InformationJPanel JLabel jlSelection
+InformationJPanel JPanel jpTotal
+InformationJPanel JLabel jlTotal
+InformationJPanel JPanel jpCurrent
+InformationJPanel JProgressBar jpbCurrent
+InformationJPanel JLabel jlCurrent
+InformationJPanel String sMessage
+InformationJPanel int iType
+InformationJPanel String sSelection
+InformationJPanel int iTotalStatus
+InformationJPanel String sTotalStatus
+InformationJPanel int iCurrentStatus
+InformationJPanel String sCurrentStatus
+InformationJPanel InformationJPanel InformationJPanel()
+InformationJPanel Set<EventSubject> getRegistrationKeys()
+InformationJPanel int getCurrentStatus()
+InformationJPanel int getTotalStatus()
+InformationJPanel String getMessage()
+InformationJPanel String getSelection()
+InformationJPanel void setCurrentStatus(int i)
+InformationJPanel void setMessage(String sMessage, int iMessageType)
+ void run()
+InformationJPanel void setSelection(String sSelection)
+InformationJPanel String getCurrentStatusMessage()
+InformationJPanel String getTotalStatusMessage()
+InformationJPanel void setCurrentStatusMessage(String string)
+InformationJPanel void setTotalStatusMessage(String string)
+InformationJPanel void update(Event event)
+ void run()
+InformationJPanel String toString()
+InformationJPanel int getMessageType()
+SearchBox long serialVersionUID
+SearchBox boolean bNeedSearch
+SearchBox int WAIT_TIME
+SearchBox int MIN_CRITERIA_LENGTH
+SearchBox ArrayList<SearchResult> alResults
+SearchBox String sTyped
+SearchBox Popup popup
+SearchBox JList jlist
+SearchBox long lDateTyped
+SearchBox ListSelectionListener lsl
+SearchBox Timer timer
+ void actionPerformed(ActionEvent arg0)
+SearchBox SearchBox SearchBox(ListSelectionListener lsl)
+SearchBox void keyPressed(KeyEvent e)
+SearchBox void keyReleased(KeyEvent e)
+SearchBox void keyTyped(KeyEvent e)
+SearchBox void search()
+JajukCellRender long serialVersionUID
+JajukCellRender Component getTableCellRendererComponent(JTable table, Object oValue, boolean selected, boolean focused, int row, int column)
+StylesSelectionDialog long serialVersionUID
+StylesSelectionDialog JComboBox jcbAmbiences
+StylesSelectionDialog JList jlist
+StylesSelectionDialog OKCancelPanel okc
+StylesSelectionDialog HashSet<Style> selectedStyles
+StylesSelectionDialog HashSet<Style> disabledStyles
+StylesSelectionDialog Vector<String> list
+StylesSelectionDialog StylesSelectionDialog StylesSelectionDialog(HashSet disabledStyles)
+StylesSelectionDialog void setSelection(HashSet<Style> selection)
+StylesSelectionDialog HashSet<Style> getSelectedStyles()
+StylesSelectionDialog void initUI()
+ void actionPerformed(ActionEvent ae)
+StylesSelectionDialog void actionPerformed(ActionEvent ae)
+PlaylistTransferHandler Component jpanel
+PlaylistTransferHandler DropTarget dropTarget
+PlaylistTransferHandler PlaylistTransferHandler PlaylistTransferHandler(Component c, int action)
+PlaylistTransferHandler void dragExit(DragSourceEvent dse)
+PlaylistTransferHandler void dragEnter(DropTargetDragEvent dtde)
+PlaylistTransferHandler void dragExit(DropTargetEvent dte)
+PlaylistTransferHandler void dragOver(DropTargetDragEvent dtde)
+PlaylistTransferHandler void dropActionChanged(DropTargetDragEvent dtde)
+PlaylistTransferHandler void drop(DropTargetDropEvent dtde)
+IconLabel ImageIcon icon
+IconLabel String sText
+IconLabel Color cBackground
+IconLabel Color cForeground
+IconLabel Font font
+IconLabel String sTooltip
+IconLabel boolean bInteger
+IconLabel IconLabel IconLabel(ImageIcon icon, String sText, Color cBackground, Color cForeground, Font font, String sTooltip)
+IconLabel IconLabel IconLabel(ImageIcon icon, String sText)
+IconLabel String getText()
+IconLabel ImageIcon getIcon()
+IconLabel Color getBackground()
+IconLabel Color getForeground()
+IconLabel Font getFont()
+IconLabel String toString()
+IconLabel String getTooltip()
+IconLabel int compareTo(Object o)
+IconLabel void setInteger(boolean integer)
+JajukTable long serialVersionUID
+JajukTable String sConf
+JajukTable JajukTable JajukTable(TableModel model, TableColumnModel colModel, boolean bSortable, String sConf)
+JajukTable JajukTable JajukTable(TableModel model, boolean bSortable, String sConf)
+JajukTable JajukTable JajukTable(TableModel model, String sConf)
+JajukTable void init(boolean bSortable)
+JajukTable void showColumns(ArrayList<String> colsToShow)
+JajukTable ArrayList<String> getColumnsConf()
+JajukTable void addColumnIntoConf(String property)
+JajukTable void removeColumnFromConf(String property)
+JajukTable void createColumnsConf()
+JajukTable String getColumnsConf(ArrayList alCol)
+JajukTable String getToolTipText(MouseEvent e)
+JajukTable void setSelectedrows(int[] indexes)
+CustomPropertyWizard JPanel jpMain
+CustomPropertyWizard JLabel jlItemChoice
+CustomPropertyWizard JComboBox jcbItemChoice
+CustomPropertyWizard OKCancelPanel okp
+CustomPropertyWizard JLabel jlName
+CustomPropertyWizard CustomPropertyWizard CustomPropertyWizard(String sTitle)
+CustomPropertyWizard void populate()
+CustomPropertyWizard ItemManager getItemManager()
+JajukWindow long serialVersionUID
+JajukWindow int iMaxWidth
+JajukWindow int iMaxHeight
+JajukWindow JajukWindow jw
+JajukWindow boolean bVisible
+JajukWindow static JajukWindow getInstance()
+JajukWindow JajukWindow JajukWindow()
+ void windowDeiconified(WindowEvent arg0)
+ void windowIconified(WindowEvent arg0)
+ void windowClosing(WindowEvent we)
+JajukWindow Set<EventSubject> getRegistrationKeys()
+JajukWindow void saveSize()
+JajukWindow void applyStoredSize()
+JajukWindow void update(Event event)
+JajukWindow boolean isWindowVisible()
+JajukWindow void display(boolean visible)
+ void run()
+SteppedComboBox long serialVersionUID
+SteppedComboBox int popupWidth
+SteppedComboBox SteppedComboBox SteppedComboBox()
+SteppedComboBox SteppedComboBox SteppedComboBox(ComboBoxModel aModel)
+SteppedComboBox SteppedComboBox SteppedComboBox(Object[] items)
+SteppedComboBox SteppedComboBox SteppedComboBox(Vector items)
+SteppedComboBox void setPopupWidth(int width)
+SteppedComboBox Dimension getPopupSize()
+SteppedComboBox void init()
+JajukBackgroundPainter void paintBackground(JComponent component, Graphics g)
+JajukBackgroundPainter JajukBackgroundPainter JajukBackgroundPainter()
+CommandJPanel long serialVersionUID
+CommandJPanel CommandJPanel command
+CommandJPanel ToolBarPanel topPanel
+CommandJPanel SearchBox sbSearch
+CommandJPanel SteppedComboBox jcbHistory
+CommandJPanel JajukToggleButton jbRepeat
+CommandJPanel JajukToggleButton jbRandom
+CommandJPanel JajukToggleButton jbContinue
+CommandJPanel JajukToggleButton jbIntro
+CommandJPanel JToolBar jtbSpecial
+CommandJPanel DropDownButton ddbGlobalRandom
+CommandJPanel JRadioButtonMenuItem jmiShuffleModeSong
+CommandJPanel JRadioButtonMenuItem jmiShuffleModeAlbum
+CommandJPanel JPopupMenu popupGlobalRandom
+CommandJPanel JajukButton jbBestof
+CommandJPanel DropDownButton ddbNovelties
+CommandJPanel JPopupMenu popupNovelties
+CommandJPanel JRadioButtonMenuItem jmiNoveltiesModeSong
+CommandJPanel JRadioButtonMenuItem jmiNoveltiesModeAlbum
+CommandJPanel JajukButton jbNorm
+CommandJPanel DropDownButton ddbDDJ
+CommandJPanel JPopupMenu popupDDJ
+CommandJPanel SteppedComboBox ambiencesCombo
+CommandJPanel JButton jbPrevious
+CommandJPanel JButton jbNext
+CommandJPanel JPressButton jbRew
+CommandJPanel JButton jbPlayPause
+CommandJPanel JButton jbStop
+CommandJPanel JPressButton jbFwd
+CommandJPanel JLabel jlVolume
+CommandJPanel JPanel jpVolume
+CommandJPanel JSlider jsVolume
+CommandJPanel JPanel jpPosition
+CommandJPanel JLabel jlPosition
+CommandJPanel JSlider jsPosition
+CommandJPanel JajukToggleButton jbMute
+CommandJPanel boolean bIsRepeatEnabled
+CommandJPanel boolean bIsShuffleEnabled
+CommandJPanel boolean bIsContinueEnabled
+CommandJPanel boolean bIsIntroEnabled
+CommandJPanel float JUMP_SIZE
+CommandJPanel long lDateLastAdjust
+CommandJPanel Timer timer
+ void actionPerformed(ActionEvent e)
+ambienceListener void actionPerformed(ActionEvent ae)
+CommandJPanel ambienceListener ambienceListener
+CommandJPanel static CommandJPanel getInstance()
+CommandJPanel CommandJPanel CommandJPanel()
+CommandJPanel void initUI()
+ long serialVersionUID
+ JPopupMenu getPopupMenu()
+ long serialVersionUID
+ JPopupMenu getPopupMenu()
+ long serialVersionUID
+ JPopupMenu getPopupMenu()
+CommandJPanel Set<EventSubject> getRegistrationKeys()
+CommandJPanel void actionPerformed(ActionEvent ae)
+CommandJPanel void valueChanged(ListSelectionEvent e)
+ Object construct()
+ void finished()
+CommandJPanel void stateChanged(ChangeEvent e)
+CommandJPanel void setPosition(float fPosition)
+ void run()
+CommandJPanel int getCurrentPosition()
+CommandJPanel int getCurrentVolume()
+CommandJPanel void setVolume(float fVolume)
+CommandJPanel void update(Event event)
+ void run()
+CommandJPanel void updateTooltips()
+CommandJPanel void populateDJs()
+ void actionPerformed(ActionEvent arg0)
+CommandJPanel void populateAmbiences()
+CommandJPanel String toString()
+CommandJPanel void mouseWheelMoved(MouseWheelEvent e)
+JajukHtmlPanel long serialVersionUID
+JajukHtmlPanel JajukHtmlPanel JajukHtmlPanel()
+JajukHtmlPanel void setURL(URL url)
+TransferableTreeNode long serialVersionUID
+TransferableTreeNode DataFlavor NODE_FLAVOR
+TransferableTreeNode Object oData
+TransferableTreeNode TransferableTreeNode TransferableTreeNode(Object oData)
+TransferableTreeNode Object getData()
+TransferableTreeNode DataFlavor[] flavors
+TransferableTreeNode DataFlavor[] getTransferDataFlavors()
+TransferableTreeNode boolean isDataFlavorSupported(DataFlavor flavor)
+TransferableTreeNode Object getTransferData(DataFlavor flavor)
+PerspectiveBarJPanel long serialVersionUID
+PerspectiveBarJPanel JButtonBar jtbPerspective
+PerspectiveBarJPanel PerspectiveBarJPanel pb
+PerspectiveBarJPanel ArrayList<JButton> alButtons
+PerspectiveBarJPanel static PerspectiveBarJPanel getInstance()
+PerspectiveBarJPanel PerspectiveBarJPanel PerspectiveBarJPanel()
+PerspectiveBarJPanel void update()
+ void actionPerformed(ActionEvent e)
+PerspectiveBarJPanel void setActivated(IPerspective perspective)
+PerspectiveBarJPanel String toString()
+JajukTableModel Vector<String> vId
+JajukTableModel int iRowNum
+JajukTableModel Object[][] oValues
+JajukTableModel ImageIcon PLAY_ICON
+JajukTableModel ImageIcon UNMOUNT_PLAY_ICON
+JajukTableModel Item[] oItems
+JajukTableModel int iNumberStandardCols
+JajukTableModel boolean[][] bCellEditable
+JajukTableModel Vector<String> vColNames
+JajukTableModel Object oLast
+JajukTableModel boolean bEditable
+JajukTableModel ArrayList<Item> treeSelection
+JajukTableModel JajukTableModel JajukTableModel(int iNumberStandardCols)
+JajukTableModel JajukTableModel JajukTableModel()
+JajukTableModel String getIdentifier(String sColName)
+JajukTableModel Item getItemAt(int iRow)
+JajukTableModel void setItemAt(int iRow, Item item)
+JajukTableModel Object getValueAt(int rowIndex, int columnIndex)
+JajukTableModel void setValueAt(Object oValue, int rowIndex, int columnIndex)
+JajukTableModel int getColumnCount()
+JajukTableModel void undo(int rowIndex, int columnIndex)
+JajukTableModel String getColumnName(int column)
+JajukTableModel String getIdentifier(int column)
+JajukTableModel int getRowCount()
+JajukTableModel boolean isCellEditable(int rowIndex, int columnIndex)
+JajukTableModel Class<? extends Object> getColumnClass(int columnIndex)
+JajukTableModel void populateModel(String sProperty, String sPattern)
+JajukTableModel void populateModel()
+JajukTableModel void setEditable(boolean b)
+LNFManager HashMap<String,String> hmNameClass
+LNFManager String sCurrent
+LNFManager static void setLookAndFeel(String sLaf)
+LNFManager static Collection<String> getSupportedLNF()
+LNFManager static void register(String sName, String sClass)
+LNFManager static String getCurrent()
+LNFManager static ComboBoxUI getSteppedComboBoxClass()
+TipOfTheDay long serialVersionUID
+TipOfTheDay String[] tips
+TipOfTheDay int iLastTip
+TipOfTheDay JCheckBox cbShow
+TipOfTheDay JTextArea tipArea
+TipOfTheDay JLabel lCounter
+TipOfTheDay TipOfTheDay TipOfTheDay()
+ void actionPerformed(ActionEvent actionevent)
+ void actionPerformed(ActionEvent actionevent)
+ void actionPerformed(ActionEvent actionevent)
+TipOfTheDay void setTip(int p)
+TipOfTheDay void setVisible(boolean flag)
+CDDBWizard long serialVersionUID
+CDDBWizard JPanel jpMain
+CDDBWizard NavigationPanel jpNav
+CDDBWizard JajukTable jtable
+CDDBWizard CDDBTableModel model
+CDDBWizard JDialog dial
+CDDBWizard OKCancelPanel okc
+CDDBWizard HashSet filter
+CDDBWizard double[][] dSize
+CDDBWizard ArrayList<CDDBTrack> alTracks
+CDDBWizard Freedb fdb
+CDDBWizard FreedbAlbum fdbAlbum
+CDDBWizard FreedbQueryResult[] aResult
+CDDBWizard FreedbReadResult fdbReader
+CDDBWizard Vector<String> vAlbums
+CDDBWizard int[] aIdxToTag
+CDDBWizard int idx
+CDDBTrack Track track
+CDDBTrack CDDBTrack CDDBTrack(Track track)
+CDDBTrack int getLength()
+CDDBTrack float getPreciseLength()
+NavigationPanel long serialVersionUID
+NavigationPanel SteppedComboBox jcbAlbum
+NavigationPanel JLabel jlCurrent
+NavigationPanel JPanel jpButtons
+NavigationPanel JLabel jlGenre
+NavigationPanel JTextField jtGenre
+NavigationPanel JLabel jlAlbum
+NavigationPanel NavigationPanel NavigationPanel()
+ void actionPerformed(ActionEvent arg0)
+CDDBWizard CDDBWizard CDDBWizard(ArrayList<Item> alGivenTracks)
+ Object construct()
+ void finished()
+CDDBWizard JajukTable populateTable()
+CDDBWizard CDDBTableModel populateModel()
+CDDBWizard void display()
+CDDBWizard int performQuery(ArrayList<CDDBTrack> alItems)
+CDDBWizard void retagFiles()
+CDDBWizard void actionPerformed(ActionEvent e)
+ void run()
+CDDBWizard void columnMoved(TableColumnModelEvent arg0)
+CDDBWizard void columnAdded(TableColumnModelEvent e)
+CDDBWizard void columnMarginChanged(ChangeEvent e)
+CDDBWizard void columnRemoved(TableColumnModelEvent e)
+CDDBWizard void columnSelectionChanged(ListSelectionEvent e)
+CDDBWizard void mouseClicked(MouseEvent e)
+CDDBWizard void mouseEntered(MouseEvent e)
+CDDBWizard void mouseExited(MouseEvent e)
+CDDBWizard void mousePressed(MouseEvent e)
+CDDBWizard void mouseReleased(MouseEvent e)
+CDDBWizard void tableChanged(TableModelEvent e)
+QualityAction long serialVersionUID
+QualityAction QualityAction QualityAction()
+QualityAction void perform(ActionEvent evt)
+JajukAction JajukAction EXIT
+JajukAction JajukAction REPEAT_MODE_STATUS_CHANGE
+JajukAction JajukAction SHUFFLE_MODE_STATUS_CHANGED
+JajukAction JajukAction CONTINUE_MODE_STATUS_CHANGED
+JajukAction JajukAction INTRO_MODE_STATUS_CHANGED
+JajukAction JajukAction DEVICE_NEW
+JajukAction JajukAction DEVICE_DELETE
+JajukAction JajukAction DEVICE_PROPERTIES
+JajukAction JajukAction DEVICE_MOUNT
+JajukAction JajukAction DEVICE_UNMOUNT
+JajukAction JajukAction DEVICE_TEST
+JajukAction JajukAction DEVICE_REFRESH
+JajukAction JajukAction DEVICE_SYNCHRO
+JajukAction JajukAction VIEW_REFRESH_REQUEST
+JajukAction JajukAction VIEW_CLOSE_REQUEST
+JajukAction JajukAction VIEW_SHOW_REQUEST
+JajukAction JajukAction VIEW_SHOW_STATUS_CHANGED_REQUEST
+JajukAction JajukAction VIEW_RESTORE_DEFAULTS
+JajukAction JajukAction VIEW_COMMAND_SELECT_HISTORY_ITEM
+JajukAction JajukAction HELP_REQUIRED
+JajukAction JajukAction SHOW_TRACES
+JajukAction JajukAction COVER_REFRESH
+JajukAction JajukAction COVER_CHANGE
+JajukAction JajukAction PLAYER_STOP
+JajukAction JajukAction PLAYER_PLAY
+JajukAction JajukAction PLAYER_PAUSE
+JajukAction JajukAction PLAYER_RESUME
+JajukAction JajukAction PLAYLIST_REFRESH
+JajukAction JajukAction PLAYLIST_CHANGED
+JajukAction JajukAction FILE_LAUNCHED
+JajukAction JajukAction HEART_BEAT
+JajukAction JajukAction ZERO
+JajukAction JajukAction ADD_HISTORY_ITEM
+JajukAction JajukAction SPECIAL_MODE
+JajukAction JajukAction SHUFFLE_GLOBAL
+JajukAction JajukAction BEST_OF
+JajukAction JajukAction DJ
+JajukAction JajukAction NOVELTIES
+JajukAction JajukAction FINISH_ALBUM
+JajukAction JajukAction PLAY_ERROR
+JajukAction JajukAction MUTE_STATE
+JajukAction JajukAction SYNC_TREE_TABLE
+JajukAction JajukAction CLEAR_HISTORY
+JajukAction JajukAction WIZARD
+JajukAction JajukAction QUALITY
+JajukAction JajukAction VOLUME_CHANGED
+JajukAction JajukAction CREATE_PROPERTY
+JajukAction JajukAction DELETE_PROPERTY
+JajukAction JajukAction CUSTOM_PROPERTIES_ADD
+JajukAction JajukAction CUSTOM_PROPERTIES_REMOVE
+JajukAction JajukAction FILE_NAME_CHANGED
+JajukAction JajukAction RATE_CHANGED
+JajukAction JajukAction TIP_OF_THE_DAY
+JajukAction JajukAction SHOW_ABOUT
+JajukAction JajukAction PREVIOUS_TRACK
+JajukAction JajukAction NEXT_TRACK
+JajukAction JajukAction REWIND_TRACK
+JajukAction JajukAction FAST_FORWARD_TRACK
+JajukAction JajukAction STOP_TRACK
+JajukAction JajukAction PLAY_PAUSE_TRACK
+JajukAction JajukAction PREVIOUS_ALBUM
+JajukAction JajukAction NEXT_ALBUM
+JajukAction JajukAction INCREASE_VOLUME
+JajukAction JajukAction DECREASE_VOLUME
+JajukAction JajukAction CONFIGURE_DJS
+JajukAction JajukAction CONFIGURE_AMBIENCES
+JajukAction JajukAction OPTIONS
+WizardAction long serialVersionUID
+WizardAction WizardAction WizardAction()
+WizardAction void perform(ActionEvent evt)
+ExitAction long serialVersionUID
+ExitAction ExitAction ExitAction()
+ExitAction void perform(ActionEvent evt)
+NewPropertyAction long serialVersionUID
+NewPropertyAction NewPropertyAction NewPropertyAction()
+NewPropertyAction void perform(ActionEvent evt)
+PlayPauseAction long serialVersionUID
+PlayPauseAction PlayPauseAction PlayPauseAction()
+PlayPauseAction void perform(ActionEvent evt)
+DJConfigurationAction long serialVersionUID
+DJConfigurationAction DJConfigurationAction DJConfigurationAction()
+DJConfigurationAction void perform(ActionEvent evt)
+ContinueModeAction long serialVersionUID
+ContinueModeAction ContinueModeAction ContinueModeAction()
+ContinueModeAction void perform(ActionEvent evt)
+ActionUtil char INDICATOR
+ActionUtil ActionUtil ActionUtil()
+ActionUtil static int getMnemonic(String text)
+ActionUtil static String strip(String text)
+ActionUtil static void installKeystrokes(JComponent component, Action[] actions)
+ActionManager EnumMap<JajukAction,ActionBase> map
+ActionManager List<KeyStroke> strokeList
+ActionManager ActionManager self
+ActionManager static ActionManager getInstance()
+ActionManager ActionManager ActionManager()
+ActionManager static ActionBase getAction(JajukAction action)
+ActionManager static void installAction(JajukAction name, ActionBase action, boolean removeFromLAF)
+ActionManager static void uninstallStrokes()
+BestOfAction long serialVersionUID
+BestOfAction BestOfAction BestOfAction()
+BestOfAction void perform(ActionEvent evt)
+RefactorAction ArrayList<File> alFiles
+RefactorAction String filename
+RefactorAction String sFS
+RefactorAction RefactorAction RefactorAction(ArrayList<File> al)
+ void run()
+RefactorAction void refactor()
+RefactorAction String getCheckedPath(String sRoot, String sPathname)
+RefactorAction void registerFile(Directory d)
+FindDuplicateFilesAction long serialVersionUID
+FindDuplicateFilesAction FindDuplicateFilesAction FindDuplicateFilesAction(String name, boolean enabled)
+FindDuplicateFilesAction void perform(ActionEvent evt)
+FindDuplicateFilesAction String convertToString(List<File> duplicateFilesList)
+GlobalRandomAction long serialVersionUID
+GlobalRandomAction GlobalRandomAction GlobalRandomAction()
+GlobalRandomAction void perform(ActionEvent evt)
+PreviousTrackAction long serialVersionUID
+PreviousTrackAction PreviousTrackAction PreviousTrackAction()
+PreviousTrackAction void perform(ActionEvent evt)
+ void run()
+NextAlbumAction long serialVersionUID
+NextAlbumAction NextAlbumAction NextAlbumAction()
+NextAlbumAction void perform(ActionEvent evt)
+ void run()
+StopTrackAction long serialVersionUID
+StopTrackAction StopTrackAction StopTrackAction()
+StopTrackAction void perform(ActionEvent evt)
+AmbienceConfigurationAction long serialVersionUID
+AmbienceConfigurationAction AmbienceConfigurationAction AmbienceConfigurationAction()
+AmbienceConfigurationAction void perform(ActionEvent evt)
+RewindTrackAction long serialVersionUID
+RewindTrackAction float JUMP_SIZE
+RewindTrackAction RewindTrackAction RewindTrackAction()
+RewindTrackAction void perform(ActionEvent evt)
+RestoreViewsAction long serialVersionUID
+RestoreViewsAction RestoreViewsAction RestoreViewsAction()
+RestoreViewsAction void perform(ActionEvent evt)
+ void run()
+IncreaseVolumeAction long serialVersionUID
+IncreaseVolumeAction IncreaseVolumeAction IncreaseVolumeAction()
+IncreaseVolumeAction void perform(ActionEvent evt)
+MuteAction long serialVersionUID
+MuteAction MuteAction MuteAction()
+MuteAction void perform(ActionEvent evt)
+ShuffleModeAction long serialVersionUID
+ShuffleModeAction ShuffleModeAction ShuffleModeAction()
+ShuffleModeAction void perform(ActionEvent evt)
+NextTrackAction long serialVersionUID
+NextTrackAction NextTrackAction NextTrackAction()
+NextTrackAction void perform(ActionEvent evt)
+ void run()
+DebugLogAction long serialVersionUID
+DebugLogAction DebugLogAction DebugLogAction()
+DebugLogAction void perform(ActionEvent evt)
+ForwardTrackAction long serialVersionUID
+ForwardTrackAction float JUMP_SIZE
+ForwardTrackAction ForwardTrackAction ForwardTrackAction()
+ForwardTrackAction void perform(ActionEvent evt)
+DecreaseVolumeAction long serialVersionUID
+DecreaseVolumeAction DecreaseVolumeAction DecreaseVolumeAction()
+DecreaseVolumeAction void perform(ActionEvent evt)
+DJAction long serialVersionUID
+DJAction DJAction DJAction()
+DJAction void perform(ActionEvent evt)
+ void run()
+RemovePropertyAction long serialVersionUID
+RemovePropertyAction RemovePropertyAction RemovePropertyAction()
+RemovePropertyAction void perform(ActionEvent evt)
+PreviousAlbumAction long serialVersionUID
+PreviousAlbumAction PreviousAlbumAction PreviousAlbumAction()
+PreviousAlbumAction void perform(ActionEvent evt)
+ void run()
+FinishAlbumAction long serialVersionUID
+FinishAlbumAction FinishAlbumAction FinishAlbumAction()
+FinishAlbumAction void perform(ActionEvent evt)
+ShowAboutAction long serialVersionUID
+ShowAboutAction ShowAboutAction ShowAboutAction()
+ShowAboutAction void perform(ActionEvent evt)
+NoveltiesAction long serialVersionUID
+NoveltiesAction NoveltiesAction NoveltiesAction()
+NoveltiesAction void perform(ActionEvent evt)
+IntroModeAction long serialVersionUID
+IntroModeAction IntroModeAction IntroModeAction()
+IntroModeAction void perform(ActionEvent evt)
+HelpRequiredAction long serialVersionUID
+HelpRequiredAction HelpRequiredAction HelpRequiredAction()
+HelpRequiredAction void perform(ActionEvent evt)
+ConfigurationRequiredAction long serialVersionUID
+ConfigurationRequiredAction ConfigurationRequiredAction ConfigurationRequiredAction()
+ConfigurationRequiredAction void perform(ActionEvent evt)
+ActionBase byte[] MUTEX
+ActionBase HashMap<Integer,ActionBase> hmIndexAction
+ActionBase boolean bHotkey
+ActionBase JIntellitype jintellitype
+ void onIntellitype(int aCommand)
+ActionBase ActionBase ActionBase(String pName, Icon icon, KeyStroke stroke, boolean enabled, boolean bHotkey)
+ActionBase static int swingToIntelliType(int swingKeystrokeModifier)
+ActionBase ActionBase ActionBase(String name, Icon icon, String stroke, boolean enabled, boolean bHotkey)
+ActionBase ActionBase ActionBase(String name, KeyStroke stroke, boolean enabled, boolean bHotkey)
+ActionBase ActionBase ActionBase(String name, String stroke, boolean enabled, boolean bHotkey)
+ActionBase ActionBase ActionBase(Icon icon, KeyStroke stroke, boolean enabled, boolean bHotkey)
+ActionBase ActionBase ActionBase(Icon icon, String stroke, boolean enabled, boolean bHotkey)
+ActionBase ActionBase ActionBase(String name, Icon icon, boolean enabled)
+ActionBase ActionBase ActionBase(Icon icon, boolean enabled)
+ActionBase ActionBase ActionBase(String name, boolean enabled)
+ActionBase void setName(String name)
+ActionBase void setShortDescription(String description)
+ActionBase void setLongDescription(String description)
+ActionBase void setIcon(Icon icon)
+ActionBase void setActionCommand(String actionCommand)
+ActionBase void setAcceleratorKey(KeyStroke stroke)
+ActionBase void setAcceleratorKey(String stroke)
+ActionBase void setMnemonic(int mnemonic)
+ActionBase void actionPerformed(ActionEvent evt)
+ActionBase void perform(ActionEvent evt)
+ActionBase void onHotKey(int aIdentifier)
+ActionBase static void cleanup()
+ActionBase boolean isHotkey()
+TipOfTheDayAction long serialVersionUID
+TipOfTheDayAction TipOfTheDayAction TipOfTheDayAction()
+TipOfTheDayAction void perform(ActionEvent evt)
+RepeatModeAction long serialVersionUID
+RepeatModeAction RepeatModeAction RepeatModeAction()
+RepeatModeAction void perform(ActionEvent evt)
+LiquidComboBoxUI ComboPopup createPopup()
+KunststoffComboBoxUI ComboPopup createPopup()
+JajukBasicComboPopup long serialVersionUID
+JajukBasicComboPopup JajukBasicComboPopup JajukBasicComboPopup(JComboBox jcb)
+JajukBasicComboPopup void show()
+JajukBasicComboPopup JScrollPane createScroller()
+MetalComboBoxUI ComboPopup createPopup()
+CatalogPerspective long serialVersionUID
+CatalogPerspective String getDesc()
+CatalogPerspective Set<IView> getViews()
+PerspectiveManager IPerspective currentPerspective
+PerspectiveManager HashMap<String,IPerspective> hmNameInstance
+PerspectiveManager Set<IPerspective> perspectives
+PerspectiveManager long lTime
+PerspectiveManager String sPerspectiveName
+PerspectiveManager static void reset()
+PerspectiveManager static void load()
+PerspectiveManager static void init()
+PerspectiveManager static IPerspective getCurrentPerspective()
+PerspectiveManager static void setCurrentPerspective(IPerspective perspective)
+ void run()
+PerspectiveManager static void setCurrentPerspective(String sPerspectiveID)
+PerspectiveManager static Set<IPerspective> getPerspectives()
+PerspectiveManager static IPerspective getPerspective(String sID)
+PerspectiveManager static void commit()
+PerspectiveManager static void registerDefaultPerspectives()
+PerspectiveManager static IPerspective registerPerspective(IPerspective perspective)
+PlayerPerspective long serialVersionUID
+PlayerPerspective String getDesc()
+PlayerPerspective Set<IView> getViews()
+ConfigurationPerspective long serialVersionUID
+ConfigurationPerspective String getDesc()
+ConfigurationPerspective Set<IView> getViews()
+PhysicalPerspective long serialVersionUID
+PhysicalPerspective String getDesc()
+PhysicalPerspective Set<IView> getViews()
+LogicalPerspective long serialVersionUID
+LogicalPerspective String getDesc()
+LogicalPerspective Set<IView> getViews()
+PerspectiveAdapter String sID
+PerspectiveAdapter URL iconPath
+PerspectiveAdapter Set<IView> views
+PerspectiveAdapter boolean bAsBeenSelected
+PerspectiveAdapter PerspectiveAdapter PerspectiveAdapter()
+PerspectiveAdapter String getID()
+PerspectiveAdapter String toString()
+PerspectiveAdapter URL getIconPath()
+PerspectiveAdapter void setIconPath(URL iconURL)
+PerspectiveAdapter void commit()
+PerspectiveAdapter void load()
+PerspectiveAdapter Container getContentPane()
+PerspectiveAdapter void restoreDefaults()
+PerspectiveAdapter void setID(String sid)
+PerspectiveAdapter void setAsBeenSelected(boolean b)
+InfoPerspective long serialVersionUID
+InfoPerspective String getDesc()
+InfoPerspective Set<IView> getViews()
+HelpPerspective long serialVersionUID
+HelpPerspective String getDesc()
+HelpPerspective Set<IView> getViews()
+StatPerspective long serialVersionUID
+StatPerspective String getDesc()
+StatPerspective Set<IView> getViews()
+PhysicalPlaylistRepositoryView long serialVersionUID
+PhysicalPlaylistRepositoryView PhysicalPlaylistRepositoryView ppr
+PhysicalPlaylistRepositoryView static PhysicalPlaylistRepositoryView getInstance()
+PhysicalPlaylistRepositoryView PhysicalPlaylistRepositoryView PhysicalPlaylistRepositoryView()
+PhysicalPlaylistRepositoryView void initUI()
+PhysicalPlaylistRepositoryView String getDesc()
+PhysicalPlaylistRepositoryView void populatePlaylists()
+PhysicalPlaylistRepositoryView void removeItem(PlaylistFileItem plfiSelected)
+PhysicalPlaylistRepositoryView void play(PlaylistFileItem plfi)
+AbstractTreeView JScrollPane jspTree
+AbstractTreeView JXTree jtree
+AbstractTreeView short[] lock
+AbstractTreeView TreePath[] paths
+AbstractTreeView ArrayList<Item> alSelectedRecursively
+AbstractTreeView ArrayList<Item> alSelected
+AbstractTreeView DefaultMutableTreeNode top
+AbstractTreeView JTree createTree()
+CoverView long serialVersionUID
+CoverView Directory dirCurrent
+CoverView ArrayList<Cover> alCovers
+CoverView JPanel jpControl
+CoverView JajukButton jbPrevious
+CoverView JajukButton jbNext
+CoverView JajukButton jbDelete
+CoverView JajukButton jbSave
+CoverView JajukButton jbDefault
+CoverView JLabel jlSize
+CoverView JLabel jlFound
+CoverView JLabel jlSearching
+CoverView SteppedComboBox jcbAccuracy
+CoverView long lDateLastResize
+CoverView JLabel jl
+CoverView Cover coverDefault
+CoverView int index
+CoverView byte[] bLock
+CoverView int iEventID
+CoverView boolean bGotoBetter
+CoverView int iErrorCounter
+CoverView boolean bOnceConnected
+CoverView ImageIcon ii
+CoverView CoverView CoverView()
+CoverView void initUI()
+ void run()
+CoverView Set<EventSubject> getRegistrationKeys()
+CoverView String getCoverID()
+CoverView void update(Event event)
+CoverView void setFoundText()
+ void run()
+CoverView void setFoundText(String sFound)
+ void run()
+CoverView void searching(boolean bSearching)
+ void run()
+CoverView void setSizeText(String sSize)
+ void run()
+CoverView String getDesc()
+CoverView void componentResized(ComponentEvent e)
+CoverView void displayCurrentCover()
+ Object construct()
+ void finished()
+CoverView void displayCover(int index)
+CoverView Object prepareDisplay(int index)
+CoverView void actionPerformed(ActionEvent e)
+ void run()
+ void run()
+ boolean accept(File file)
+ String getDescription()
+ void run()
+CoverView void refreshThumbs(Cover cover)
+CoverView int getCoverNumber()
+CoverView String createQuery(File file)
+CoverView boolean isInCurrentPerspective()
+AnimationView long serialVersionUID
+AnimationView int DEFAULT_FRAME_RATE
+AnimationView int DEFAULT_DURATION
+AnimationView int DEFAULT_PAUSE
+AnimationView int iSize
+AnimationView BasicTextLabel btl1
+AnimationView Animator animator
+AnimationView AnimationView AnimationView()
+AnimationView String getDesc()
+AnimationView void initUI()
+AnimationView Set<EventSubject> getRegistrationKeys()
+AnimationView void setText(String sText)
+ void run()
+AnimationView void update(Event event)
+AnimationView void componentResized(ComponentEvent e)
+ void run()
+WikipediaView long serialVersionUID
+WikipediaView JPanel jpControl
+WikipediaView JLabel jlLanguage
+WikipediaView JComboBox jcbLanguage
+WikipediaView JajukHtmlPanel browser
+WikipediaView int index
+WikipediaView String search
+WikipediaView WikipediaView WikipediaView()
+WikipediaView String getDesc()
+WikipediaView void initUI()
+WikipediaView Set<EventSubject> getRegistrationKeys()
+WikipediaView void update(Event event)
+WikipediaView void launchSearch(String search)
+ void run()
+WikipediaView void reset()
+ void run()
+WikipediaView void actionPerformed(ActionEvent arg0)
+StatView long serialVersionUID
+StatView StatView sv
+StatView static StatView getInstance()
+StatView StatView StatView()
+StatView void initUI()
+StatView Set<EventSubject> getRegistrationKeys()
+StatView ChartPanel createStyleRepartition()
+StatView ChartPanel createDeviceRepartition()
+StatView ChartPanel createCollectionSize()
+StatView ChartPanel createTrackNumber()
+StatView String getDesc()
+StatView void update(Event event)
+StatView String[] getMountsLabels(int iMounthsNumber)
+StatView int[] getMounts(int iMounthsNumber)
+CatalogView long serialVersionUID
+CatalogView JPanel jpControl
+CatalogView JLabel jlSorter
+CatalogView SteppedComboBox jcbSorter
+CatalogView JLabel jlFilter
+CatalogView SteppedComboBox jcbFilter
+CatalogView JLabel jlContains
+CatalogView JTextField jtfValue
+CatalogView JCheckBox jcbShow
+CatalogView JLabel jlSize
+CatalogView JComboBox jcbSize
+CatalogView JajukButton jbRefresh
+CatalogView JajukButton jbPrev
+CatalogView JajukButton jbNext
+CatalogView SteppedComboBox jcbPage
+CatalogView FlowScrollPanel jpItems
+CatalogView JScrollPane jsp
+CatalogView JPopupMenu jmenu
+CatalogView JMenuItem jmiAlbumPlay
+CatalogView JMenuItem jmiAlbumPush
+CatalogView JMenuItem jmiAlbumPlayShuffle
+CatalogView JMenuItem jmiAlbumPlayRepeat
+CatalogView JMenuItem jmiGetCovers
+CatalogView JMenuItem jmiAlbumProperties
+CatalogView ArrayList<PropertyMetaInformation> alFilters
+CatalogView ArrayList<PropertyMetaInformation> alSorters
+CatalogView HashSet<CatalogItem> hsItems
+CatalogView boolean bNeedSearch
+CatalogView boolean bPopulating
+CatalogView int WAIT_TIME
+CatalogView long lDateTyped
+CatalogView CatalogItem item
+CatalogView int page
+CatalogView int iNbPages
+CatalogView int iNbCreatedThumbs
+CatalogView Timer timer
+ void actionPerformed(ActionEvent e)
+CatalogView CatalogView CatalogView()
+CatalogView void initUI()
+ void keyReleased(KeyEvent e)
+CatalogView Set<EventSubject> getRegistrationKeys()
+CatalogView boolean refreshThumbnail(Album album)
+CatalogView void populateCatalog()
+ Object construct()
+ int compare(Album album1, Album album2)
+ void finished()
+CatalogView void update(Event event)
+CatalogView String getDesc()
+CatalogView void actionPerformed(ActionEvent e)
+CatalogView void cleanThumbs(String size)
+CatalogView int getSelectedSize()
+CatalogItem long serialVersionUID
+CatalogItem Album album
+CatalogItem Track track
+CatalogItem String size
+CatalogItem File fCover
+CatalogItem boolean bNoCover
+CatalogItem JPanel jpIcon
+CatalogItem JLabel jlIcon
+CatalogItem JTextArea jlAuthor
+CatalogItem JTextArea jlAlbum
+CatalogItem HashMap<String,ImageIcon> noCoversCache
+CatalogItem CatalogItem CatalogItem(Album album, String size, Track track)
+CatalogItem void populate()
+CatalogItem boolean isNoCover()
+CatalogItem void play(boolean bRepeat, boolean bShuffle, boolean bPush)
+CatalogItem void actionPerformed(ActionEvent e)
+ void run()
+CatalogItem void mousePressed(MouseEvent e)
+CatalogItem void mouseReleased(MouseEvent e)
+CatalogItem void handlePopup(MouseEvent e)
+CatalogItem void mouseEntered(MouseEvent arg0)
+CatalogItem void mouseExited(MouseEvent arg0)
+CatalogItem File getCoverFile()
+CatalogItem void setIcon(ImageIcon icon)
+CatalogItem Album getAlbum()
+CatalogItem void mouseClicked(MouseEvent e)
+CoverSelectionWizard long serialVersionUID
+CoverSelectionWizard JPanel jpMain
+CoverSelectionWizard JLabel jlSearch
+CoverSelectionWizard JLabel jlIcon
+CoverSelectionWizard JPanel jpControls
+CoverSelectionWizard JajukButton jbPrevious
+CoverSelectionWizard JajukButton jbNext
+CoverSelectionWizard JLabel jlIndex
+CoverSelectionWizard JButton jbOK
+CoverSelectionWizard JButton jbCancel
+CoverSelectionWizard ArrayList<URL> alUrls
+CoverSelectionWizard int width
+CoverSelectionWizard int index
+CoverSelectionWizard boolean bNeedRefresh
+CoverSelectionWizard Timer timer
+ void actionPerformed(ActionEvent arg0)
+CoverSelectionWizard CoverSelectionWizard CoverSelectionWizard()
+CoverSelectionWizard void displayCurrentCover()
+CoverSelectionWizard void actionPerformed(ActionEvent e)
+AbstractTableView JajukTable jtable
+AbstractTableView JPanel jpControl
+AbstractTableView JajukToggleButton jtbEditable
+AbstractTableView JLabel jlFilter
+AbstractTableView JComboBox jcbProperty
+AbstractTableView JLabel jlEquals
+AbstractTableView JTextField jtfValue
+AbstractTableView JMenuItem jmiProperties
+AbstractTableView JajukTableModel model
+AbstractTableView String sAppliedFilter
+AbstractTableView String sAppliedCriteria
+AbstractTableView boolean bNeedSearch
+AbstractTableView int WAIT_TIME
+AbstractTableView long lDateTyped
+AbstractTableView boolean bReloading
+AbstractTableView String sConf
+AbstractTableView AbstractTableView AbstractTableView()
+ void run()
+AbstractTableView String getApplyCriteria()
+AbstractTableView void initUI()
+ Object construct()
+ void finished()
+ void keyReleased(KeyEvent e)
+AbstractTableView Set<EventSubject> getRegistrationKeys()
+AbstractTableView void actionPerformed(ActionEvent e)
+AbstractTableView void applyFilter(String sPropertyName, String sPropertyValue)
+AbstractTableView void othersActionPerformed(ActionEvent ae)
+AbstractTableView void update(Event event)
+ void run()
+AbstractTableView JajukTableModel populateTable()
+AbstractTableView void setRenderers()
+AbstractTableView void itemStateChanged(ItemEvent ie)
+AbstractTableView void columnChange()
+AbstractTableView void columnAdded(TableColumnModelEvent arg0)
+AbstractTableView void columnRemoved(TableColumnModelEvent arg0)
+AbstractTableView void columnMoved(TableColumnModelEvent arg0)
+AbstractTableView void columnMarginChanged(ChangeEvent arg0)
+AbstractTableView void columnSelectionChanged(ListSelectionEvent arg0)
+AbstractTableView void tableChanged(TableModelEvent e)
+AbstractTableView void initTable()
+LogicalPlaylistEditorView long serialVersionUID
+LogicalPlaylistEditorView LogicalPlaylistEditorView LogicalPlaylistEditorView()
+LogicalPlaylistEditorView ArrayList getRepositoryCurrentPlaylistFileItem()
+LogicalTreeView long serialVersionUID
+LogicalTreeView LogicalTreeView ltv
+LogicalTreeView ArrayList<Track> alTracks
+LogicalTreeView JPopupMenu jmenuCollection
+LogicalTreeView ButtonGroup btCollection
+LogicalTreeView JRadioButtonMenuItem jmiCollectionStyle
+LogicalTreeView JRadioButtonMenuItem jmiCollectionAuthor
+LogicalTreeView JRadioButtonMenuItem jmiCollectionAlbum
+LogicalTreeView JMenuItem jmiCollectionExport
+LogicalTreeView JLabel jlSort
+LogicalTreeView JComboBox jcbSort
+LogicalTreeView JPopupMenu jmenuStyle
+LogicalTreeView JMenuItem jmiStylePlay
+LogicalTreeView JMenuItem jmiStylePush
+LogicalTreeView JMenuItem jmiStylePlayShuffle
+LogicalTreeView JMenuItem jmiStylePlayRepeat
+LogicalTreeView JMenuItem jmiStyleDelete
+LogicalTreeView JMenuItem jmiStyleAddFavorite
+LogicalTreeView JMenuItem jmiStyleExport
+LogicalTreeView JMenuItem jmiStyleProperties
+LogicalTreeView JPopupMenu jmenuAuthor
+LogicalTreeView JMenuItem jmiAuthorPlay
+LogicalTreeView JMenuItem jmiAuthorPush
+LogicalTreeView JMenuItem jmiAuthorPlayShuffle
+LogicalTreeView JMenuItem jmiAuthorPlayRepeat
+LogicalTreeView JMenuItem jmiAuthorDelete
+LogicalTreeView JMenuItem jmiAuthorAddFavorite
+LogicalTreeView JMenuItem jmiAuthorExport
+LogicalTreeView JMenuItem jmiAuthorProperties
+LogicalTreeView JPopupMenu jmenuAlbum
+LogicalTreeView JMenuItem jmiAlbumPlay
+LogicalTreeView JMenuItem jmiAlbumPush
+LogicalTreeView JMenuItem jmiAlbumPlayShuffle
+LogicalTreeView JMenuItem jmiAlbumPlayRepeat
+LogicalTreeView JMenuItem jmiAlbumDelete
+LogicalTreeView JMenuItem jmiAlbumAddFavorite
+LogicalTreeView JMenuItem jmiAlbumExport
+LogicalTreeView JMenuItem jmiAlbumCDDBWizard
+LogicalTreeView JMenuItem jmiAlbumProperties
+LogicalTreeView JPopupMenu jmenuTrack
+LogicalTreeView JMenuItem jmiTrackPlay
+LogicalTreeView JMenuItem jmiTrackPush
+LogicalTreeView JMenuItem jmiTrackDelete
+LogicalTreeView JMenuItem jmiTrackAddFavorite
+LogicalTreeView JMenuItem jmiTrackProperties
+LogicalTreeView int iSortOrder
+LogicalTreeView String getDesc()
+LogicalTreeView static LogicalTreeView getInstance()
+LogicalTreeView LogicalTreeView LogicalTreeView()
+LogicalTreeView Set<EventSubject> getRegistrationKeys()
+LogicalTreeView void initUI()
+ long serialVersionUID
+ Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus)
+ void treeNodesChanged(TreeModelEvent e)
+ void treeNodesInserted(TreeModelEvent e)
+ void treeNodesRemoved(TreeModelEvent e)
+ void treeStructureChanged(TreeModelEvent e)
+ void valueChanged(TreeSelectionEvent e)
+ void mousePressed(MouseEvent e)
+ void mouseReleased(MouseEvent e)
+ void handlePopup(MouseEvent e)
+ void treeCollapsed(TreeExpansionEvent event)
+ void treeExpanded(TreeExpansionEvent event)
+LogicalTreeView void populateTree()
+LogicalTreeView void populateTreeByStyle()
+LogicalTreeView void populateTreeByAuthor()
+LogicalTreeView void populateTreeByAlbum()
+LogicalTreeView void cleanTree()
+LogicalTreeView void actionPerformed(ActionEvent e)
+ void run()
+ void run()
+ void run()
+LogicalTreeView void update(Event event)
+ Object construct()
+ void finished()
+ Object construct()
+ void finished()
+LogicalTreeView void expand()
+LogicalTreeView ArrayList getTrackSelection()
+LogicalTreeView int getSortOrder()
+StyleNode long serialVersionUID
+StyleNode StyleNode StyleNode(Style track)
+StyleNode String toString()
+StyleNode Style getStyle()
+AuthorNode long serialVersionUID
+AuthorNode AuthorNode AuthorNode(Author author)
+AuthorNode String toString()
+AuthorNode Author getAuthor()
+AlbumNode long serialVersionUID
+AlbumNode AlbumNode AlbumNode(Album album)
+AlbumNode String toString()
+AlbumNode Album getAlbum()
+TrackNode long serialVersionUID
+TrackNode TrackNode TrackNode(Track track)
+TrackNode String toString()
+TrackNode Track getTrack()
+LogicalTreeUtilities static PopulatedAlbum getPopulatedAlbumFromTree(DefaultMutableTreeNode node)
+LogicalTreeUtilities static PopulatedAuthor getPopulatedAuthorFromTree(DefaultMutableTreeNode node)
+LogicalTreeUtilities static PopulatedStyle getPopulatedStyleFromTree(DefaultMutableTreeNode node)
+LogicalTreeUtilities static ArrayList getStyleCollectionFromTree(DefaultMutableTreeNode node)
+LogicalTreeUtilities static ArrayList getAuthorCollectionFromTree(DefaultMutableTreeNode node)
+LogicalTreeUtilities static ArrayList getAlbumCollectionFromTree(DefaultMutableTreeNode node)
+ViewAdapter boolean bIsPopulated
+ViewAdapter String sID
+ViewAdapter IPerspective perspective
+ViewAdapter DockKey key
+ViewAdapter ViewAdapter ViewAdapter()
+ViewAdapter String toString()
+ViewAdapter boolean isPopulated()
+ViewAdapter void setIsPopulated(boolean isPopulated)
+ViewAdapter void refresh()
+ViewAdapter void componentHidden(ComponentEvent e)
+ViewAdapter void componentMoved(ComponentEvent e)
+ViewAdapter void componentResized(ComponentEvent e)
+ViewAdapter void componentShown(ComponentEvent e)
+ViewAdapter DockKey getDockKey()
+ViewAdapter Component getComponent()
+ViewAdapter String getID()
+ViewAdapter void setID(String sID)
+ViewAdapter IPerspective getPerspective()
+ViewAdapter void setPerspective(IPerspective perspective)
+AbstractPlaylistRepositoryView PlaylistFileItem plfiSelected
+AbstractPlaylistRepositoryView PlaylistFileItem plfiQueue
+AbstractPlaylistRepositoryView PlaylistFileItem plfiNew
+AbstractPlaylistRepositoryView PlaylistFileItem plfiBookmarks
+AbstractPlaylistRepositoryView PlaylistFileItem plfiBestof
+AbstractPlaylistRepositoryView PlaylistFileItem plfiNovelties
+AbstractPlaylistRepositoryView ArrayList<PlaylistFileItem> alPlaylistFileItems
+AbstractPlaylistRepositoryView boolean bReleased
+AbstractPlaylistRepositoryView JPanel jpRoot
+AbstractPlaylistRepositoryView JPopupMenu jpmenu
+AbstractPlaylistRepositoryView JMenuItem jmiPlay
+AbstractPlaylistRepositoryView JMenuItem jmiSaveAs
+AbstractPlaylistRepositoryView JMenuItem jmiDelete
+AbstractPlaylistRepositoryView JMenuItem jmiProperties
+AbstractPlaylistRepositoryView MouseAdapter ma
+AbstractPlaylistRepositoryView void initUI()
+ void mousePressed(MouseEvent e)
+ void mouseReleased(MouseEvent e)
+ void handlePopup(MouseEvent e)
+AbstractPlaylistRepositoryView Set<EventSubject> getRegistrationKeys()
+AbstractPlaylistRepositoryView void selectQueue()
+AbstractPlaylistRepositoryView void showMenu(PlaylistFileItem plfi, MouseEvent e)
+AbstractPlaylistRepositoryView void selectPlaylistFileItem(PlaylistFileItem plfi)
+AbstractPlaylistRepositoryView String getDesc()
+AbstractPlaylistRepositoryView String getViewName()
+AbstractPlaylistRepositoryView void update(Event event)
+ Object construct()
+ void finished()
+AbstractPlaylistRepositoryView void populatePlaylists()
+AbstractPlaylistRepositoryView void removeItem(PlaylistFileItem plfiSelected)
+AbstractPlaylistRepositoryView void play(PlaylistFileItem plfi)
+AbstractPlaylistRepositoryView void actionPerformed(ActionEvent ae)
+ void run()
+AbstractPlaylistRepositoryView ArrayList getPlaylistFileItems()
+AbstractPlaylistRepositoryView PlaylistFileItem getQueue()
+LogicalPlaylistRepositoryView long serialVersionUID
+LogicalPlaylistRepositoryView LogicalPlaylistRepositoryView lpr
+LogicalPlaylistRepositoryView static LogicalPlaylistRepositoryView getInstance()
+LogicalPlaylistRepositoryView LogicalPlaylistRepositoryView LogicalPlaylistRepositoryView()
+LogicalPlaylistRepositoryView void initUI()
+LogicalPlaylistRepositoryView String getDesc()
+LogicalPlaylistRepositoryView void populatePlaylists()
+LogicalPlaylistRepositoryView void removeItem(PlaylistFileItem plfiSelected)
+LogicalPlaylistRepositoryView void play(PlaylistFileItem plfi)
+PhysicalPlaylistEditorView long serialVersionUID
+PhysicalPlaylistEditorView PhysicalPlaylistEditorView PhysicalPlaylistEditorView()
+PhysicalPlaylistEditorView ArrayList getRepositoryCurrentPlaylistFileItem()
+ParameterView long serialVersionUID
+ParameterView ParameterView pv
+ParameterView JTabbedPane jtpMain
+ParameterView JajukJPanel jpHistory
+ParameterView JLabel jlHistory
+ParameterView JTextField jtfHistory
+ParameterView JButton jbClearHistory
+ParameterView JButton jbResetRatings
+ParameterView JajukJPanel jpStart
+ParameterView JLabel jlStart
+ParameterView ButtonGroup bgStart
+ParameterView JRadioButton jrbNothing
+ParameterView JRadioButton jrbLast
+ParameterView JRadioButton jrbLastKeepPos
+ParameterView JRadioButton jrbShuffle
+ParameterView JRadioButton jrbBestof
+ParameterView JRadioButton jrbNovelties
+ParameterView JRadioButton jrbFile
+ParameterView SearchBox sbSearch
+ParameterView JajukJPanel jpConfirmations
+ParameterView JCheckBox jcbBeforeDelete
+ParameterView JCheckBox jcbBeforeExit
+ParameterView JCheckBox jcbBeforeRemoveDevice
+ParameterView JCheckBox jcbBeforeDeleteCover
+ParameterView JCheckBox jcbBeforeClearingHistory
+ParameterView JCheckBox jcbBeforeResetingRatings
+ParameterView JCheckBox jcbBeforeRefactorFiles
+ParameterView JajukJPanel jpOptions
+ParameterView JCheckBox jcbDisplayUnmounted
+ParameterView JCheckBox jcbSyncTableTree
+ParameterView JLabel jlLanguage
+ParameterView SteppedComboBox scbLanguage
+ParameterView JLabel jlLAF
+ParameterView SteppedComboBox scbLAF
+ParameterView JLabel jlLogLevel
+ParameterView SteppedComboBox scbLogLevel
+ParameterView JLabel jlIntroPosition
+ParameterView JSlider introPosition
+ParameterView JLabel jlIntroLength
+ParameterView JSlider introLength
+ParameterView JLabel jlBestofSize
+ParameterView JTextField jtfBestofSize
+ParameterView JLabel jlNoveltiesAge
+ParameterView JTextField jtfNoveltiesAge
+ParameterView JLabel jlVisiblePlanned
+ParameterView JTextField jtfVisiblePlanned
+ParameterView JLabel jlCrossFadeDuration
+ParameterView JSlider crossFadeDuration
+ParameterView JCheckBox jcbDefaultActionClick
+ParameterView JCheckBox jcbDefaultActionDrop
+ParameterView JCheckBox jcbShowBaloon
+ParameterView JCheckBox jcbHotkeys
+ParameterView JajukJPanel jpP2P
+ParameterView JCheckBox jcbShare
+ParameterView JLabel jlPasswd
+ParameterView JPasswordField jpfPasswd
+ParameterView JCheckBox jcbAddRemoteProperties
+ParameterView JCheckBox jcbHideProperties
+ParameterView JajukJPanel jpTags
+ParameterView JCheckBox jcbUseParentDir
+ParameterView JLabel jlRefactorPattern
+ParameterView JFormattedTextField jtfRefactorPattern
+ParameterView JLabel jlAnimationPattern
+ParameterView JTextField jtfAnimationPattern
+ParameterView JajukJPanel jpAdvanced
+ParameterView JCheckBox jcbBackup
+ParameterView JLabel jlBackupSize
+ParameterView JSlider backupSize
+ParameterView JLabel jlCollectionEncoding
+ParameterView JComboBox jcbCollectionEncoding
+ParameterView JCheckBox jcbRegexp
+ParameterView JajukJPanel jpNetwork
+ParameterView JCheckBox jcbProxy
+ParameterView JLabel jlProxyHostname
+ParameterView JTextField jtfProxyHostname
+ParameterView JLabel jlProxyPort
+ParameterView JTextField jtfProxyPort
+ParameterView JLabel jlProxyLogin
+ParameterView JTextField jtfProxyLogin
+ParameterView JLabel jlConnectionTO
+ParameterView JSlider connectionTO
+ParameterView JLabel jlTransfertTO
+ParameterView JSlider transfertTO
+ParameterView JajukJPanel jpCovers
+ParameterView JCheckBox jcbAutoCover
+ParameterView JCheckBox jcbShuffleCover
+ParameterView JCheckBox jcbPreLoad
+ParameterView JCheckBox jcbLoadEachTrack
+ParameterView JajukJPanel jpOKCancel
+ParameterView JButton jbOK
+ParameterView JButton jbDefault
+ParameterView JajukJPanel jpModes
+ParameterView boolean bHidden
+ParameterView static ParameterView getInstance()
+ParameterView void initUI()
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ boolean verify(JComponent input)
+ boolean shouldYieldFocus(JComponent input)
+ParameterView ParameterView ParameterView()
+ParameterView String getDesc()
+ParameterView void actionPerformed(ActionEvent e)
+ void run()
+ void run()
+ParameterView void applyParameters()
+ParameterView void updateSelection()
+ParameterView void valueChanged(ListSelectionEvent e)
+ParameterView void itemStateChanged(ItemEvent e)
+ParameterView void stateChanged(ChangeEvent e)
+LogicalTableView long serialVersionUID
+LogicalTableView LogicalTableView ltv
+LogicalTableView JPopupMenu jmenuTrack
+LogicalTableView JMenuItem jmiTrackPlay
+LogicalTableView JMenuItem jmiTrackPush
+LogicalTableView JMenuItem jmiTrackPlayShuffle
+LogicalTableView JMenuItem jmiTrackPlayRepeat
+LogicalTableView JMenuItem jmiTrackPlayAlbum
+LogicalTableView JMenuItem jmiTrackPlayAuthor
+LogicalTableView JMenuItem jmiTrackAddFavorite
+LogicalTableView String getDesc()
+LogicalTableView static LogicalTableView getInstance()
+LogicalTableView LogicalTableView LogicalTableView()
+LogicalTableView JajukTableModel populateTable()
+LogicalTableView void mouseEntered(MouseEvent e)
+LogicalTableView void mouseExited(MouseEvent e)
+LogicalTableView void mousePressed(MouseEvent e)
+LogicalTableView void mouseReleased(MouseEvent e)
+LogicalTableView void handlePopup(MouseEvent e)
+LogicalTableView void mouseClicked(MouseEvent e)
+LogicalTableView void othersActionPerformed(ActionEvent e)
+ void run()
+LogicalTableView void initTable()
+PhysicalTreeView long serialVersionUID
+PhysicalTreeView PhysicalTreeView ptv
+PhysicalTreeView ArrayList<File> alFiles
+PhysicalTreeView ArrayList<Directory> alDirs
+PhysicalTreeView JPopupMenu jmenuCollection
+PhysicalTreeView JMenuItem jmiCollectionExport
+PhysicalTreeView JPopupMenu jmenuFile
+PhysicalTreeView JMenuItem jmiFilePlay
+PhysicalTreeView JMenuItem jmiFilePush
+PhysicalTreeView JMenuItem jmiFileCopy
+PhysicalTreeView JMenuItem jmiFileCut
+PhysicalTreeView JMenuItem jmiFilePaste
+PhysicalTreeView JMenuItem jmiFileDelete
+PhysicalTreeView JMenuItem jmiFileProperties
+PhysicalTreeView JMenuItem jmiFileAddFavorites
+PhysicalTreeView JPopupMenu jmenuDir
+PhysicalTreeView JMenuItem jmiDirPlay
+PhysicalTreeView JMenuItem jmiDirPush
+PhysicalTreeView JMenuItem jmiDirPlayShuffle
+PhysicalTreeView JMenuItem jmiDirPlayRepeat
+PhysicalTreeView JMenuItem jmiDirDesynchro
+PhysicalTreeView JMenuItem jmiDirResynchro
+PhysicalTreeView JMenuItem jmiDirCreatePlaylist
+PhysicalTreeView JMenuItem jmiDirCopy
+PhysicalTreeView JMenuItem jmiDirCut
+PhysicalTreeView JMenuItem jmiDirPaste
+PhysicalTreeView JMenuItem jmiDirDelete
+PhysicalTreeView JMenuItem jmiDirProperties
+PhysicalTreeView JMenuItem jmiDirAddFavorites
+PhysicalTreeView JMenuItem jmiDirCDDBQuery
+PhysicalTreeView JMenuItem jmiDirExport
+PhysicalTreeView JMenuItem jmiDirRefactor
+PhysicalTreeView JPopupMenu jmenuDev
+PhysicalTreeView JMenuItem jmiDevPlay
+PhysicalTreeView JMenuItem jmiDevPush
+PhysicalTreeView JMenuItem jmiDevPlayShuffle
+PhysicalTreeView JMenuItem jmiDevPlayRepeat
+PhysicalTreeView JMenuItem jmiDevCreatePlaylist
+PhysicalTreeView JMenuItem jmiDevMount
+PhysicalTreeView JMenuItem jmiDevUnmount
+PhysicalTreeView JMenuItem jmiDevRefresh
+PhysicalTreeView JMenuItem jmiDevSynchronize
+PhysicalTreeView JMenuItem jmiDevTest
+PhysicalTreeView JMenuItem jmiDevProperties
+PhysicalTreeView JMenuItem jmiDevCDDBQuery
+PhysicalTreeView JMenuItem jmiDevConfiguration
+PhysicalTreeView JMenuItem jmiDevExport
+PhysicalTreeView JPopupMenu jmenuPlaylistFile
+PhysicalTreeView JMenuItem jmiPlaylistFilePlay
+PhysicalTreeView JMenuItem jmiPlaylistFilePush
+PhysicalTreeView JMenuItem jmiPlaylistFilePlayShuffle
+PhysicalTreeView JMenuItem jmiPlaylistFilePlayRepeat
+PhysicalTreeView JMenuItem jmiPlaylistFileCopy
+PhysicalTreeView JMenuItem jmiPlaylistFileCut
+PhysicalTreeView JMenuItem jmiPlaylistFilePaste
+PhysicalTreeView JMenuItem jmiPlaylistFileDelete
+PhysicalTreeView JMenuItem jmiPlaylistAddFavorites
+PhysicalTreeView JMenuItem jmiPlaylistFileProperties
+PhysicalTreeView boolean bAutoCollapse
+PhysicalTreeView String getDesc()
+PhysicalTreeView static PhysicalTreeView getInstance()
+PhysicalTreeView PhysicalTreeView PhysicalTreeView()
+PhysicalTreeView Set<EventSubject> getRegistrationKeys()
+PhysicalTreeView void initUI()
+ long serialVersionUID
+ Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus)
+ void treeNodesChanged(TreeModelEvent e)
+ void treeNodesInserted(TreeModelEvent e)
+ void treeNodesRemoved(TreeModelEvent e)
+ void treeStructureChanged(TreeModelEvent e)
+ void valueChanged(TreeSelectionEvent e)
+ void mousePressed(MouseEvent e)
+ void mouseReleased(MouseEvent e)
+ void handlePopup(MouseEvent e)
+ void treeCollapsed(TreeExpansionEvent event)
+ void treeExpanded(TreeExpansionEvent event)
+PhysicalTreeView void populateTree()
+PhysicalTreeView void actionPerformed(ActionEvent e)
+ void run()
+ void run()
+PhysicalTreeView void update(Event event)
+ Object construct()
+ void finished()
+PhysicalTreeView void expand(boolean bDependsOnMountState)
+FileNode long serialVersionUID
+FileNode FileNode FileNode(File file)
+FileNode String toString()
+FileNode File getFile()
+DeviceNode long serialVersionUID
+DeviceNode HashMap<Device,DeviceNode> hmDeviceDeviceNode
+DeviceNode DeviceNode DeviceNode(Device device)
+DeviceNode static DeviceNode getDeviceNode(Device device)
+DeviceNode String toString()
+DeviceNode Device getDevice()
+DirectoryNode long serialVersionUID
+DirectoryNode HashMap<Directory,DirectoryNode> hmDirectoryDirectoryNode
+DirectoryNode DirectoryNode DirectoryNode(Directory directory)
+DirectoryNode static DirectoryNode getDirectoryNode(Directory directory)
+DirectoryNode String toString()
+DirectoryNode Directory getDirectory()
+PlaylistFileNode long serialVersionUID
+PlaylistFileNode PlaylistFileNode PlaylistFileNode(PlaylistFile playlistFile)
+PlaylistFileNode String toString()
+PlaylistFileNode PlaylistFile getPlaylistFile()
+AbstractPlaylistEditorView JPanel jpControl
+AbstractPlaylistEditorView JajukButton jbRun
+AbstractPlaylistEditorView JajukButton jbSave
+AbstractPlaylistEditorView JajukButton jbRemove
+AbstractPlaylistEditorView JajukButton jbUp
+AbstractPlaylistEditorView JajukButton jbDown
+AbstractPlaylistEditorView JajukButton jbAddShuffle
+AbstractPlaylistEditorView JajukButton jbClear
+AbstractPlaylistEditorView JLabel jlTitle
+AbstractPlaylistEditorView JajukTable jtable
+AbstractPlaylistEditorView JPopupMenu jmenuFile
+AbstractPlaylistEditorView JMenuItem jmiFilePlay
+AbstractPlaylistEditorView JMenuItem jmiFilePush
+AbstractPlaylistEditorView JMenuItem jmiFileAddFavorites
+AbstractPlaylistEditorView JMenuItem jmiFileProperties
+AbstractPlaylistEditorView String sTitle
+AbstractPlaylistEditorView PlaylistFileItem plfi
+AbstractPlaylistEditorView int iType
+AbstractPlaylistEditorView List<StackItem> alItems
+AbstractPlaylistEditorView ArrayList<StackItem> alPlanned
+AbstractPlaylistEditorView boolean bSettingSelection
+AbstractPlaylistEditorView File fileLast
+AbstractPlaylistEditorView boolean bReloading
+AbstractPlaylistEditorView ImageIcon iconNormal
+AbstractPlaylistEditorView ImageIcon iconRepeat
+AbstractPlaylistEditorView ImageIcon iconPlanned
+AbstractPlaylistEditorView ImageIcon iconPlaylist
+AbstractPlaylistEditorView JajukTableModel model
+PlayListEditorTableModel long serialVersionUID
+PlayListEditorTableModel Font fontPlanned
+PlayListEditorTableModel PlayListEditorTableModel PlayListEditorTableModel()
+PlayListEditorTableModel Item getItemAt(int iRow)
+PlayListEditorTableModel void prepareColumns()
+PlayListEditorTableModel void populateModel(String sPropertyName, String sPattern)
+AbstractPlaylistEditorView Item getItemAt(int iRow)
+AbstractPlaylistEditorView void initUI()
+ boolean test(ComponentAdapter adapter)
+AbstractPlaylistEditorView Set<EventSubject> getRegistrationKeys()
+AbstractPlaylistEditorView String getDesc()
+AbstractPlaylistEditorView void columnChange()
+AbstractPlaylistEditorView void columnAdded(TableColumnModelEvent arg0)
+AbstractPlaylistEditorView void columnRemoved(TableColumnModelEvent arg0)
+AbstractPlaylistEditorView void columnMoved(TableColumnModelEvent arg0)
+AbstractPlaylistEditorView void columnMarginChanged(ChangeEvent arg0)
+AbstractPlaylistEditorView void columnSelectionChanged(ListSelectionEvent arg0)
+AbstractPlaylistEditorView void setRenderers()
+AbstractPlaylistEditorView void update(Event event)
+ void run()
+AbstractPlaylistEditorView void setDefaultButtonState()
+AbstractPlaylistEditorView void mouseEntered(MouseEvent e)
+AbstractPlaylistEditorView void mouseExited(MouseEvent e)
+AbstractPlaylistEditorView void mouseClicked(MouseEvent e)
+AbstractPlaylistEditorView void mousePressed(MouseEvent e)
+AbstractPlaylistEditorView void mouseReleased(MouseEvent e)
+AbstractPlaylistEditorView void handlePopup(MouseEvent e)
+AbstractPlaylistEditorView StackItem getItem(int index)
+AbstractPlaylistEditorView ArrayList<StackItem> getItemsFrom(int index)
+AbstractPlaylistEditorView void actionPerformed(ActionEvent ae)
+AbstractPlaylistEditorView ArrayList getRepositoryCurrentPlaylistFileItem()
+AbstractPlaylistEditorView PlaylistFileItem getCurrentPlaylistFileItem()
+AbstractPlaylistEditorView void setCurrentPlaylistFileItem(PlaylistFileItem plfi)
+AbstractPlaylistEditorView void valueChanged(ListSelectionEvent e)
+PhysicalTableView long serialVersionUID
+PhysicalTableView PhysicalTableView ltv
+PhysicalTableView JPopupMenu jmenuFile
+PhysicalTableView JMenuItem jmiFilePlay
+PhysicalTableView JMenuItem jmiFilePush
+PhysicalTableView JMenuItem jmiFilePlayShuffle
+PhysicalTableView JMenuItem jmiFilePlayRepeat
+PhysicalTableView JMenuItem jmiFilePlayDirectory
+PhysicalTableView JMenuItem jmiFileAddFavorites
+PhysicalTableView String getDesc()
+PhysicalTableView static PhysicalTableView getInstance()
+PhysicalTableView PhysicalTableView PhysicalTableView()
+PhysicalTableView JajukTableModel populateTable()
+PhysicalTableView void mouseClicked(MouseEvent e)
+PhysicalTableView void mouseEntered(MouseEvent e)
+PhysicalTableView void mouseExited(MouseEvent e)
+PhysicalTableView void mousePressed(MouseEvent e)
+PhysicalTableView void mouseReleased(MouseEvent e)
+PhysicalTableView void handlePopup(MouseEvent e)
+PhysicalTableView void othersActionPerformed(ActionEvent e)
+ void run()
+PhysicalTableView void initTable()
+HelpView long serialVersionUID
+HelpView HelpView hv
+HelpView HelpSet hs
+HelpView HelpBroker hb
+HelpView JHelp jhelp
+HelpView static HelpView getInstance()
+HelpView HelpView HelpView()
+HelpView void initUI()
+HelpView String getDesc()
+AboutView long serialVersionUID
+AboutView AboutView av
+AboutView JPanel jpLicence
+AboutView AboutPanel ap
+AboutView ContributorsPanel cp
+AboutView SystemPropertiesPanel spp
+AboutView JTabbedPane jtp
+AboutView String INFOS
+AboutView static AboutView getInstance()
+AboutView AboutView AboutView()
+AboutView void initUI()
+ void mouseClicked(MouseEvent me)
+AboutView String getDesc()
+CDScanView long serialVersionUID
+CDScanView CDScanView cds
+CDScanView JLabel jlName
+CDScanView JTextField jtfName
+CDScanView JLabel jlMountPoint
+CDScanView JTextField jtfMountPoint
+CDScanView JButton jbScan
+CDScanView JButton jbUrl
+CDScanView static CDScanView getInstance()
+CDScanView CDScanView CDScanView()
+CDScanView void initUI()
+CDScanView String getDesc()
+CDScanView void actionPerformed(ActionEvent e)
+ Object construct()
+ void finished()
+DeviceView long serialVersionUID
+DeviceView DeviceView dv
+DeviceView FlowScrollPanel jpDevices
+DeviceView JPopupMenu jpmenu
+DeviceView JMenuItem jmiDelete
+DeviceView JMenuItem jmiProperties
+DeviceView JMenuItem jmiMount
+DeviceView JMenuItem jmiUnmount
+DeviceView JMenuItem jmiTest
+DeviceView JMenuItem jmiRefresh
+DeviceView JMenuItem jmiSynchronize
+DeviceView DeviceItem diSelected
+DeviceView DeviceView DeviceView()
+DeviceView void initUI()
+DeviceView Set<EventSubject> getRegistrationKeys()
+DeviceView void refreshDevices()
+ void mouseClicked(MouseEvent e)
+DeviceView void setVisible(boolean pVisible)
+DeviceView Component getComponent()
+DeviceView static DeviceView getInstance()
+DeviceView void actionPerformed(ActionEvent ae)
+ void run()
+DeviceView String getDesc()
+DeviceView void update(Event event)
+ void run()
+DeviceView void mousePressed(MouseEvent e)
+DeviceView void mouseReleased(MouseEvent e)
+DeviceView void handlePopup(MouseEvent e)
+DeviceView void mouseClicked(MouseEvent e)
+DeviceView void selectItem(MouseEvent e)
+DeviceView void mouseExited(MouseEvent arg0)
+DeviceView void mouseEntered(MouseEvent e)
+DeviceItem long serialVersionUID
+DeviceItem Device device
+DeviceItem DeviceItem DeviceItem(URL urlIcon, String sName, Device device)
+DeviceItem Device getDevice()
+DeviceItem void setDevice(Device device)
+ViewFactory HashMap<Class,Set<IView>> hmClassesInstances
+ViewFactory ViewFactory ViewFactory()
+ViewFactory static IView createView(Class className, IPerspective perspective)
+Util Cursor WAIT_CURSOR
+Util Cursor DEFAULT_CURSOR
+Util boolean bWaiting
+Util SimpleDateFormat sdfAdded
+Util DateFormat dateFormatter
+Util JajukFileFilter dirFilter
+Util JajukFileFilter fileFilter
+Util HashMap<String,ImageIcon> iconCache
+Util String sMplayerPath
+Util DropShadowBorder shadowBorder
+Util BasicGradientPainter grandiant
+Util String[] genres
+Util Util Util()
+Util static String getExtension(File file)
+Util static String removeExtension(String sFilename)
+Util static StringBuffer readFile(String path)
+Util static StringBuffer readJarFile(String sURL)
+Util static String formatXML(String s)
+Util static boolean isChar(int ucs4char)
+Util static boolean isXMLValid(String s)
+Util static String formatTag(String s)
+Util static String getStringGenre(int i)
+Util static String formatTimeBySec(long lTime, boolean bTrimZeros)
+Util Thread tWaiting
+ void run()
+Util Thread tDefault
+ void run()
+Util static void waiting()
+Util static void stopWaiting()
+Util static ImageIcon getIcon(URL url)
+Util static void backupFile(File file, int iMB)
+Util static void createEmptyFile(String sFullPath)
+Util static void copyToDir(File file, File directory)
+Util static void copy(File file, File fNew)
+Util static void copy(File file, String sNewName)
+Util static boolean isStandardCover(String sFileName)
+Util static boolean isAbsoluteDefaultCover(Directory directory, String sFilename)
+Util static URL getJarLocation(Class cClass)
+Util static String getFileChecksum(File fio)
+Util static String getOnlyFile(String sPath)
+Util static String getCachePath(URL url)
+Util static void clearCache()
+Util static boolean isUnderWindows()
+Util static boolean isUnderOSXintel()
+Util static boolean isUnderOSXpower()
+Util static boolean isUnderWindows32bits()
+Util static boolean isUnderWindows64bits()
+Util static boolean isUnderLinux()
+Util static long getTimeLengthEstimation(Map properties)
+Util static JPanel getCentredPanel(JComponent jc, int iOrientation)
+Util static JPanel getCentredPanel(JComponent jc)
+Util static boolean isDescendant(File file1, File file2)
+Util static boolean isAncestor(File file1, File file2)
+Util static List<org.jajuk.base.File> applyPlayOption(List<org.jajuk.base.File> alFiles)
+Util static List<StackItem> createStackItems(List<org.jajuk.base.File> alFiles, boolean bRepeat, boolean bUserLauched)
+Util static ImageIcon getResizedImage(ImageIcon img, int iNewWidth, int iNewHeight)
+Util static BufferedImage toBufferedImage(Image image)
+Util static ImageIcon getScaledImage(ImageIcon img, int iScale)
+Util static void updateAllUIs()
+Util static void updateWindowUI(Window window)
+Util static void updateComponentTreeUI(Component c)
+Util static void updateComponentTreeUI0(Component c)
+Util static String formatPropertyDesc(String sDesc)
+Util static DateFormat getAdditionDateFormat()
+Util static void setShuffleLocation(Window window, int iFromTop, int iFromLeft)
+Util static Object parse(String sValue, Class cType)
+Util static String format(Object oValue, PropertyMetaInformation meta)
+Util static String formatStyle(String style)
+Util static void createThumbnail(File orig, File thumb, int maxDim)
+Util static void displayImage(ImageIcon ii)
+Util static void createThumbnail(ImageIcon ii, File thumb, int maxDim)
+Util static boolean needFullFC()
+Util static Properties getAnonymizedSystemProperties()
+Util static Properties getAnonymizedJajukProperties()
+Util static boolean isValidFileName(File parent, String name)
+Util static boolean containsNonDigitOrLetters(String s)
+Util static Object getShuffleItem(Collection<? extends Object> col)
+Util static ArrayList<org.jajuk.base.File> getFilesFromSelection(Item oData)
+Util static List<org.jajuk.base.File> filterByAmbience(List<org.jajuk.base.File> al, Ambience ambience)
+Util static DateFormat getLocaleDateFormatter()
+Util static JOptionPane getNarrowOptionPane(int maxCharactersPerLineCount)
+NarrowOptionPane long serialVersionUID
+NarrowOptionPane int maxCharactersPerLineCount
+NarrowOptionPane NarrowOptionPane NarrowOptionPane(int maxCharactersPerLineCount)
+NarrowOptionPane int getMaxCharactersPerLineCount()
+Util static URL getResource(String name)
+Util static String getMPlayerWindowsPath()
+Util static String getMPlayerOSXPath()
+Util static String applyPattern(File file, String sPattern, boolean bMandatory)
+Util static DropShadowBorder getShadowBorder()
+Util static BasicGradientPainter getGrandiant()
+Util static MPlayerStatus getMplayerStatus(String mplayerPATH)
+UpgradeManager static void upgradeStep1()
+UpgradeManager static void upgradeStep2()
+UpgradeManager static Class[] getPerspectivesToReset()
+MD5Processor char[] hex
+MD5Processor static String hash(String sIn)
+MD5Processor static byte[] hash(byte[] bIn)
+MD5Processor static int op(int iType, int a, int b, int c, int d, int x_k, int s, int t_i)
+MD5Processor static int rcl(int i, int j)
+MD5Processor static int unsignedAdd(int i1, int i2)
+MD5Processor static String toHex(byte[] b)
+Filter PropertyMetaInformation meta
+Filter String sValue
+Filter boolean bHuman
+Filter boolean bExact
+Filter Filter Filter(PropertyMetaInformation meta, String sValue, boolean bHuman, boolean bExact)
+Filter boolean isExact()
+Filter boolean isHuman()
+Filter PropertyMetaInformation getProperty()
+Filter String getValue()
+DownloadManager String sProxyPwd
+DownloadManager static HttpClient getHTTPClient(String sProxyUser, String sProxyPassswd, int iConTimeout, int iDataTimeout)
+DownloadManager static HttpClient getHTTPClient(int iConTimeout, int iDataTimeout)
+DownloadManager static HostConfiguration getHostConfiguration(String sHostname, String sProxyURL, int iProxyPort)
+DownloadManager static ArrayList<URL> getRemoteCoversList(String search)
+DownloadManager static byte[] downloadUrl(URL url)
+DownloadManager static void download(URL url, File fDestination)
+DownloadManager static byte[] downloadCover(URL url)
+DownloadManager static byte[] downloadCoverList(URL url)
+DownloadManager static String getProxyPwd()
+DownloadManager static void setDefaultProxySettings()
+ PasswordAuthentication getPasswordAuthentication()
+ConfigurationManager Properties properties
+ConfigurationManager ConfigurationManager cm
+ConfigurationManager static ConfigurationManager getInstance()
+ConfigurationManager ConfigurationManager ConfigurationManager()
+ConfigurationManager static String getProperty(String pName)
+ConfigurationManager static boolean getBoolean(String pName)
+ConfigurationManager static boolean getBoolean(String pName, boolean bDefault)
+ConfigurationManager static float getFloat(String pName)
+ConfigurationManager static int getInt(String pName)
+ConfigurationManager static void setDefaultProperties()
+ConfigurationManager void setSystemLocal()
+ConfigurationManager static void setProperty(String sName, String sValue)
+ConfigurationManager static void commit()
+ConfigurationManager static void load()
+ConfigurationManager static Properties getProperties()
+ConfigurationManager static void removeProperty(String sKey)
+JajukFileFilter boolean bDirectories
+JajukFileFilter boolean bFiles
+JajukFileFilter ArrayList<Type> alTypes
+JajukFileFilter FileFilter[] filters
+JajukFileFilter boolean bAND
+DirectoryFilter DirectoryFilter self
+DirectoryFilter boolean accept(File f)
+DirectoryFilter DirectoryFilter DirectoryFilter()
+DirectoryFilter static DirectoryFilter getInstance()
+AnyFileFilter AnyFileFilter self
+AnyFileFilter boolean accept(File f)
+AnyFileFilter AnyFileFilter AnyFileFilter()
+AnyFileFilter static AnyFileFilter getInstance()
+KnownTypeFilter KnownTypeFilter self
+KnownTypeFilter boolean accept(File f)
+KnownTypeFilter KnownTypeFilter KnownTypeFilter()
+KnownTypeFilter static KnownTypeFilter getInstance()
+AudioFilter AudioFilter self
+AudioFilter boolean accept(File f)
+AudioFilter AudioFilter AudioFilter()
+AudioFilter static AudioFilter getInstance()
+ImageFilter ImageFilter self
+ImageFilter boolean accept(File f)
+ImageFilter ImageFilter ImageFilter()
+ImageFilter static ImageFilter getInstance()
+NotAudioFilter NotAudioFilter self
+NotAudioFilter boolean accept(File f)
+NotAudioFilter NotAudioFilter NotAudioFilter()
+NotAudioFilter static NotAudioFilter getInstance()
+PlaylistFilter PlaylistFilter self
+PlaylistFilter boolean accept(File f)
+PlaylistFilter PlaylistFilter PlaylistFilter()
+PlaylistFilter static PlaylistFilter getInstance()
+JajukFileFilter JajukFileFilter JajukFileFilter(FileFilter[] filters)
+JajukFileFilter JajukFileFilter JajukFileFilter(boolean bAND, FileFilter[] filters)
+JajukFileFilter boolean accept(File f)
+JajukFileFilter String getDescription()
+ITechnicalStrings int BORDER_Y_SIZE
+ITechnicalStrings int BORDER_X_SIZE
+ITechnicalStrings int PRECISION
+ITechnicalStrings int BORDER
+ITechnicalStrings int MAX_COVER_SIZE
+ITechnicalStrings int MAX_REMOTE_COVERS
+ITechnicalStrings long TO_THE_END
+ITechnicalStrings int WAIT_AFTER_ERROR
+ITechnicalStrings String DEFAULT_PLAYLIST_FILE
+ITechnicalStrings int STOP_TO_SEARCH
+ITechnicalStrings int PORT
+ITechnicalStrings String FEEDBACK_EMAIL
+ITechnicalStrings int FEEDBACK_LINES
+ITechnicalStrings int MAX_HISTORY_SIZE
+ITechnicalStrings int AUTO_COMMIT_DELAY
+ITechnicalStrings int AUTO_REFRESH_DELAY
+ITechnicalStrings int MIN_AUTO_REFRESH_DELAY
+ITechnicalStrings int GARBAGER_DELAY
+ITechnicalStrings int FADING_STATUS
+ITechnicalStrings float NEED_FULL_GC_LEVEL
+ITechnicalStrings int INC_RATE_TIME
+ITechnicalStrings int MIN_TRACKS_NUMBER
+ITechnicalStrings int MIN_TRACKS_NUMBER_WITHOUT_UNICITY
+ITechnicalStrings int DEFAULT_TRANSITION_TRACK_NUMBER
+ITechnicalStrings int RATE_COLUMN_SIZE
+ITechnicalStrings int PLAY_COLUMN_SIZE
+ITechnicalStrings int CATALOG_PAGE_SIZE
+ITechnicalStrings float BESTOF_PROPORTION
+ITechnicalStrings int MILLISECONDS_IN_A_SECOND
+ITechnicalStrings int SECONDS_IN_A_MINUTE
+ITechnicalStrings int MINUTES_IN_AN_HOUR
+ITechnicalStrings int HOURS_IN_A_DAY
+ITechnicalStrings int MILLISECONDS_IN_A_DAY
+ITechnicalStrings long MPLAYER_EXE_SIZE
+ITechnicalStrings String WIKIPEDIA_VIEW_DEFAULT_URL
+ITechnicalStrings String JAJUK_VERSION_TEST
+ITechnicalStrings String JAJUK_VERSION
+ITechnicalStrings String JAJUK_VERSION_DATE
+ITechnicalStrings String JAJUK_COPYRIGHT
+ITechnicalStrings String FILE_JAJUK_DIR
+ITechnicalStrings String FILE_COLLECTION
+ITechnicalStrings String FILE_COLLECTION_EXIT
+ITechnicalStrings String FILE_COLLECTION_EXIT_PROOF
+ITechnicalStrings String FILE_CONFIGURATION
+ITechnicalStrings String FILE_HISTORY
+ITechnicalStrings String FILE_LOCK
+ITechnicalStrings String FILE_DEFAULT_COVER
+ITechnicalStrings String FILE_DEFAULT_COVER_2
+ITechnicalStrings String FILE_ABSOLUTE_DEFAULT_COVER
+ITechnicalStrings String FILE_LANGPACK_PART1
+ITechnicalStrings String FILE_LANGPACK_PART2
+ITechnicalStrings String FILE_LOGS
+ITechnicalStrings URL FILE_LOG4j_CONF
+ITechnicalStrings String FILE_IMAGE_CACHE
+ITechnicalStrings String FILE_THUMBS
+ITechnicalStrings String FILE_THUMB_NO_COVER
+ITechnicalStrings String FILE_DEFAULT_BESTOF_PLAYLIST
+ITechnicalStrings String FILE_DEFAULT_NOVELTIES_PLAYLIST
+ITechnicalStrings String FILE_DEFAULT_BOOKMARKS_PLAYLIST
+ITechnicalStrings String FILE_DEFAULT_QUEUE_PLAYLIST
+ITechnicalStrings String FILE_DJ_DIR
+ITechnicalStrings String FILE_FIFO
+ITechnicalStrings String FILE_MPLAYER_EXE
+ITechnicalStrings String FILE_TOOLBARS_CONF
+ITechnicalStrings String FILE_DEFAULT_PERSPECTIVES_PATH
+ITechnicalStrings String FILE_DEFAULT_MPLAYER_X86_OSX_PATH
+ITechnicalStrings String FILE_DEFAULT_MPLAYER_POWER_OSX_PATH
+ITechnicalStrings String URL_MPLAYER
+ITechnicalStrings String ABOUT
+ITechnicalStrings String PROPERTY_SEQ
+ITechnicalStrings String AMBIENCE_PREFIX
+ITechnicalStrings String PATH_RELATIVE_DOCS
+ITechnicalStrings String UNKNOWN_AUTHOR
+ITechnicalStrings String UNKNOWN_ALBUM
+ITechnicalStrings String UNKNOWN_STYLE
+ITechnicalStrings String UNKNOWN
+ITechnicalStrings URL ICON_LOGO
+ITechnicalStrings URL ICON_TRAY
+ITechnicalStrings URL ICON_LOGO_FRAME
+ITechnicalStrings URL ICON_REPEAT
+ITechnicalStrings URL ICON_SHUFFLE
+ITechnicalStrings URL ICON_CONTINUE
+ITechnicalStrings URL ICON_INTRO
+ITechnicalStrings URL ICON_SHUFFLE_GLOBAL
+ITechnicalStrings URL ICON_BESTOF
+ITechnicalStrings URL ICON_MUTE
+ITechnicalStrings URL ICON_UNMUTE
+ITechnicalStrings URL ICON_NOVELTIES
+ITechnicalStrings URL ICON_PREVIOUS
+ITechnicalStrings URL ICON_NEXT
+ITechnicalStrings URL ICON_REW
+ITechnicalStrings URL ICON_PLAY
+ITechnicalStrings URL ICON_PAUSE
+ITechnicalStrings URL ICON_STOP
+ITechnicalStrings URL ICON_FWD
+ITechnicalStrings URL ICON_VOLUME
+ITechnicalStrings URL ICON_POSITION
+ITechnicalStrings URL ICON_INFO
+ITechnicalStrings URL ICON_PERSPECTIVE_PHYSICAL
+ITechnicalStrings URL ICON_PERSPECTIVE_LOGICAL
+ITechnicalStrings URL ICON_PERSPECTIVE_STATISTICS
+ITechnicalStrings URL ICON_PERSPECTIVE_CONFIGURATION
+ITechnicalStrings URL ICON_PERSPECTIVE_PLAYER
+ITechnicalStrings URL ICON_PERSPECTIVE_CATALOG
+ITechnicalStrings URL ICON_PERSPECTIVE_INFORMATION
+ITechnicalStrings URL ICON_PERSPECTIVE_HELP
+ITechnicalStrings URL ICON_OPEN_FILE
+ITechnicalStrings URL ICON_EXIT
+ITechnicalStrings URL ICON_NEW
+ITechnicalStrings URL ICON_SEARCH
+ITechnicalStrings URL ICON_DELETE
+ITechnicalStrings URL ICON_PROPERTIES
+ITechnicalStrings URL ICON_VOID
+ITechnicalStrings URL ICON_CONFIGURATION
+ITechnicalStrings URL ICON_MOUNT
+ITechnicalStrings URL ICON_UNMOUNT
+ITechnicalStrings URL ICON_TRACES
+ITechnicalStrings URL ICON_TEST
+ITechnicalStrings URL ICON_REFRESH
+ITechnicalStrings URL ICON_SYNCHRO
+ITechnicalStrings URL ICON_DEVICE_NEW
+ITechnicalStrings URL ICON_DEVICE_CD_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_CD_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_CD_AUDIO_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_CD_AUDIO_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_EXT_DD_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_EXT_DD_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_DIRECTORY_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_DIRECTORY_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_PLAYER_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_PLAYER_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_REMOTE_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_REMOTE_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_NETWORK_DRIVE_MOUNTED
+ITechnicalStrings URL ICON_DEVICE_NETWORK_DRIVE_UNMOUNTED
+ITechnicalStrings URL ICON_DEVICE_CD_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_CD_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_CD_AUDIO_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_CD_AUDIO_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_EXT_DD_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_EXT_DD_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_NETWORK_DRIVE_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_NETWORK_DRIVE_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_DIRECTORY_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_DIRECTORY_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_PLAYER_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_PLAYER_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_REMOTE_MOUNTED_SMALL
+ITechnicalStrings URL ICON_DEVICE_REMOTE_UNMOUNTED_SMALL
+ITechnicalStrings URL ICON_OK
+ITechnicalStrings URL ICON_OK_SMALL
+ITechnicalStrings URL ICON_KO
+ITechnicalStrings URL ICON_FILE
+ITechnicalStrings URL ICON_DIRECTORY_SYNCHRO
+ITechnicalStrings URL ICON_DIRECTORY_DESYNCHRO
+ITechnicalStrings URL ICON_PLAYLIST_FILE
+ITechnicalStrings URL ICON_STYLE
+ITechnicalStrings URL ICON_AUTHOR
+ITechnicalStrings URL ICON_ALBUM
+ITechnicalStrings URL ICON_APPLY_FILTER
+ITechnicalStrings URL ICON_CLEAR_FILTER
+ITechnicalStrings URL ICON_ADVANCED_FILTER
+ITechnicalStrings URL ICON_PLAYLIST_QUEUE
+ITechnicalStrings URL ICON_PLAYLIST_QUEUE_SMALL
+ITechnicalStrings URL ICON_PLAYLIST_NORMAL
+ITechnicalStrings URL ICON_PLAYLIST_NEW
+ITechnicalStrings URL ICON_PLAYLIST_NEW_SMALL
+ITechnicalStrings URL ICON_PLAYLIST_BOOKMARK
+ITechnicalStrings URL ICON_PLAYLIST_BOOKMARK_SMALL
+ITechnicalStrings URL ICON_PLAYLIST_BESTOF
+ITechnicalStrings URL ICON_PLAYLIST_NOVELTIES
+ITechnicalStrings URL ICON_RUN
+ITechnicalStrings URL ICON_ADD
+ITechnicalStrings URL ICON_REMOVE
+ITechnicalStrings URL ICON_UP
+ITechnicalStrings URL ICON_DOWN
+ITechnicalStrings URL ICON_ADD_SHUFFLE
+ITechnicalStrings URL ICON_CLEAR
+ITechnicalStrings URL ICON_SAVE
+ITechnicalStrings URL ICON_SAVE_AS
+ITechnicalStrings URL ICON_DEFAULT_COVER
+ITechnicalStrings URL ICON_MODE_NORMAL
+ITechnicalStrings URL ICON_NET_SEARCH
+ITechnicalStrings URL ICON_TRACK_FIFO_PLANNED
+ITechnicalStrings URL ICON_TRACK_FIFO_NORM
+ITechnicalStrings URL ICON_TRACK_FIFO_REPEAT
+ITechnicalStrings URL ICON_WIZARD
+ITechnicalStrings URL ICON_TYPE_MP3
+ITechnicalStrings URL ICON_TYPE_OGG
+ITechnicalStrings URL ICON_TYPE_AU
+ITechnicalStrings URL ICON_TYPE_AIFF
+ITechnicalStrings URL ICON_TYPE_FLAC
+ITechnicalStrings URL ICON_TYPE_MPC
+ITechnicalStrings URL ICON_TYPE_WMA
+ITechnicalStrings URL ICON_TYPE_APE
+ITechnicalStrings URL ICON_TYPE_AAC
+ITechnicalStrings URL ICON_TYPE_WAV
+ITechnicalStrings URL ICON_TYPE_RAM
+ITechnicalStrings URL ICON_NO_EDIT
+ITechnicalStrings URL ICON_EDIT
+ITechnicalStrings URL ICON_UNKNOWN
+ITechnicalStrings URL ICON_TIP
+ITechnicalStrings URL ICON_TIP_SMALL
+ITechnicalStrings URL ICON_OPEN_DIR
+ITechnicalStrings URL ICON_STAR_1
+ITechnicalStrings URL ICON_STAR_2
+ITechnicalStrings URL ICON_STAR_3
+ITechnicalStrings URL ICON_STAR_4
+ITechnicalStrings URL ICON_DROP_DOWN
+ITechnicalStrings URL ICON_DIGITAL_DJ
+ITechnicalStrings URL ICON_LIST
+ITechnicalStrings URL ICON_PLAY2
+ITechnicalStrings URL ICON_DEFAULTS
+ITechnicalStrings URL ICON_DEFAULTS_BIG
+ITechnicalStrings URL ICON_HELP
+ITechnicalStrings URL IMAGES_SPLASHSCREEN
+ITechnicalStrings URL IMAGE_NO_COVER
+ITechnicalStrings URL IMAGE_WRITE
+ITechnicalStrings URL IMAGE_SEARCH
+ITechnicalStrings URL IMAGE_DJ
+ITechnicalStrings URL IMAGE_TRAY_TITLE
+ITechnicalStrings URL ARTIST_XSLT
+ITechnicalStrings URL ALBUM_XSLT
+ITechnicalStrings URL STYLE_XSLT
+ITechnicalStrings URL DIRECTORY_XSLT
+ITechnicalStrings URL DEVICE_XSLT
+ITechnicalStrings URL COLLECTION_XSLT
+ITechnicalStrings URL STYLE_COLLECTION_XSLT
+ITechnicalStrings URL ARTIST_COLLECTION_XSLT
+ITechnicalStrings URL ALBUM_COLLECTION_XSLT
+ITechnicalStrings String CLI_NOTASKBAR
+ITechnicalStrings String CLI_IDE
+ITechnicalStrings String CLI_TEST
+ITechnicalStrings String PLAYER_IMPL_JAVALAYER
+ITechnicalStrings String PLAYER_IMPL_MPLAYER
+ITechnicalStrings String TAG_IMPL_JID3LIB
+ITechnicalStrings String TAG_IMPL_MP3INFO
+ITechnicalStrings String TAG_IMPL_RABBIT_FARM
+ITechnicalStrings String TAG_IMPL_JLGUI_MP3
+ITechnicalStrings String TAG_IMPL_JLGUI_OGG
+ITechnicalStrings String TAG_IMPL_NO_TAGS
+ITechnicalStrings String TAG_IMPL_ENTAGGED
+ITechnicalStrings String DEVICE_TYPE_DIRECTORY
+ITechnicalStrings String DEVICE_TYPE_FILE_CD
+ITechnicalStrings String DEVICE_TYPE_REMOTE
+ITechnicalStrings String DEVICE_TYPE_USBKEY
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_MP3
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_OGG
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_AIFF
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_WAVE
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_AU
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_SPEEX
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_FLAC
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_MPC
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_WMA
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_APE
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_AAC
+ITechnicalStrings String TYPE_PROPERTY_TECH_DESC_RAM
+ITechnicalStrings String DEVICE_SYNCHRO_MODE_BI
+ITechnicalStrings String DEVICE_SYNCHRO_MODE_UNI
+ITechnicalStrings String PERSPECTIVE_NAME_PHYSICAL
+ITechnicalStrings String PERSPECTIVE_NAME_LOGICAL
+ITechnicalStrings String PERSPECTIVE_NAME_CONFIGURATION
+ITechnicalStrings String PERSPECTIVE_NAME_STATISTICS
+ITechnicalStrings String PERSPECTIVE_NAME_HELP
+ITechnicalStrings String PERSPECTIVE_NAME_PLAYER
+ITechnicalStrings String PERSPECTIVE_NAME_CATALOG
+ITechnicalStrings String PERSPECTIVE_NAME_INFO
+ITechnicalStrings String VIEW_NAME_DEVICES
+ITechnicalStrings String VIEW_NAME_PARAMETERS
+ITechnicalStrings String VIEW_NAME_PHYSICAL_TREE
+ITechnicalStrings String VIEW_NAME_PHYSICAL_TABLE
+ITechnicalStrings String VIEW_NAME_LOGICAL_TREE
+ITechnicalStrings String VIEW_NAME_LOGICAL_TABLE
+ITechnicalStrings String VIEW_NAME_ABOUT
+ITechnicalStrings String VIEW_NAME_HELP
+ITechnicalStrings String VIEW_NAME_STAT
+ITechnicalStrings String VIEW_NAME_COVER
+ITechnicalStrings String VIEW_NAME_PHYSICAL_PLAYLIST_REPOSITORY
+ITechnicalStrings String VIEW_NAME_PHYSICAL_PLAYLIST_EDITOR
+ITechnicalStrings String VIEW_NAME_PHYSICAL_NAVIGATION_BAR
+ITechnicalStrings String VIEW_NAME_LOGICAL_PLAYLIST_REPOSITORY
+ITechnicalStrings String VIEW_NAME_LOGICAL_PLAYLIST_EDITOR
+ITechnicalStrings String VIEW_NAME_LOGICAL_NAVIGATION_BAR
+ITechnicalStrings String VIEW_NAME_CD_SCAN
+ITechnicalStrings String EXT_MP3
+ITechnicalStrings String EXT_PLAYLIST
+ITechnicalStrings String EXT_OGG
+ITechnicalStrings String EXT_WAV
+ITechnicalStrings String EXT_AU
+ITechnicalStrings String EXT_AIFF
+ITechnicalStrings String EXT_FLAC
+ITechnicalStrings String EXT_THUMB
+ITechnicalStrings String EXT_MPC
+ITechnicalStrings String EXT_WMA
+ITechnicalStrings String EXT_APE
+ITechnicalStrings String EXT_AAC
+ITechnicalStrings String EXT_M4A
+ITechnicalStrings String EXT_REAL
+ITechnicalStrings String DETAIL_CURRENT_FILE_ID
+ITechnicalStrings String DETAIL_CURRENT_FILE
+ITechnicalStrings String DETAIL_CURRENT_DATE
+ITechnicalStrings String DETAIL_CURRENT_POSITION
+ITechnicalStrings String DETAIL_TOTAL
+ITechnicalStrings String DETAIL_HISTORY_ITEM
+ITechnicalStrings String DETAIL_SPECIAL_MODE
+ITechnicalStrings String DETAIL_SPECIAL_MODE_SHUFFLE
+ITechnicalStrings String DETAIL_SPECIAL_MODE_BESTOF
+ITechnicalStrings String DETAIL_SPECIAL_MODE_NOVELTIES
+ITechnicalStrings String DETAIL_SPECIAL_MODE_NORMAL
+ITechnicalStrings String DETAIL_SELECTION
+ITechnicalStrings String DETAIL_ENABLE
+ITechnicalStrings String DETAIL_ORIGIN
+ITechnicalStrings String DETAIL_REASON
+ITechnicalStrings String DETAIL_CONTENT
+ITechnicalStrings String DETAIL_OLD
+ITechnicalStrings String DETAIL_NEW
+ITechnicalStrings String DETAIL_OPTION
+ITechnicalStrings String LNF_METAL
+ITechnicalStrings String LNF_METAL_CLASS
+ITechnicalStrings String LNF_METAL_CBUI
+ITechnicalStrings String LNF_GTK
+ITechnicalStrings String LNF_GTK_CLASS
+ITechnicalStrings String LNF_GTK_CBUI
+ITechnicalStrings String LNF_WINDOWS
+ITechnicalStrings String LNF_WINDOWS_CLASS
+ITechnicalStrings String LNF_WINDOWS_CBUI
+ITechnicalStrings String LNF_KUNSTSTOFF
+ITechnicalStrings String LNF_KUNSTSTOFF_CLASS
+ITechnicalStrings String LNF_KUNSTSTOFF_CBUI
+ITechnicalStrings String LNF_LIQUID
+ITechnicalStrings String LNF_LIQUID_CLASS
+ITechnicalStrings String LNF_LIQUID_CBUI
+ITechnicalStrings String LNF_PLASTIC
+ITechnicalStrings String LNF_PLASTIC_CLASS
+ITechnicalStrings String LNF_PLASTICXP
+ITechnicalStrings String LNF_PLASTICXP_CLASS
+ITechnicalStrings String LNF_PLASTIC3D
+ITechnicalStrings String LNF_PLASTIC3D_CLASS
+ITechnicalStrings String LNF_INFONODE
+ITechnicalStrings String LNF_INFONODE_CLASS
+ITechnicalStrings String LNF_SQUARENESS
+ITechnicalStrings String LNF_SQUARENESS_CLASS
+ITechnicalStrings String LNF_TINY
+ITechnicalStrings String LNF_TINY_CLASS
+ITechnicalStrings String LNF_LOOKS
+ITechnicalStrings String LNF_LOOKS_CLASS
+ITechnicalStrings String LNF_DEFAULT
+ITechnicalStrings String STARTUP_MODE_NOTHING
+ITechnicalStrings String STARTUP_MODE_SHUFFLE
+ITechnicalStrings String STARTUP_MODE_FILE
+ITechnicalStrings String STARTUP_MODE_LAST
+ITechnicalStrings String STARTUP_MODE_LAST_KEEP_POS
+ITechnicalStrings String STARTUP_MODE_BESTOF
+ITechnicalStrings String STARTUP_MODE_NOVELTIES
+ITechnicalStrings String CONF_RELEASE
+ITechnicalStrings String CONF_PERSPECTIVE_DEFAULT
+ITechnicalStrings String CONF_STATE_REPEAT
+ITechnicalStrings String CONF_STATE_SHUFFLE
+ITechnicalStrings String CONF_STATE_CONTINUE
+ITechnicalStrings String CONF_STATE_INTRO
+ITechnicalStrings String CONF_STATE_WAS_PLAYING
+ITechnicalStrings String CONF_STARTUP_FILE
+ITechnicalStrings String CONF_STARTUP_MODE
+ITechnicalStrings String CONF_CONFIRMATIONS_DELETE_FILE
+ITechnicalStrings String CONF_CONFIRMATIONS_EXIT
+ITechnicalStrings String CONF_CONFIRMATIONS_REMOVE_DEVICE
+ITechnicalStrings String CONF_CONFIRMATIONS_DELETE_COVER
+ITechnicalStrings String CONF_CONFIRMATIONS_CLEAR_HISTORY
+ITechnicalStrings String CONF_CONFIRMATIONS_RESET_RATINGS
+ITechnicalStrings String CONF_CONFIRMATIONS_REFACTOR_FILES
+ITechnicalStrings String CONF_OPTIONS_HIDE_UNMOUNTED
+ITechnicalStrings String CONF_OPTIONS_LOG_LEVEL
+ITechnicalStrings String CONF_OPTIONS_LANGUAGE
+ITechnicalStrings String CONF_OPTIONS_INTRO_BEGIN
+ITechnicalStrings String CONF_OPTIONS_INTRO_LENGTH
+ITechnicalStrings String CONF_OPTIONS_LNF
+ITechnicalStrings String CONF_OPTIONS_NOVELTIES_AGE
+ITechnicalStrings String CONF_OPTIONS_VISIBLE_PLANNED
+ITechnicalStrings String CONF_OPTIONS_DEFAULT_ACTION_CLICK
+ITechnicalStrings String CONF_OPTIONS_DEFAULT_ACTION_DROP
+ITechnicalStrings String CONF_OPTIONS_SYNC_TABLE_TREE
+ITechnicalStrings String CONF_OPTIONS_SHOW_POPUP
+ITechnicalStrings String CONF_P2P_SHARE
+ITechnicalStrings String CONF_P2P_ADD_REMOTE_PROPERTIES
+ITechnicalStrings String CONF_P2P_HIDE_LOCAL_PROPERTIES
+ITechnicalStrings String CONF_P2P_PASSWORD
+ITechnicalStrings String CONF_HISTORY
+ITechnicalStrings String CONF_FIRST_CON
+ITechnicalStrings String CONF_TAGS_USE_PARENT_DIR
+ITechnicalStrings String CONF_BOOKMARKS
+ITechnicalStrings String CONF_SHOW_AT_STARTUP
+ITechnicalStrings String CONF_BESTOF_SIZE
+ITechnicalStrings String CONF_VOLUME
+ITechnicalStrings String CONF_REGEXP
+ITechnicalStrings String CONF_BACKUP_SIZE
+ITechnicalStrings String CONF_COLLECTION_CHARSET
+ITechnicalStrings String CONF_STARTUP_LAST_POSITION
+ITechnicalStrings String CONF_NETWORK_USE_PROXY
+ITechnicalStrings String CONF_NETWORK_PROXY_HOSTNAME
+ITechnicalStrings String CONF_NETWORK_PROXY_PORT
+ITechnicalStrings String CONF_NETWORK_PROXY_LOGIN
+ITechnicalStrings String CONF_COVERS_AUTO_COVER
+ITechnicalStrings String CONF_COVERS_SHUFFLE
+ITechnicalStrings String CONF_COVERS_PRELOAD
+ITechnicalStrings String CONF_COVERS_MIN_SIZE
+ITechnicalStrings String CONF_COVERS_MAX_SIZE
+ITechnicalStrings String CONF_COVERS_ACCURACY
+ITechnicalStrings String CONF_COVERS_CHANGE_AT_EACH_TRACK
+ITechnicalStrings String CONF_NETWORK_CONNECTION_TO
+ITechnicalStrings String CONF_NETWORK_TRANSFERT_TO
+ITechnicalStrings String CONF_OPTIONS_TAB
+ITechnicalStrings String CONF_BUFFER_SIZE
+ITechnicalStrings String CONF_AUDIO_BUFFER_SIZE
+ITechnicalStrings String CONF_WINDOW_POSITION
+ITechnicalStrings String CONF_PHYSICAL_TABLE_COLUMNS
+ITechnicalStrings String CONF_PHYSICAL_TABLE_EDITION
+ITechnicalStrings String CONF_LOGICAL_TABLE_COLUMNS
+ITechnicalStrings String CONF_PLAYLIST_EDITOR_COLUMNS
+ITechnicalStrings String CONF_LOGICAL_TABLE_EDITION
+ITechnicalStrings String CONF_THUMBS_SIZE
+ITechnicalStrings String CONF_THUMBS_SHOW_WITHOUT_COVER
+ITechnicalStrings String CONF_THUMBS_SORTER
+ITechnicalStrings String CONF_THUMBS_FILTER
+ITechnicalStrings String CONF_SHOW_TIP_ON_STARTUP
+ITechnicalStrings String CONF_TIP_OF_DAY_INDEX
+ITechnicalStrings String CONF_WIKIPEDIA_LANGUAGE
+ITechnicalStrings String CONF_FADE_DURATION
+ITechnicalStrings String CONF_LOGICAL_TREE_SORT_ORDER
+ITechnicalStrings String CONF_REFACTOR_PATTERN
+ITechnicalStrings String CONF_DEFAULT_DJ
+ITechnicalStrings String CONF_DEFAULT_AMBIENCE
+ITechnicalStrings String CONF_NOT_SHOW_AGAIN_PLAYER
+ITechnicalStrings String CONF_GLOBAL_RANDOM_MODE
+ITechnicalStrings String CONF_NOVELTIES_MODE
+ITechnicalStrings String CONF_ANIMATION_PATTERN
+ITechnicalStrings String CONF_FRAME_POS_FORCED
+ITechnicalStrings String CONF_MPLAYER_PATH_FORCED
+ITechnicalStrings String CONF_OPTIONS_HOTKEYS
+ITechnicalStrings String MODE_ALBUM
+ITechnicalStrings String MODE_TRACK
+ITechnicalStrings String ACCURACY_LOW
+ITechnicalStrings String ACCURACY_NORMAL
+ITechnicalStrings String ACCURACY_HIGH
+ITechnicalStrings String TRUE
+ITechnicalStrings String FALSE
+ITechnicalStrings String VIEW_PHYSICAL_TREE
+ITechnicalStrings String VIEW_TRACK_LIST
+ITechnicalStrings String DATE_FILE
+ITechnicalStrings String ADDITION_DATE_FORMAT
+ITechnicalStrings String DATE_FORMAT_DEFAULT
+ITechnicalStrings String DATE_FORMAT_1
+ITechnicalStrings String DATE_FORMAT_2
+ITechnicalStrings String DATE_FORMAT_3
+ITechnicalStrings String PLAYLIST_NOTE
+ITechnicalStrings String XML_COLLECTION
+ITechnicalStrings String XML_VERSION
+ITechnicalStrings String XML_TYPES
+ITechnicalStrings String XML_TYPE
+ITechnicalStrings String XML_DEVICES
+ITechnicalStrings String XML_DEVICE
+ITechnicalStrings String XML_STYLES
+ITechnicalStrings String XML_STYLE
+ITechnicalStrings String XML_GENRE
+ITechnicalStrings String XML_AUTHORS
+ITechnicalStrings String XML_AUTHOR
+ITechnicalStrings String XML_ARTIST
+ITechnicalStrings String XML_ALBUMS
+ITechnicalStrings String XML_ALBUM
+ITechnicalStrings String XML_TRACKS
+ITechnicalStrings String XML_TRACK
+ITechnicalStrings String XML_DIRECTORIES
+ITechnicalStrings String XML_DIRECTORY
+ITechnicalStrings String XML_DIRECTORY_DEFAULT_COVER
+ITechnicalStrings String XML_FILES
+ITechnicalStrings String XML_FILE
+ITechnicalStrings String XML_PLAYLIST_FILES
+ITechnicalStrings String XML_PLAYLIST_FILE
+ITechnicalStrings String XML_PLAYLISTS
+ITechnicalStrings String XML_ID
+ITechnicalStrings String XML_PLAY
+ITechnicalStrings String XML_FILE_DATE
+ITechnicalStrings String XML_TRACK_NAME
+ITechnicalStrings String XML_TRACK_ALBUM
+ITechnicalStrings String XML_TRACK_STYLE
+ITechnicalStrings String XML_TRACK_GENRE
+ITechnicalStrings String XML_TRACK_AUTHOR
+ITechnicalStrings String XML_TRACK_ARTIST
+ITechnicalStrings String XML_TRACK_LENGTH
+ITechnicalStrings String XML_TRACK_YEAR
+ITechnicalStrings String XML_TRACK_TYPE
+ITechnicalStrings String XML_TRACK_RATE
+ITechnicalStrings String XML_TRACK_HITS
+ITechnicalStrings String XML_TRACK_ADDED
+ITechnicalStrings String XML_TRACK_ORDER
+ITechnicalStrings String XML_PLAYLIST
+ITechnicalStrings String XML_NAME
+ITechnicalStrings String XML_FILE_NAME
+ITechnicalStrings String XML_PATH
+ITechnicalStrings String XML_URL
+ITechnicalStrings String XML_QUALITY
+ITechnicalStrings String XML_SIZE
+ITechnicalStrings String XML_DEVICE_MOUNT_POINT
+ITechnicalStrings String XML_DEVICE_AUTO_REFRESH
+ITechnicalStrings String XML_DEVICE_AUTO_MOUNT
+ITechnicalStrings String XML_DEVICE_SYNCHRO_SOURCE
+ITechnicalStrings String XML_DEVICE_SYNCHRO_MODE
+ITechnicalStrings String XML_EXPANDED
+ITechnicalStrings String XML_DIRECTORY_PARENT
+ITechnicalStrings String XML_DIRECTORY_SYNCHRONIZED
+ITechnicalStrings String XML_HASHCODE
+ITechnicalStrings String XML_TYPE_EXTENSION
+ITechnicalStrings String XML_TYPE_PLAYER_IMPL
+ITechnicalStrings String XML_TYPE_TAG_IMPL
+ITechnicalStrings String XML_TYPE_IS_MUSIC
+ITechnicalStrings String XML_TYPE_SEEK_SUPPORTED
+ITechnicalStrings String XML_TYPE_TECH_DESC
+ITechnicalStrings String XML_TYPE_ICON
+ITechnicalStrings String XML_TRACK_COMMENT
+ITechnicalStrings String XML_TRACK_NUMBER
+ITechnicalStrings String XML_ANY
+ITechnicalStrings String XML_CONSTRUCTOR
+ITechnicalStrings String XML_VISIBLE
+ITechnicalStrings String XML_EDITABLE
+ITechnicalStrings String XML_UNIQUE
+ITechnicalStrings String XML_CUSTOM
+ITechnicalStrings String XML_PROPERTY
+ITechnicalStrings String XML_DEFAULT_VALUE
+ITechnicalStrings String XML_DJ_DJ
+ITechnicalStrings String XML_DJ_GENERAL
+ITechnicalStrings String XML_DJ_RATING_LEVEL
+ITechnicalStrings String XML_DJ_UNICITY
+ITechnicalStrings String XML_DJ_FADE_DURATION
+ITechnicalStrings String XML_DJ_PROPORTIONS
+ITechnicalStrings String XML_DJ_PROPORTION
+ITechnicalStrings String XML_DJ_AMBIENCES
+ITechnicalStrings String XML_DJ_AMBIENCE
+ITechnicalStrings String XML_DJ_STYLES
+ITechnicalStrings String XML_DJ_VALUE
+ITechnicalStrings String XML_DJ_PROPORTION_CLASS
+ITechnicalStrings String XML_DJ_TRANSITION_CLASS
+ITechnicalStrings String XML_DJ_AMBIENCE_CLASS
+ITechnicalStrings String XML_DJ_EXTENSION
+ITechnicalStrings String XML_DJ_TRANSITION
+ITechnicalStrings String XML_DJ_TRANSITIONS
+ITechnicalStrings String XML_DJ_FROM
+ITechnicalStrings String XML_DJ_TO
+ITechnicalStrings String XML_DJ_NUMBER
+ITechnicalStrings String XML_DJ_STARTUP_STYLE
+ITechnicalStrings String[] XML_RESERVED_ATTRIBUTE_NAMES
+ITechnicalStrings String PROPERTY_SEPARATOR
+ITechnicalStrings String FORMAT_STRING
+ITechnicalStrings String FORMAT_NUMBER
+ITechnicalStrings String FORMAT_BOOLEAN
+ITechnicalStrings String FORMAT_FLOAT
+ITechnicalStrings String FORMAT_DATE
+ITechnicalStrings String THUMBNAIL_SIZE_50x50
+ITechnicalStrings String THUMBNAIL_SIZE_100x100
+ITechnicalStrings String THUMBNAIL_SIZE_150x150
+ITechnicalStrings String THUMBNAIL_SIZE_200x200
+ITechnicalStrings String PATTERN_ARTIST
+ITechnicalStrings String PATTERN_ALBUM
+ITechnicalStrings String PATTERN_GENRE
+ITechnicalStrings String PATTERN_YEAR
+ITechnicalStrings String PATTERN_TRACKNAME
+ITechnicalStrings String PATTERN_TRACKORDER
+ITechnicalStrings String PATTERN_DEFAULT_REORG
+ITechnicalStrings String PATTERN_DEFAULT_ANIMATION
+ITechnicalStrings String ACTION_NEXT
+ITechnicalStrings String ACTION_PREV
+ITechnicalStrings String ACTION_FINISH
+ITechnicalStrings String ACTION_Cancel
+ITechnicalStrings String FRAME_MAXIMIZED
+EventSubject EventSubject EVENT_EXIT
+EventSubject EventSubject EVENT_REPEAT_MODE_STATUS_CHANGED
+EventSubject EventSubject EVENT_SHUFFLE_MODE_STATUS_CHANGED
+EventSubject EventSubject EVENT_CONTINUE_MODE_STATUS_CHANGED
+EventSubject EventSubject EVENT_INTRO_MODE_STATUS_CHANGED
+EventSubject EventSubject EVENT_DEVICE_NEW
+EventSubject EventSubject EVENT_DEVICE_DELETE
+EventSubject EventSubject EVENT_DEVICE_PROPERTIES
+EventSubject EventSubject EVENT_DEVICE_MOUNT
+EventSubject EventSubject EVENT_DEVICE_UNMOUNT
+EventSubject EventSubject EVENT_DEVICE_TEST
+EventSubject EventSubject EVENT_DEVICE_REFRESH
+EventSubject EventSubject EVENT_DEVICE_SYNCHRO
+EventSubject EventSubject EVENT_VIEW_REFRESH_REQUEST
+EventSubject EventSubject EVENT_VIEW_CLOSE_REQUEST
+EventSubject EventSubject EVENT_VIEW_SHOW_REQUEST
+EventSubject EventSubject EVENT_VIEW_SHOW_STATUS_CHANGED_REQUEST
+EventSubject EventSubject EVENT_VIEW_RESTORE_DEFAULTS
+EventSubject EventSubject EVENT_VIEW_COMMAND_SELECT_HISTORY_ITEM
+EventSubject EventSubject EVENT_HELP_REQUIRED
+EventSubject EventSubject EVENT_COVER_REFRESH
+EventSubject EventSubject EVENT_COVER_CHANGE
+EventSubject EventSubject EVENT_PLAYER_STOP
+EventSubject EventSubject EVENT_PLAYER_PLAY
+EventSubject EventSubject EVENT_PLAYER_PAUSE
+EventSubject EventSubject EVENT_PLAYER_RESUME
+EventSubject EventSubject EVENT_PLAYLIST_REFRESH
+EventSubject EventSubject EVENT_PLAYLIST_SELECTION_CHANGED
+EventSubject EventSubject EVENT_FILE_LAUNCHED
+EventSubject EventSubject EVENT_HEART_BEAT
+EventSubject EventSubject EVENT_ZERO
+EventSubject EventSubject EVENT_ADD_HISTORY_ITEM
+EventSubject EventSubject EVENT_SPECIAL_MODE
+EventSubject EventSubject EVENT_PLAY_ERROR
+EventSubject EventSubject EVENT_PLAY_FINISHED
+EventSubject EventSubject EVENT_MUTE_STATE
+EventSubject EventSubject EVENT_SYNC_TREE_TABLE
+EventSubject EventSubject EVENT_CLEAR_HISTORY
+EventSubject EventSubject EVENT_WIZARD
+EventSubject EventSubject EVENT_QUALITY
+EventSubject EventSubject EVENT_VOLUME_CHANGED
+EventSubject EventSubject EVENT_CREATE_PROPERTY
+EventSubject EventSubject EVENT_DELETE_PROPERTY
+EventSubject EventSubject EVENT_CUSTOM_PROPERTIES_ADD
+EventSubject EventSubject EVENT_CUSTOM_PROPERTIES_REMOVE
+EventSubject EventSubject EVENT_FILE_NAME_CHANGED
+EventSubject EventSubject EVENT_STYLE_NAME_CHANGED
+EventSubject EventSubject EVENT_RATE_CHANGED
+EventSubject EventSubject EVENT_TIP_OF_THE_DAY
+EventSubject EventSubject EVENT_CDDB_WIZARD
+EventSubject EventSubject EVENT_LOGICAL_TREE_SORT
+EventSubject EventSubject EVENT_COVER_DEFAULT_CHANGED
+EventSubject EventSubject EVENT_TABLE_CLEAR_SELECTION
+EventSubject EventSubject EVENT_DJS_CHANGE
+EventSubject EventSubject EVENT_AMBIENCES_CHANGE
+EventSubject EventSubject EVENT_AMBIENCES_SELECTION_CHANGE
+EventSubject EventSubject EVENT_AMBIENCE_REMOVED
+EventSubject EventSubject EVENT_AUTHOR_CHANGED
+EventSubject EventSubject EVENT_LANGUAGE_CHANGED
+EventSubject EventSubject EVENT_PERPECTIVE_CHANGED
+JajukException long serialVersionUID
+JajukException String code
+JajukException JajukException JajukException(String pCode)
+JajukException JajukException JajukException(String pCode, Throwable pCause)
+JajukException String getCode()
+JajukException JajukException JajukException(String pCode, String pMessage, Throwable pCause)
+NoneAccessibleFileException long serialVersionUID
+NoneAccessibleFileException NoneAccessibleFileException NoneAccessibleFileException(String pCode)
+NoneAccessibleFileException NoneAccessibleFileException NoneAccessibleFileException(String pCode, Throwable pCause)
+CannotRenameException long serialVersionUID
+CannotRenameException CannotRenameException CannotRenameException(String pCode)
+CannotRenameException CannotRenameException CannotRenameException(String pCode, Throwable pCause)
+Log int FATAL
+Log int ERROR
+Log int WARNING
+Log int INFO
+Log int DEBUG
+Log int verbosity
+Log Log log
+Log Logger loggerRoot
+Log Logger logger
+Log Logger loggerHttp
+Log ArrayList<String> alSpool
+Log Log Log()
+Log static Log getInstance()
+Log static void debug(String s)
+Log static void info(String s)
+Log static void warn(String s)
+Log static void warn(String s, String sInfoSup)
+Log static void warn(String sCode, String sInfosup, Throwable t)
+Log static void error(String sCode, String sInfosup, Throwable t)
+Log static void error(String sCode)
+Log static void error(Throwable t)
+Log static void error(String sCode, Throwable t)
+Log static void error(String sInfosup, JajukException je)
+Log static void error(JajukException je)
+Log static void fatal(String s)
+Log int getVerbosity()
+Log static void setVerbosity(int newVerbosity)
+Log static void stack(Exception e)
+Log static boolean isDebugEnabled()
+Log static void spool(String sMessage)
+Log static void spool(Throwable e)
+Log static Iterator getSpool()

@@ -1,0 +1,4 @@
+Issue:
+
+Don't want EN/ED irregular lists to contain any verbs that are the same in present
+and these verb forms -- will assume they're in present tense.
