@@ -30,14 +30,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 
-import edu.udel.nlpa.swum.builders.BaseVerbBuilder;
+
 import edu.udel.nlpa.swum.builders.ISWUMBuilder;
 import edu.udel.nlpa.swum.builders.UnigramBuilder;
-import edu.udel.nlpa.swum.nodes.base.MethodDecl;
+import edu.udel.nlpa.swum.nodes.base.*;
 import edu.udel.nlpa.swum.utils.constants.RuleIndicator;
-import edu.udel.nlpa.swum.utils.context.MethodContext;
-import edu.udel.nlpa.swum.utils.identifiers.ConservativeCamelCaseSplitter;
-import edu.udel.nlpa.swum.utils.identifiers.IdentifierSplitter;
+import edu.udel.nlpa.swum.utils.context.*;
+
 
 public class SWUMAccuracyHarness implements AccuracyTestHarness {
 	
@@ -45,8 +44,8 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 		
 	}
 	
-	
-	public void verifyOutput(BufferedReader in) {
+	//Type: 1 - Method, 2 - Field, 3- Decl
+	public void verifyOutput(BufferedReader in, int type) {
 		try {
 			//BufferedReader in = new BufferedReader(new FileReader(testFile));
 			String line = "";
@@ -59,21 +58,19 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 			Pattern p = 
 				Pattern.compile("^(\\S+)?\\s(static\\s)?(\\S+)\\s([A-Za-z0-9_]+)(\\(.*\\))?$");
 			while ((line = in.readLine()) != null) {
-				Matcher m = p.matcher(line);
-				if (m.matches()) {
-					String cl = m.group(1);
-					if ( cl == null ) { cl = "_ANONYMOUS_"; }
-					else {
-						// parse of leading package
-						cl = cl.replaceAll("\\s+\\.", "");
-					}
-					boolean stat = m.group(2) == null ? false : true;
-					String returnType = m.group(3);
-					String name = m.group(4);
-					String args = m.group(5);
-					
-					if (args != null) { // it's a method
-
+				if (type == 1) { // it's a method
+					Matcher m = p.matcher(line);
+					if (m.matches()) {
+						String cl = m.group(1);
+						if ( cl == null ) { cl = "_ANONYMOUS_"; }
+						else {
+							// parse of leading package
+							cl = cl.replaceAll("\\s+\\.", "");
+						}
+						boolean stat = m.group(2) == null ? false : true;
+						String returnType = m.group(3);
+						String name = m.group(4);
+						String args = m.group(5);
 						MethodContext mc = new MethodContext(returnType);
 						if (returnType.matches(name)) mc.setConstructor(true);
 						mc.setStatic(stat);
@@ -94,15 +91,23 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 
 						MethodDecl md = new MethodDecl(name, mc);
 						RuleIndicator ri = swum.applyRules(md);
-						
+					
 						if (md.isConstructedSWUM())
 							System.out.println(ri + ":" + md.getThemeLocation() + ":" + line.trim() + 
-									": " + md);
+								": " + md);
 						else
 							System.out.println(RuleIndicator.UNKOWN + ":OOPS:" + line.trim() + ":");
-					} 
-				} else {
-					System.out.println(RuleIndicator.UNKOWN + ": :" + line.trim() + ":");
+					}else {
+						System.out.println(RuleIndicator.UNKOWN + ": :" + line.trim() + ":");
+					}
+				} else if (type == 2){
+					String[] splitLine = line.split(" ");
+					FieldContext fc = new FieldContext(splitLine[0], splitLine[1]);
+					FieldDecl fd = new FieldDecl(splitLine[1], fc);
+					RuleIndicator ri = swum.applyRules(fd);
+					if(fd.isConstructedSWUM()) {
+						System.out.println(ri + ":" + line.trim() + ": " + fd);
+					}
 				}
 			}
 		} catch (Exception e) {
@@ -110,17 +115,17 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 		}
 	}
 	
-	public void verifyOutput(String testFile) {
+	public void verifyOutput(String testFile, int type) {
 		try {
-			verifyOutput(new BufferedReader(new FileReader(testFile)));
+			verifyOutput(new BufferedReader(new FileReader(testFile)), type);
 		} catch (FileNotFoundException e) { e.printStackTrace(); }
 	}
 	
-	public void processSignatures() {
+	public void processSignatures(String file, int type) {
 		//verifyOutput("data/swum/testing.txt");
 		//verifyOutput("data/swum/SWUM_POS_List.txt");
 		//verifyOutput("data/swum/random10Kmethods-noArrays.txt");
-		verifyOutput("data/swum/eval.txt");
+		verifyOutput(file, type);
 		//verifyOutput("data/swum/vdo.txt");
 		
 		//verifyOutput("data/swum/ctor-test.txt");
@@ -140,7 +145,7 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 						new InputStreamReader(
 							new GZIPInputStream(
 								new FileInputStream(allSigs)
-			))));
+			))), 1);
 		} catch (FileNotFoundException e) { e.printStackTrace(); } 
 		  catch (IOException e) { e.printStackTrace(); }
 	}
@@ -155,7 +160,7 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 	 */
 	public static void main(String[] args) {
 		SWUMAccuracyHarness test = new SWUMAccuracyHarness();
-		test.processSignatures();
+		test.processSignatures(args[0], Integer.valueOf(args[1]));
 		//test.runAllSignatures();
 		//test.testAccuracy();
 	}
