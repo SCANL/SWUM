@@ -7,12 +7,12 @@ import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.IMember;
 import org.eclipse.jdt.core.IMethod;
-import org.eclipse.jdt.internal.corext.callhierarchy.CallHierarchy;
+import org.eclipse.jdt.internal.corext.callhierarchy.CallHierarchyCore;
 import org.eclipse.jdt.internal.corext.callhierarchy.MethodWrapper;
 
 @SuppressWarnings("restriction")
 public class EclipseCallHierarchy implements CallingRelationship {
-	private static final CallHierarchy callHierarchy = CallHierarchy.getDefault();
+	private static final CallHierarchyCore callHierarchy = CallHierarchyCore.getDefault();
 	
 	public HashMap<IMethod, int[]> getCallees(IMember m) {
 		// Get Callees

@@ -29,6 +29,6 @@ public interface AccuracyTestHarness {
 	/**
 	 * Use to create expected outputs
 	 */
-	public void verifyOutput(String testFile, int idType);
+	public void verifyOutput(String testFile, int idType, boolean input_type);
 
 }
