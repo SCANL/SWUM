@@ -30,7 +30,7 @@ public class EventHandlerRule extends UnigramMethodRule {
 
 			md.setConstructedSWUM(true);
 			//md.setAction(new WordNode("handle", POSTag.VERB)); // TODO
-			md.setAction(md.getParse().get(0).getNewWord("handle", POSTag.VERB));
+			md.setAction(md.getParse().get(0).getNewWord("[handle]", POSTag.VERB));
 
 			tagger.tagNounPhrase(md.getParse());
 			md.setTheme(md.getPreamble(), md.getParse());

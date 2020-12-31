@@ -88,8 +88,8 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 				RuleIndicator ri = swum.applyRules(md);
 			
 				if (md.isConstructedSWUM())
-					System.out.println(ri + ":" + md.getThemeLocation() + ":" + line.trim() + 
-						": " + md);
+					System.out.println("FUNCTION#" + line.trim() + 
+						"@" + md);
 				else
 					System.out.println(RuleIndicator.UNKOWN + ":OOPS:" + line.trim() + ":");
 			}else {
@@ -101,7 +101,7 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 			FieldDecl fd = new FieldDecl(splitLine[1], fc);
 			RuleIndicator ri = swum.applyRules(fd);
 			if(fd.isConstructedSWUM()) {
-				System.out.println(ri + ":" + line.trim() + ": " + fd);
+				System.out.println("FIELD#" + fd);
 			}
 		}
 	}

@@ -459,13 +459,13 @@ public abstract class UnigramMethodRule extends UnigramRule implements Rule {
 			ArrayList<Node> unknownArgs) {
 		ArrayList<Node> newArgs = new ArrayList<Node>(unknownArgs);
 		int nequiv = 0; // number of equivalences (index offset)
-		for (int i = 0; i < don.length; i++) {
-			if (don[i]) {
-				equivdo.addEquivalentNode(unknownArgs.get(i));
-				newArgs.remove(i - nequiv);
-				nequiv++;
-			}
-		}
+//		for (int i = 0; i < don.length; i++) {
+//			if (don[i]) {
+//				equivdo.addEquivalentNode(unknownArgs.get(i));
+//				newArgs.remove(i - nequiv);
+//				nequiv++;
+//			}
+//		}
 		return newArgs;
 	}
 
@@ -576,7 +576,7 @@ public abstract class UnigramMethodRule extends UnigramRule implements Rule {
 
 	protected void parseReactiveName(IMethodDecl md) {
 		//md.setAction(new WordNode("handle", POSTag.VERB)); // EEK
-		md.setAction(md.getParse().get(0).getNewWord("handle", POSTag.VERB));
+		md.setAction(md.getParse().get(0).getNewWord("[handle]", POSTag.VERB));
 		
 		tagger.tagNounPhrase(md.getParse());
 		

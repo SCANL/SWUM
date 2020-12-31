@@ -41,7 +41,7 @@ public class LeadingPrepositionRule extends UnigramMethodRule {
 			//	md.setAction(new WordNode("convert", POSTag.VERB));
 			//} else if (prep.matches("on")) // event handler should come first
 			if (prep.matches("to") || prep.matches("from"))
-				md.setAction(md.getParse().get(0).getNewWord("convert", POSTag.VERB));
+				md.setAction(md.getParse().get(0).getNewWord("[convert]", POSTag.VERB));
 				//md.setAction(new WordNode("convert", POSTag.VERB));
 			else if (prep.matches("on") || prep.matches("before") ||
 					prep.matches("after")) {// event handler should come first

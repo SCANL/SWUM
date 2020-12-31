@@ -1,0 +1,13 @@
+String CONF_LOGICAL_TREE_SORT_ORDER
+String EVENT_LOGICAL_TREE_SORT
+int iSortOrder
+JComboBox jcbSort
+JRadioButtonMenuItem jmiCollectionStyle
+Style style
+int iSortingMethod
+TrackComparator comparator
+boolean reservedKeywordAsIdentifier
+int FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER
+Scriptable thisObj
+int RESERVED
+boolean dirtyLine

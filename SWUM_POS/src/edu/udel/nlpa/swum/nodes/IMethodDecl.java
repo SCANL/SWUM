@@ -69,20 +69,25 @@ public abstract class IMethodDecl extends IProgramElementNode {
 		String s = "";
 		if (action != null) { a = action.toString(); }
 		if (theme != null)  { t = theme.toString(); }
-		if (secondaryArgs != null) {
-			for (Node n : secondaryArgs) {
-				s += "-- " + n.toString();
-			}
+//		if (secondaryArgs != null) {
+//			for (Node n : secondaryArgs) {
+//				s += "-- " + n.toString();
+//			}
+//		}
+//		
+//		if (unknownArgs != null) {
+//			s += "\t++";
+//			for (Node n : unknownArgs) {
+//				s += " :: " + n.toString();
+//			}
+//		}
+		// everything else is an aux arg
+		if(this.getThemeLocation() == Location.ONCLASS) {
+			return a + " | " + "["+t+"]" + s;
+		} else {
+			return a + " | " + t + s;
 		}
 		
-		if (unknownArgs != null) {
-			s += "\t++";
-			for (Node n : unknownArgs) {
-				s += " :: " + n.toString();
-			}
-		}
-		// everything else is an aux arg
-		return a + " | " + t + s;
 	}
 	
 	public Location getThemeLocation() {

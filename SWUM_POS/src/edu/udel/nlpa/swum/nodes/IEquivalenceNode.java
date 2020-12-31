@@ -47,7 +47,9 @@ public abstract class IEquivalenceNode implements Node {
 	}
 	
 	public String toString() {
-		return "EQUIV" + equivalentNodes.toString();
+		String s = equivalentNodes.toString();
+		s=s.replaceAll("\\[", "").replaceAll("\\]", "").strip();
+		return s;
 	}
 
 }

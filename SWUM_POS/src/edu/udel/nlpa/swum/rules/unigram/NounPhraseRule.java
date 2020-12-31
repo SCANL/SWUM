@@ -30,7 +30,7 @@ public class NounPhraseRule extends UnigramMethodRule {
 				tagger.tagNounPhrase(md.getParse());
 				md.setTheme(md.getPreamble(), md.getParse());
 				//md.setAction(new WordNode("get", POSTag.VERB)); // TODO EEK
-				md.setAction(md.getParse().get(0).getNewWord("get", POSTag.VERB));
+				md.setAction(md.getParse().get(0).getNewWord("[get]", POSTag.VERB));
 				setDefaultUnknownArgs(md);
 				return RuleIndicator.NOUN_PHRASE;
 			}
