@@ -57,7 +57,7 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 			Matcher m = p.matcher(line);
 			if (m.matches()) {
 				String cl = m.group(1);
-				if ( cl == null ) { cl = "_ANONYMOUS_"; }
+				if ( cl == null ) { cl = ""; }
 				else {
 					// parse of leading package
 					cl = cl.replaceAll("\\s+\\.", "");
@@ -86,10 +86,32 @@ public class SWUMAccuracyHarness implements AccuracyTestHarness {
 
 				MethodDecl md = new MethodDecl(name, mc);
 				RuleIndicator ri = swum.applyRules(md);
-			
+				String md_string_raw = md.toString();
+				String md_string = "";
+				boolean seenParen = false;
+				for(int i = 0; i<md_string_raw.toString().length(); ++i) {
+					if(md_string_raw.charAt(i) == '[') {
+						seenParen = true;
+					}
+					if(md_string_raw.charAt(i) == '|') {
+						seenParen = false;
+					}
+					if(seenParen == false) {
+						md_string += md_string_raw.charAt(i);
+					}
+				}
+				String line_raw = line.trim();
+				String line_processed = "";
+				for(int i = 0; i<line_raw.length(); ++i) {
+					if(line.charAt(i) == '[') {
+						break;
+					}else {
+						line_processed += line_raw.charAt(i);
+					}
+				}
 				if (md.isConstructedSWUM())
-					System.out.println("FUNCTION#" + line.trim() + 
-						"@" + md);
+					System.out.println("FUNCTION#" + line_processed + 
+						"@" + md_string);
 				else
 					System.out.println(RuleIndicator.UNKOWN + ":OOPS:" + line.trim() + ":");
 			}else {

@@ -69,12 +69,12 @@ public abstract class IMethodDecl extends IProgramElementNode {
 		String s = "";
 		if (action != null) { a = action.toString(); }
 		if (theme != null)  { t = theme.toString(); }
-//		if (secondaryArgs != null) {
-//			for (Node n : secondaryArgs) {
-//				s += "-- " + n.toString();
-//			}
-//		}
-//		
+		if (secondaryArgs != null) {
+			for (Node n : secondaryArgs) {
+				s += n.toString();
+			}
+		}
+		
 //		if (unknownArgs != null) {
 //			s += "\t++";
 //			for (Node n : unknownArgs) {
